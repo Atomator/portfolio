@@ -1,15 +1,12 @@
 <template>
   <div id="app">
-    <h1>This is the App</h1>
-    <router-link to="/"><button class = 'button is-primary'>Welcome</button></router-link>
-    <router-link to="/other"><button class = 'button is-link'>Other</button></router-link>
-    <router-view/>
+    <h1>This is the Other Page</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'Other'
 }
 </script>
 
