@@ -10,6 +10,7 @@ $white: #F7F7FF;
 
 // Update Bulma's global variables
 $family-sans-serif: "Avenir", sans-serif;
+$text: $gray;
 $primary: $blue;
 $dark: $gray;
 $light: $white;
@@ -17,13 +18,11 @@ $light: $white;
 // Update some of Bulma's component variables
 $body-background-color: $white;
 
-// Import only what you need from Bulma
-@import "../../../node_modules/bulma/sass/utilities/_all.sass";
-@import "../../../node_modules/bulma/sass/base/_all.sass";
-@import "../../../node_modules/bulma/sass/elements/button.sass";
-@import "../../../node_modules/bulma/sass/elements/container.sass";
-@import "../../../node_modules/bulma/sass/elements/title.sass";
-@import "../../../node_modules/bulma/sass/form/_all.sass";
-@import "../../../node_modules/bulma/sass/components/navbar.sass";
-@import "../../../node_modules/bulma/sass/layout/hero.sass";
-@import "../../../node_modules/bulma/sass/layout/section.sass";
+// Currently importing all modules for production; will cut down later
+@import "../../../node_modules/bulma/sass/utilities/_all";
+@import "../../../node_modules/bulma/sass/base/_all";
+@import "../../../node_modules/bulma/sass/elements/_all";
+@import "../../../node_modules/bulma/sass/form/_all";
+@import "../../../node_modules/bulma/sass/components/_all";
+@import "../../../node_modules/bulma/sass/grid/_all";
+@import "../../../node_modules/bulma/sass/layout/_all";

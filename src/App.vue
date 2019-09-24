@@ -1,8 +1,11 @@
+// This file contains the code used to deploy the rest of the site
+
 <template>
   <div id="app">
-    <router-link to="/"><button class = 'button is-primary'>Welcome</button></router-link>
-    <router-link to="/other"><button class = 'button is-link'>Other</button></router-link>
+
+    <!-- This is the router view that allows for different components (pages) to be showed here -->
     <router-view/>
+
   </div>
 </template>
 
@@ -11,11 +14,3 @@ export default {
   name: 'App',
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>
