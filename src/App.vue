@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>This is the App</h1>
     <router-link to="/"><button class = 'button is-primary'>Welcome</button></router-link>
     <router-link to="/other"><button class = 'button is-link'>Other</button></router-link>
     <router-view/>
@@ -18,8 +17,5 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
