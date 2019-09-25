@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-    <nav class="level m-xl">
-      <div class="level-right" v-for="(value, key) in pages" v-bind:key="value.id">
-        <div class="level-item">
-          <router-link :to="value"><p class="menuItem has-text-weight-bold has-text-dark subtitle">{{ key }}</p></router-link>
-        </div>
+    <nav class="navbar p-t-lg" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="level-left">
-        <div class="level-item">
-          <p>The Verge</p>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" v-for="(value, key) in pages" v-bind:key="value.id">
+            <router-link :to="value">
+              <a class="menu-item has-text-weight-bold has-text-dark"> {{ key }} </a>
+            </router-link>
+          </a>
         </div>
       </div>
     </nav>
@@ -35,8 +46,11 @@ export default {
 
 <style>
 
-.menuItem {
-  /* color: #465362; */
+.menu-item {
+  font-size: 1.5rem;
+}
+
+.menu {
 }
 
 </style>
