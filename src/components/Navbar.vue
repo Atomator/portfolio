@@ -18,7 +18,9 @@
           <div class="navbar-end">
             <a class="navbar-item" v-for="(value, key) in pages" v-bind:key="value.id">
               <router-link :to="value">
-                <a class="has-text-weight-bold has-text-dark is-size-5"> {{ key }} </a>
+                <a class="has-text-weight-bold has-text-dark is-size-4"> {{ key }} </a>
+                <div class="navlink-current" v-if="currentPage == '/' + value"></div>
+                <div class="navlink-unselected" v-else></div>
               </router-link>
             </a>
           </div>
@@ -43,9 +45,26 @@ export default {
   created: function () {
     this.currentPage = this.$router.currentRoute.fullPath;
   },
+  watch: {
+    $route (to){
+      this.currentPage = to.fullPath;
+    }
+  }
 }
 </script>
 
 <style scoped>
+
+.navlink-current {
+  margin-top: -13px;
+  height: 4px;
+  background-color: #71A9F7;
+  border-radius: 2px;
+}
+
+.navlink-unselected {
+  margin-top: -13px;
+  height: 4px;
+}
 
 </style>

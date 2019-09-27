@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <h1>This is the Other Page</h1>
+    <div class="container has-text-centered">
+        <h2 class="subtitle">
+          This is the <strong>other</strong> page; used to demo navigation;
+        </h2>
+    </div>
   </div>
 </template>
 
