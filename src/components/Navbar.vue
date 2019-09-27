@@ -19,7 +19,7 @@
             <a class="navbar-item" v-for="(value, key) in pages" v-bind:key="value.id">
               <router-link :to="value">
                 <a class="has-text-weight-bold has-text-dark is-size-4"> {{ key }} </a>
-                <div class="navlink-current" v-if="currentPage == '/' + value"></div>
+                <div class="navlink-current" v-if="currentPage == value"></div>
                 <div class="navlink-unselected" v-else></div>
               </router-link>
             </a>
@@ -37,8 +37,8 @@ export default {
     return {
       currentPage: '',
       pages: {
-        'Home': 'home',
-        'Other': 'other',
+        'Home': '/',
+        'Other': '/other',
       }
     }
   },
