@@ -13,11 +13,6 @@ const router = new Router({
         component: Welcome
     },
     {
-      path: '/home',
-      name: 'Welcome',
-      component: Welcome
-    },
-    {
         path: '/other',
         name: 'Other',
         component: Other
