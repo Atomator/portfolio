@@ -1,11 +1,27 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
+    <div class="container">
+      <div class="columns is-centered is-vcentered is-mobile">
+        <div class="column is-narrow has-text-centered">
+          <p class="has-text-light has-text-weight-semibold">Improving my code; one day at a time</p>
+          <div class="icon-container">
+            <a class="icon">
+              <img src="../assets/media icons/dribbble.svg" class="logo">
+            </a>
+            <a class="icon">
+              <img src="../assets/media icons/github.svg" class="logo">
+            </a>
+            <a class="icon">
+              <img src="../assets/media icons/medium.svg" class="logo">
+            </a>
+            <a class="icon">
+              <img src="../assets/media icons/linkedin.svg" class="logo">
+            </a>
+          </div>
+          <p class="has-text-light">Conner Stark</p>
+          <p class="has-text-light">© twentyNineteen </p>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -20,6 +36,16 @@ export default {
 
 .footer {
   height: 256px;
+}
+
+.icon-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.icon {
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 </style>

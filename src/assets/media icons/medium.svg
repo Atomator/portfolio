@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_6" data-name="Group 6" transform="translate(-0.247)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="16" cy="16" r="16" transform="translate(0.247)" fill="#f7f7ff"/>
+    <path id="iconmonstr-medium-1" d="M1.892,5.583a.617.617,0,0,0-.2-.521L.2,3.268V3H4.826L8.4,10.839,11.543,3h4.409v.268L14.678,4.489a.373.373,0,0,0-.142.358v8.971a.373.373,0,0,0,.142.357L15.921,15.4v.268H9.666V15.4l1.289-1.251c.126-.126.126-.163.126-.357V6.537L7.5,15.634H7.015l-4.171-9.1v6.1a.841.841,0,0,0,.231.7l1.676,2.032v.269H0v-.269l1.676-2.032a.81.81,0,0,0,.216-.7V5.583Z" transform="translate(7.93 6.847)" fill="#71a9f7" fill-rule="evenodd"/>
+  </g>
+</svg>
