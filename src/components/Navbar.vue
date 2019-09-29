@@ -18,7 +18,7 @@
           <div class="navbar-end">
             <a class="navbar-item" v-for="(value, key) in pages" v-bind:key="value.id">
               <router-link :to="value">
-                <a class="has-text-weight-bold has-text-dark is-size-4"> {{ key }} </a>
+                <a class="has-text-weight-bold has-text-dark is-size-5"> {{ key }} </a>
                 <div class="navlink-current" v-if="currentPage == value"></div>
                 <div class="navlink-unselected" v-else></div>
               </router-link>
@@ -56,14 +56,14 @@ export default {
 <style scoped>
 
 .navlink-current {
-  margin-top: -13px;
-  height: 4px;
+  margin-top: -10px;
+  height: 3px;
   background-color: #71A9F7;
   border-radius: 2px;
 }
 
 .navlink-unselected {
-  margin-top: -13px;
+  margin-top: -11px;
   height: 4px;
 }
 
