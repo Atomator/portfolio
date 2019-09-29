@@ -32,12 +32,13 @@
 <style scoped>
 .main {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
 }
 
 .section {
+  min-height: 100vh;
   flex: 1;
   padding: 0;
 }
+
 </style>

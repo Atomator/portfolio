@@ -17,4 +17,9 @@ export default {
 </script>
 
 <style scoped>
+
+.footer {
+  height: 256px;
+}
+
 </style>
