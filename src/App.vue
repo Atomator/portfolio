@@ -3,13 +3,15 @@
 <template>
   <div id="app">
     <body class="main">
-      <div class="section">
+      <div class="ssection">
 
         <!-- Navbar component -->
-        <navbar></navbar>
+        <navbar class="nav"></navbar>
 
         <!-- This is the router view that allows for different components (pages) to be showed here -->
-        <router-view/>
+        <div class="section">
+          <router-view id="router"/>
+        </div>
 
       </div>
 
@@ -39,6 +41,17 @@
   min-height: 100vh;
   flex: 1;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#router {
+
+}
+
+.nav {
+  margin-bottom: -160px;
 }
 
 </style>
