@@ -38,7 +38,7 @@ export default {
       currentPage: '',
       pages: {
         'Home': '/',
-        'Other': '/other',
+        'Projects': '/projects',
       }
     }
   },
