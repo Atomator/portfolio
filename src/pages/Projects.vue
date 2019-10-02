@@ -5,15 +5,9 @@
           This is the <strong>other</strong> page; used to demo navigation;
         </h2>
     </div>
-    <p>{{ this.pageData[0].account_name[1] }}</p>
     <div v-for="(value) in pageData" v-bind:key="value.id">
-      <div v-for="(a) in value" v-bind:key="a.id">
-        <div v-for="(b) in a" v-bind:key="b.id">
-          {{ b }}
-        </div>
-      </div>
+      <project-tile :data="value"></project-tile>
     </div>
-    <project-tile></project-tile>
   </div>
 </template>
 
@@ -27,16 +21,9 @@ export default {
     return {
       "pageData": [
         {
-          "account_id": "11",
-          "account_name": ["name11", "the"]
-        },
-        {
-          "account_id": "21",
-          "account_name": ["name11", "the"]
-        },
-        {
-          "account_id": "31",
-          "account_name": ["name11", "the"]
+          "title": ["VRKit"],
+          "tags": ["VR", "AR", "Unity", "C#"],
+          "decription": ["Ever since I had my first hands on time with an Oculus Rift at a local Best Buy, I have been hooked on VR. So I created an experiment; Apple’s ARKit + Google’s GVR combined within Unity."]
         }
       ]
     }
