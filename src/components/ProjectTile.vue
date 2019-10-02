@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="tile is-parent">
-      <article class="tile is-child notification is-success">
+      <article class="tile is-child notification is-dark">
         <div class="content">
           <p class="title">Tall tile</p>
           <p class="subtitle">With even more content</p>
