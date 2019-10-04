@@ -21,8 +21,8 @@ export default {
     return {
       "pageData": [
         {
-          "title": ["VRKit"],
-          "images": "/img/PlaceHolder.596b55d2.jpeg",
+          "title": "VRKit",
+          "images": require('src/assets/images/placeholder.jpeg'),
           "tags": ["VR", "AR", "Unity", "C#"],
           "decription": ["Ever since I had my first hands on time with an Oculus Rift at a local Best Buy, I have been hooked on VR. So I created an experiment; Apple’s ARKit + Google’s GVR combined within Unity."]
         }
