@@ -1,15 +1,9 @@
 <template>
   <div id="app">
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-dark">
-        <div class="content">
-          <p class="title">Tall tile</p>
-          <p class="subtitle">With even more content</p>
-          <div class="content">
-            <!-- Content -->
-          </div>
-        </div>
-      </article>
+    <div class="box has-background-dark">
+      <img :src="data.images"/>
+      <p>{{ data.images }}</p>
+      <h1 class="has-text-light title">Hi</h1>
     </div>
   </div>
 </template>
