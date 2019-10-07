@@ -3,7 +3,7 @@
   <div id="app">
     <section class="section">
       <div class="container has-text-centered">
-        <h1 class = "title" id="welcomeMessage">Hello<strong class="has-text-primary">.</strong> </h1>
+        <h1 class="title" id="welcomeMessage">Hello<strong class="has-text-primary">.</strong> </h1>
         <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
           I love what I do even if I'm not sure what that is
         </h2>

@@ -3,7 +3,7 @@
 <template>
   <div id="app">
     <body class="main">
-      <div class="ssection">
+      <div>
 
         <!-- Navbar component -->
         <navbar class="nav"></navbar>
@@ -34,24 +34,17 @@
 <style scoped>
 .main {
   display: flex;
+  height: 100%;
   flex-direction: column;
 }
 
 .section {
-  min-height: 100vh;
+  min-height: calc(100vh - 160px);
   flex: 1;
-  padding: 0;
+  padding: 0px 0px 160px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#router {
-
-}
-
-.nav {
-  margin-bottom: -160px;
 }
 
 </style>

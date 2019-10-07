@@ -3,14 +3,17 @@
     <div class="box has-background-dark">
       <img :src="data.images"/>
       <div id="content">
-        <h1 class="title-custom has-text-light">{{ data.title }}</h1>
-        <nav class="level">
-          <div class="level-left" v-for="(value) in data.tags" v-bind:key="value.id">
-            <a class="level-item">
-              <span class="tag is-primary is-rounded has-text-weight-bold"> {{ value }} </span>
-            </a>
+        <div class="child">
+          <h1 class="title-custom has-text-light">{{ data.title }}</h1>
+        </div>
+        <div class="child">
+          <div class="tag-container has-text-centered level-item has-background-primary" v-for="(value) in data.tags" v-bind:key="value.id">
+            <p class="tag-text has-text-weight-bold has-text-light"> {{ value }} </p>
           </div>
-        </nav>
+        </div>
+        <div class="child">
+          <p class="text-content has-text-light"> {{ data.description }} </p>
+        </div>
       </div>
     </div>
   </div>
@@ -32,13 +35,32 @@ export default {
   height: 300px;
   width: 400px;
   padding: 0px;
+  margin: 15px;
+}
+
+.child {
+  min-height: 25px;
 }
 
 .title-custom {
-  font-size: 25px;
-  margin-bottom: 0px;
+  font-size: 22px;
+  margin-bottom: 8px;
   font-weight: 600;
   line-height: 1.125;
+}
+
+.tag-container {
+  border-radius: 15px;
+  padding: 1px 8px 1px 8px;
+  margin-right: 12px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, .16);
+  font-size: 7px;
+  height: 12px;
+  float: left;
+}
+
+.text-content {
+  font-size: 11px;
 }
 
 #content {
@@ -51,11 +73,6 @@ img {
   height: 150px;
   width: 400px;
   padding: 0;
-}
-
-.tag {
-  padding: 0px 12px 0px 12px;
-  font-size: 8px;
 }
 
 </style>
