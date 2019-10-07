@@ -33,7 +33,7 @@ export default {
           "title": "Q Learning",
           "images": require('src/assets/images/qlearning.png'),
           "tags": ["Python", "Numpy", "Pygame"],
-          "description": "Ever since I had my first hands on time with an Oculus Rift at a local Best Buy, I have been hooked on VR. So I created an experiment; Apple’s ARKit + Google’s GVR combined within Unity."
+          "description": "When I was forced to the reality that a computer can in fact drive a car I became interested in ML. While I couldn’t teach a computer to drive a car I soon saw that I could teach it how to play a game. "
         },
         {
           "title": "Neural Network",
