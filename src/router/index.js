@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
-import Other from '@/pages/Other'
+import Projects from '@/pages/Projects'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ const router = new Router({
         component: Home
     },
     {
-        path: '/other',
-        name: 'Other',
-        component: Other
+        path: '/projects',
+        name: 'Projects',
+        component: Projects
     }
   ]
 })
