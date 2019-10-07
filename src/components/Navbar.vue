@@ -3,8 +3,8 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="../assets/mylogo.svg" width="40" height="64"  class="logo">
+          <a id="logo" class="navbar-item" href="https://bulma.io" >
+            <img src="../assets/mylogo.svg" width="40" height="64">
           </a>
 
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -39,6 +39,7 @@ export default {
       pages: {
         'Home': '/',
         'Projects': '/projects',
+        'About': '/about',
       }
     }
   },
@@ -65,6 +66,18 @@ export default {
 .navlink-unselected {
   margin-top: -11px;
   height: 4px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #logo{
+    margin-left: 25px;
+  }
+  
+  .burger {
+    height: 10rem;
+    width: 5rem;
+    margin-right: 25px;
+  }
 }
 
 </style>
