@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="box has-background-dark">
-      <img :src="data.images"/>
+      <img :src="data.images" :alt="data.alt"/>
       <div id="content">
         <div class="child">
           <h1 class="title-custom has-text-light">{{ data.title }}</h1>
