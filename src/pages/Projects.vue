@@ -27,31 +27,36 @@ export default {
           "title": "VRKit",
           "images": require('src/assets/images/vrkit.jpg'),
           "tags": ["VR", "AR", "Unity", "C#"],
-          "description": "Ever since I had my first hands on time with an Oculus Rift at a local Best Buy, I have been hooked on VR. So I created an experiment; Apple’s ARKit + Google’s GVR combined within Unity."
+          "description": "Ever since I had my first hands on time with an Oculus Rift at a local Best Buy, I have been hooked on VR. So I created an experiment; Apple’s ARKit + Google’s GVR combined within Unity.",
+          "alt": "vr-headset-cardboard"
         },
         {
           "title": "Q Learning",
-          "images": require('src/assets/images/qlearning.png'),
+          "images": require('src/assets/images/qlearning.jpg'),
           "tags": ["Python", "Numpy", "Pygame"],
-          "description": "When I was forced to the reality that a computer can in fact drive a car I became interested in ML. While I couldn’t teach a computer to drive a car I soon saw that I could teach it how to play a game. "
+          "description": "When I was forced to the reality that a computer can in fact drive a car I became interested in ML. While I couldn’t teach a computer to drive a car I soon saw that I could teach it how to play a game. ",
+          "alt": "snake-game-with-code"
         },
         {
           "title": "Neural Network",
-          "images": require('src/assets/images/neuralnetwork.png'),
+          "images": require('src/assets/images/neuralnetwork.jpg'),
           "tags": ["Python", "Numpy"],
-          "description": "Not understanding Artificial Neural Networks I embarked on a quest, create a NN using nothing but Python, Numpy, and a lot of math that was way above my skill level."
+          "description": "Not understanding Artificial Neural Networks I embarked on a quest, create a NN using nothing but Python, Numpy, and a lot of math that was way above my skill level.",
+          "alt": "numpy-code"
         },
         {
           "title": "Driveline",
-          "images": require('src/assets/images/driveline.png'),
+          "images": require('src/assets/images/driveline.jpg'),
           "tags": ["Javascript", "Vuejs", "Firebase", "HTML", "Bootstrap"],
-          "description": "Working with web design this was my first time coding with a group. With my fellow classmates and a mentor, we began to craft an app to help with the schools drop off and pickup."
+          "description": "Working with web design this was my first time coding with a group. With my fellow classmates and a mentor, we began to craft an app to help with the schools drop off and pickup.",
+          "alt": "driveline-app"
         },
         {
           "title": "Portfolio",
-          "images": require('src/assets/images/portfolio.png'),
+          "images": require('src/assets/images/portfolio.jpg'),
           "tags": ["XD", "HTML/CSS", "Vuejs", "Bulma"],
-          "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a web developer portfolio that would at least be okay."
+          "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a web developer portfolio that would at least be okay.",
+          "alt": "adobe-xd"
         }
       ]
     }
@@ -67,7 +72,7 @@ export default {
 }
 
 .subtext {
-  margin-top: 25px;
+  margin: 25px 15px 35px 15px;
   margin-bottom: 35px;
   font-size: 15px;
 }
