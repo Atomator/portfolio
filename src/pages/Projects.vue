@@ -72,7 +72,7 @@ export default {
 }
 
 .subtext {
-  margin-top: 25px;
+  margin: 25px 15px 35px 15px;
   margin-bottom: 35px;
   font-size: 15px;
 }
