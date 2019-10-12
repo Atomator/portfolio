@@ -1,26 +1,11 @@
 <template>
   <div>
-    <form 
-      name="contact" 
-      action="/#/" 
-      method="post" 
-      netlify
-      netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <div>  
-        <label for="name">Name:</label> 
-        <input type="text" name="name" required/>
-      </div>
-      <div>
-        <input type="email" name="email" required/>
-        <label for="email">Email:</label>
-      </div>
-      <div>
-        <textarea name="message" required></textarea>
-        <label for="message">Message:</label>
-      </div>
-      <button type="submit" value="Send message">Send</button>
+    <form action="https://getsimpleform.com/messages?form_api_token=4509df9eb4afd18538cf77fc19741a9b" method="post">
+      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+      <input type='hidden' name='redirect_to' value='https://atomator-portfolio.netlify.com/#/' />
+      <!-- all your input fields here.... -->
+      <input type='text' name='test' />
+      <input type='submit' value='Test form' />
     </form>
   </div>
 </template>
