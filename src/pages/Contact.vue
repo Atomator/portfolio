@@ -1,35 +1,58 @@
 <template>
-  <div class="container">
-    <h1 class="title">
-      Contact
-    </h1>
-    <div class="content">
-      <form name="contact" action="/thank-you" netlify-honeypot="bot-field" method="post" netlify>
-        <input type="hidden" name="form-name" value="contact" />
-        <p class="hidden">     
-          <label>Don’t fill this out: <input name="bot-field"></label>   
-        </p>
-        <label class="form-label" for="name">
-          Name:
+  <div>
+    <form>
+      <p>
+        <label>
+          Your Name: <input type="text" name="name" v-model="form.name" />
         </label>
-        <input class="form-field" name="name" id="name" />
-        <label class="form-label" for="email">
-          Email:
+      </p>
+      <p>
+        <label>
+          Your Email: <input type="email" name="email" v-model="form.email" />
         </label>
-        <input class="form-field" name="email" id="email" />
-        <label class="form-label" for="message">
-          Message:
+      </p>
+      <p>
+        <label>
+          Message: <textarea name="message" v-model="form.message" />
         </label>
-        <textarea class="form-field" name="message" id="message"></textarea>
-        <input class="form-button" type="submit" value="Send message" />
-      </form>
-    </div>
+      </p>
+      <p>
+        <button type="submit" @click.prevent="handleSubmit">Send</button>
+      </p>
+    </form>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Contact',
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: '',
+      },
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&');
+    },
+    handleSubmit() {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({ 'form-name': 'contact', ...this.form }),
+      })
+        .then(() => alert('Success!'))
+        .catch(error => alert(error));
+    },
+  }
 }
 </script>
 
