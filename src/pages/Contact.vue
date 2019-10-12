@@ -2,7 +2,8 @@
   <div>
     <form 
       name="contact" 
-      action="/#/"  
+      action="/#/" 
+      method="post" 
       netlify
       netlify-honeypot="bot-field"
     >
