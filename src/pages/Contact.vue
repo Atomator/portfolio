@@ -1,14 +1,12 @@
 <template>
   <div>
     <form 
-      name="contactus" 
-      action="/#/" 
-      method="post" 
+      name="contact" 
+      action="/#/"  
       netlify
       netlify-honeypot="bot-field"
     >
-      // Hidden input to check for bots
-      <input type="hidden" name="form-name" value="contactus" />
+      <input type="hidden" name="form-name" value="contact" />
       <div>  
         <label for="name">Name:</label> 
         <input type="text" name="name" required/>
