@@ -1,24 +1,27 @@
 <template>
   <div>
-    <form
-      name="ask-question"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      >
-      <input type="hidden" name="form-name" value="ask-question" />
-      <label v-for="(panelist, index) in panelists" :key="index">
-        <input
-          type="radio"
-          name="panelist"
-          :value="panelist"
-          @input="ev => updatePanelist"
-          :checked="panelist === currentPanelist"
-        />
-        <span>{{ panelist }}</span>
-      </label>
-      ...
-      <button>Submit</button>
+    <form 
+      name="contactus" 
+      action="/#/" 
+      method="post" 
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      // Hidden input to check for bots
+      <input type="hidden" name="form-name" value="contactus" />
+      <div>  
+        <label for="name">Name:</label> 
+        <input type="text" name="name" required/>
+      </div>
+      <div>
+        <input type="email" name="email" required/>
+        <label for="email">Email:</label>
+      </div>
+      <div>
+        <textarea name="message" required></textarea>
+        <label for="message">Message:</label>
+      </div>
+      <button type="submit" value="Send message">Send</button>
     </form>
   </div>
 </template>
@@ -26,19 +29,5 @@
 <script>
 export default {
   name: 'Contact',
-  methods: {
-    updatePanelist (ev) {
-      this.currentPanelist = ev.target.value
-    }
-  },
-  data () {
-    return {
-      panelists: ['Evan You', 'Chris Fritz'],
-      currentPanelist: 'Evan You'
-    }
-  }
 }
 </script>
-
-<style scoped>
-</style>
