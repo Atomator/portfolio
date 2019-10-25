@@ -5,6 +5,7 @@ import Projects from '@/pages/Projects'
 import About from '@/pages/About'
 import Contact from '@/pages/Contact'
 import Resume from '@/pages/Resume'
+import Vrkit from '@/pages/projects/Vrkit'
 
 Vue.use(Router)
 
@@ -34,7 +35,12 @@ const router = new Router({
       path: '/resume',
       name: 'Resume',
       component: Resume
-  },
+    },
+    {
+      path: '/projects/vrkit',
+      name: 'Vrkit',
+      component: Vrkit
+    },
   ]
 })
 
