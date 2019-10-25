@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <div class="box has-background-dark">
-      <img :src="data.images" :alt="data.alt"/>
-      <div id="content">
-        <div class="child">
-          <h1 class="title-custom has-text-light">{{ data.title }}</h1>
-        </div>
-        <div class="child">
-          <div class="tag-container has-text-centered level-item has-background-primary" v-for="(value) in data.tags" v-bind:key="value.id">
-            <p class="tag-text has-text-weight-bold has-text-light"> {{ value }} </p>
+    <router-link :to="'/projects/' + data.page">
+      <div class="box has-background-dark">
+        <img :src="data.images" :alt="data.alt"/>
+        <div id="content">
+          <div class="child">
+            <h1 class="title-custom has-text-light">{{ data.title }}</h1>
+          </div>
+          <div class="child">
+            <div class="tag-container has-text-centered level-item has-background-primary" v-for="(value) in data.tags" v-bind:key="value.id">
+              <p class="tag-text has-text-weight-bold has-text-light"> {{ value }} </p>
+            </div>
+          </div>
+          <div class="child">
+            <p class="text-content has-text-light"> {{ data.description }} </p>
           </div>
         </div>
-        <div class="child">
-          <p class="text-content has-text-light"> {{ data.description }} </p>
-        </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
