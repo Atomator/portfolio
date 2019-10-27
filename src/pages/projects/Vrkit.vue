@@ -15,20 +15,23 @@
               </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
+            <a class="button is-primary is-large has-shadow" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
               <a class="icon">
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
+            <!-- <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
               <p class="has-text-weight-bold">Demo</p>
-            </a>
+            </a> -->
           </div>  
         </div>
-        <div class="column is-one-half">
-          <img class="is-vertical-center" src="../../assets/plank.svg" width="500">
+        <div class="column is-one-half has-text-centered">
+          <img class="is-vertical-center" src="../../assets/plank.svg" width="350">
         </div>
+      </div>
+      <div>
+        <!-- <h1>Title</h1> -->
       </div>
     </section>
   </div>
