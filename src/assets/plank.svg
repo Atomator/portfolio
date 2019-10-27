@@ -14,4 +14,9 @@
       </g>
     </g>
   </g>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    </style>
+  </defs>
 </svg>
