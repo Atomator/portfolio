@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 470">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway');
+    </style>
+  </defs>
   <g id="iPhone" transform="translate(-286 -73)">
     <rect id="Background" width="203" height="427" transform="translate(299 86)" fill="#eff6ff"/>
     <rect id="Button" width="120" height="29" rx="6" transform="translate(340 300)" fill="rgba(113,169,247,0.25)"/>
@@ -14,9 +19,4 @@
       </g>
     </g>
   </g>
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-    </style>
-  </defs>
 </svg>
