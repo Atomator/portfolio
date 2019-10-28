@@ -1,10 +1,10 @@
 <template>
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
-    <section class="section">
+    <div class="container">
       <div class="columns">
         <div class="column is-one-half">
-          <div id="main" class="container">
+          <div id="main" class="container is-pulled-right">
             <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
             <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
               Google Cardboard Meets Positional Tracking
@@ -26,14 +26,20 @@
             </a> -->
           </div>  
         </div>
-        <div class="column is-one-half has-text-centered">
+        <div class="column is-one-half has-text-left">
           <img class="is-vertical-center" src="../../assets/plank.svg" width="350">
         </div>
       </div>
-      <div>
-        <!-- <h1>Title</h1> -->
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <p>
+            Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it) I needed another solution if I was to explore the wonders of VR. 
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -44,6 +50,9 @@ export default {
 </script>
 
 <style scoped>
+p {
+  font-size: 20px;
+}
 
 #welcomeMessage {
   font-weight: 900;
