@@ -16,14 +16,12 @@
 
         <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': showNav }">
           <div class="navbar-end">
-            <a class="navbar-item" v-for="(value, key) in pages" v-bind:key="value.id" @click="showNav = false">
-              <router-link :to="value">
+            <router-link @click.native="showNav = false" class="navbar-item" v-for="(value, key) in pages" v-bind:key="value.id" :to="value">
                 <a class="test has-text-dark is-size-5" :class="{ 'has-text-weight-medium': showNav, 'has-text-weight-bold': !showNav, 'navlink-mobile': (showNav == true && currentPage == value)}"> 
                   {{ key }} 
                   <div :class="{'navlink-current': (currentPage == value && showNav == false), 'navlink-unselected': (currentPage != value && showNav == false)}"></div>
                 </a>
-              </router-link>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
