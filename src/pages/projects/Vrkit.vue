@@ -1,10 +1,10 @@
 <template>
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
-    <div class="container">
+    <div class="container title-tile">
       <div class="columns">
         <div class="column is-one-half">
-          <div id="main" class="container is-pulled-right">
+          <div id="main" class="container is-pulled-right-desktop">
             <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
             <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
               Google Cardboard Meets Positional Tracking
@@ -26,7 +26,7 @@
             </a> -->
           </div>  
         </div>
-        <div class="column is-one-half has-text-left">
+        <div class="column is-one-half has-text-centered">
           <img class="is-vertical-center" src="../../assets/plank.svg" width="350">
         </div>
       </div>
@@ -50,6 +50,10 @@ export default {
 </script>
 
 <style scoped>
+.title-tile {
+  min-height: calc(100vh - 150px);
+}
+
 p {
   font-size: 20px;
 }

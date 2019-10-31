@@ -54,6 +54,7 @@ export default {
 .tag-container {
   border-radius: 15px;
   padding: 1px 8px 1px 8px;
+  margin-top: 1px;
   margin-right: 12px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, .16);
   font-size: 7px;
