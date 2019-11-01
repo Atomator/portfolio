@@ -1,10 +1,10 @@
 <template>
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
-    <div class="container title-tile">
+    <div class="container work-header">
       <div class="columns">
         <div class="column is-one-half">
-          <div id="main" class="container is-pulled-right-desktop">
+          <div id="main" class="container pull-right">
             <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
             <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
               Google Cardboard Meets Positional Tracking
@@ -31,12 +31,23 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column is-half">
-          <p>
-            Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it) I needed another solution if I was to explore the wonders of VR. 
-          </p>
+    <div class="container work-skills">
+      <div class="columns is-right">
+        <div class="column">
+          <div class="row">
+            <p class="has-text-weight-bold">Skills:</p>
+            <p>
+              Unity
+              <br>
+              C#
+              <br>
+              Blender
+              <br>
+              ARKit
+              <br>
+              Google Cardboard
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -50,7 +61,13 @@ export default {
 </script>
 
 <style scoped>
-.title-tile {
+.row {
+  display: flex;
+}
+
+.work-header {
+  padding-top: 50px;
+  margin-bottom: 100px;
   min-height: calc(100vh - 150px);
 }
 
@@ -81,6 +98,10 @@ p {
 @media only screen and (min-width: 768px) {
   #main {
     margin-top: 150px;
+  }
+
+  .pull-right {
+    float: right;
   }
 }
 
