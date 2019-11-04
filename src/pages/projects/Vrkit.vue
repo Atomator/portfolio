@@ -63,6 +63,13 @@
         </div>
       </div>
     </div>
+    <div class="container work-content has-background-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="has-text-light">Compared to other VR solutions there were two main obstacles for mobile headsets: positional tracking and game controllers. High-end headsets such as the Oculus Rift or HTC Vive offered the user the ability to not only walk around in a virtual environment, but interact with it by tracking controllers that represented the user’s hands. Based on my previous knowledge it was unlikely I would be able to track three-dimensional objects using a limited smartphone camera, but I could track the phone’s position.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -73,6 +80,15 @@ export default {
 </script>
 
 <style scoped>
+
+.work-content {
+
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
 .title-card {
   font-size: 50px;
   font-weight: 900;
@@ -113,7 +129,8 @@ export default {
 
 .work-header {
   padding-top: 50px;
-  min-height: calc(95vh);
+  margin-bottom: 100px;
+  min-height: calc(100vh - 100px);
 }
 
 p {
