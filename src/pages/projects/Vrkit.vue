@@ -32,10 +32,18 @@
       </div>
     </div>
     <div class="container work-skills">
-      <div class="columns is-right">
+      <div class="columns work-column">
         <div class="column">
           <div class="row">
-            <p class="has-text-weight-bold">Skills:</p>
+            <h1 class="has-text-weight-bold">Project Duration</h1>
+            <p>June 2019 - August 2019</p>
+          </div>
+          <div class="row">
+            <h1 class="has-text-weight-bold">Team</h1>
+            <p>Just Me :)</p>
+          </div>
+          <div class="row">
+            <h1 class="has-text-weight-bold">Skills</h1>
             <p>
               Unity
               <br>
@@ -49,6 +57,10 @@
             </p>
           </div>
         </div>
+        <div class="column">
+          <h1 class="title-card">Why?</h1>
+          <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it) I needed another solution if I was to explore the wonders of VR. </p>
+        </div>
       </div>
     </div>
   </div>
@@ -61,14 +73,47 @@ export default {
 </script>
 
 <style scoped>
+.title-card {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.row p {
+  font-size: 16px; 
+  padding-top: 5px; 
+  padding-left: 25px;
+  width: 55%;
+}
+
+.column {
+  padding: 0px 35px 0px 35px;
+}
+
+.row h1 {
+  text-align: right;
+  font-size: 20px;
+  width: 45%;
+}
+
+.work-column {
+  flex-direction: row-reverse;
+}
+
 .row {
   display: flex;
+  margin-bottom: 15px;
+}
+
+.work-skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-header {
   padding-top: 50px;
-  margin-bottom: 100px;
-  min-height: calc(100vh - 150px);
+  min-height: calc(95vh);
 }
 
 p {
@@ -108,6 +153,10 @@ p {
 @media only screen and (max-width: 768px) {
   #main {
     text-align: center;
+  }
+
+  #app {
+    padding: 0px 10px 0px 10px;
   }
 
   .button {
