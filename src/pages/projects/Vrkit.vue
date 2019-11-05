@@ -58,17 +58,22 @@
           </div>
         </div>
         <div class="column">
-          <h1 class="title-card">Why?</h1>
+          <h1 class="title-card">Why</h1>
           <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br> <br> I needed another solution if I was to explore the wonders of VR. </p>
         </div>
       </div>
     </div>
-    <div class="container work-content has-background-dark">
-      <div class="columns">
-        <div class="column">
-          <p class="has-text-light">Compared to other VR solutions there were two main obstacles for mobile headsets: positional tracking and game controllers. High-end headsets such as the Oculus Rift or HTC Vive offered the user the ability to not only walk around in a virtual environment, but interact with it by tracking controllers that represented the user’s hands. Based on my previous knowledge it was unlikely I would be able to track three-dimensional objects using a limited smartphone camera, but I could track the phone’s position.</p>
+    <div class="container work-content has-background-dark is-fullhd is-widescreen">
+      <section class="hero is-dark is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title-card has-text-light">
+              What
+            </h1>
+            <p>Compared to other VR solutions there were two main obstacles for mobile headsets: positional tracking and game controllers. High-end headsets such as the Oculus Rift or HTC Vive offered the user the ability to not only walk around in a virtual environment, but interact with it by tracking controllers that represented the user’s hands. Based on my previous knowledge it was unlikely I would be able to track three-dimensional objects using a limited smartphone camera, but I could track the phone’s position.</p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </template>
