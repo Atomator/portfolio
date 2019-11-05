@@ -63,15 +63,21 @@
         </div>
       </div>
     </div>
-    <div class="container work-content has-background-dark is-fullhd is-widescreen">
+    <div class="container work-content has-background-dark is-fullhd">
       <section class="hero is-dark is-fullheight">
-        <div class="hero-body">
-          <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img :src="require('src/assets/images/ar.jpg')" alt="ar" style="border-radius: 30px;">
+          </div>
+          <div class="column has-text-left">
             <h1 class="title-card has-text-light">
               What
             </h1>
             <p>Compared to other VR solutions there were two main obstacles for mobile headsets: positional tracking and game controllers. High-end headsets such as the Oculus Rift or HTC Vive offered the user the ability to not only walk around in a virtual environment, but interact with it by tracking controllers that represented the user’s hands. Based on my previous knowledge it was unlikely I would be able to track three-dimensional objects using a limited smartphone camera, but I could track the phone’s position.</p>
           </div>
+        </div>
+        <div>
+          <p>A couple of years ago Apple released ARKit, an augmented reality framework that allowed for apps to be built using an iPhone’s camera to display and track a virtual object in real space using the camera and the phone’s screen. By using Unity and ARKit to overlay an entire virtual environment with a stereoscopic view so it could be viewed with a Google Cardboard, I was able to create a new type of mobile VR experience. </p>
         </div>
       </section>
     </div>
@@ -85,12 +91,12 @@ export default {
 </script>
 
 <style scoped>
-.work-content {
-
+.hero {
+  padding: 100px;
 }
 
 .title-card {
-  font-size: 50px;
+  font-size: 65px;
   font-weight: 900;
   margin-bottom: 10px;
 }
