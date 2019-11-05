@@ -33,7 +33,7 @@
     </div>
     <div class="container work-skills">
       <div class="columns work-column">
-        <div class="column">
+        <div id="skils-column" class="column">
           <div class="row">
             <h1 class="has-text-weight-bold">Project Duration</h1>
             <p>June 2019 - August 2019</p>
@@ -59,7 +59,7 @@
         </div>
         <div class="column">
           <h1 class="title-card">Why?</h1>
-          <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it) I needed another solution if I was to explore the wonders of VR. </p>
+          <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br> <br> I needed another solution if I was to explore the wonders of VR. </p>
         </div>
       </div>
     </div>
@@ -80,13 +80,8 @@ export default {
 </script>
 
 <style scoped>
-
 .work-content {
 
-}
-
-.container {
-  margin-bottom: 50px;
 }
 
 .title-card {
@@ -127,12 +122,6 @@ export default {
   flex-direction: column;
 }
 
-.work-header {
-  padding-top: 50px;
-  margin-bottom: 100px;
-  min-height: calc(100vh - 100px);
-}
-
 p {
   font-size: 20px;
 }
@@ -165,6 +154,21 @@ p {
   .pull-right {
     float: right;
   }
+
+  #skils-column {
+    padding-top: 70px;
+  }
+
+  .container {
+    margin-bottom: 200px;
+  }
+
+  .work-header {
+    padding-top: 50px;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 100px);
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -179,6 +183,11 @@ p {
   .button {
     margin: 35px 18px 0px 18px;
   }
+
+  .work-header {
+    margin: 50px;
+  }
+
 }
 
 </style>
