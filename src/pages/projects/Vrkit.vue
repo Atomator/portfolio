@@ -6,7 +6,7 @@
         <div class="column is-one-half">
           <div id="main" class="container pull-right">
             <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
-            <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
+            <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 25px;">
               Google Cardboard Meets Positional Tracking
             </h2>
             <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
@@ -31,55 +31,10 @@
         </div>
       </div>
     </div>
-    <div class="container work-skills">
-      <div class="columns work-column">
-        <div id="skils-column" class="column">
-          <div class="row">
-            <h1 class="has-text-weight-bold">Project Duration</h1>
-            <p>June 2019 - August 2019</p>
-          </div>
-          <div class="row">
-            <h1 class="has-text-weight-bold">Team</h1>
-            <p>Just Me :)</p>
-          </div>
-          <div class="row">
-            <h1 class="has-text-weight-bold">Skills</h1>
-            <p>
-              Unity
-              <br>
-              C#
-              <br>
-              Blender
-              <br>
-              ARKit
-              <br>
-              Google Cardboard
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <h1 class="title-card">Why</h1>
-          <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br> <br> I needed another solution if I was to explore the wonders of VR. </p>
-        </div>
+    <div class="container">
+      <div class="tile-centered-primary">
+        <p>Hello</p>
       </div>
-    </div>
-    <div class="container work-content has-background-dark is-fullhd">
-      <section class="hero is-dark is-fullheight">
-        <div class="columns is-vcentered">
-          <div class="column">
-            <img :src="require('src/assets/images/ar.jpg')" alt="ar" style="border-radius: 30px;">
-          </div>
-          <div class="column has-text-left">
-            <h1 class="title-card has-text-light">
-              What
-            </h1>
-            <p>Compared to other VR solutions there were two main obstacles for mobile headsets: positional tracking and game controllers. High-end headsets such as the Oculus Rift or HTC Vive offered the user the ability to not only walk around in a virtual environment, but interact with it by tracking controllers that represented the user’s hands. Based on my previous knowledge it was unlikely I would be able to track three-dimensional objects using a limited smartphone camera, but I could track the phone’s position.</p>
-          </div>
-        </div>
-        <div>
-          <p>A couple of years ago Apple released ARKit, an augmented reality framework that allowed for apps to be built using an iPhone’s camera to display and track a virtual object in real space using the camera and the phone’s screen. By using Unity and ARKit to overlay an entire virtual environment with a stereoscopic view so it could be viewed with a Google Cardboard, I was able to create a new type of mobile VR experience. </p>
-        </div>
-      </section>
     </div>
   </div>
 </template>
@@ -91,47 +46,7 @@ export default {
 </script>
 
 <style scoped>
-.hero {
-  padding: 100px;
-}
-
-.title-card {
-  font-size: 65px;
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
-.row p {
-  font-size: 16px; 
-  padding-top: 5px; 
-  padding-left: 25px;
-  width: 55%;
-}
-
-.column {
-  padding: 0px 35px 0px 35px;
-}
-
-.row h1 {
-  text-align: right;
-  font-size: 20px;
-  width: 45%;
-}
-
-.work-column {
-  flex-direction: row-reverse;
-}
-
-.row {
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.work-skills {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+@import '../../assets/css/projects.css';
 
 p {
   font-size: 20px;
@@ -153,9 +68,7 @@ p {
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
 }
 
-#main {
-  margin-bottom: 75px;
-}
+
 
 @media only screen and (min-width: 768px) {
   #main {
@@ -164,10 +77,6 @@ p {
 
   .pull-right {
     float: right;
-  }
-
-  #skils-column {
-    padding-top: 70px;
   }
 
   .container {
@@ -186,13 +95,9 @@ p {
   #main {
     text-align: center;
   }
-
-  #app {
-    padding: 0px 10px 0px 10px;
-  }
-
+  
   .button {
-    margin: 35px 18px 0px 18px;
+    margin: 35px 18px 35px 18px;
   }
 
   .work-header {

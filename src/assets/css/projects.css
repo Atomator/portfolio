@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+.tile-centered-primary {
+  margin: 0 auto;
+  background-color: #71A9F7;
+  width: 75vw; }
+
+.tile-centered-dark {
+  margin: 0 auto;
+  background-color: #465362;
+  width: 75vw; }
+
+.tile-centered-light {
+  margin: 0 auto;
+  background-color: #F7F7FF;
+  width: 75vw; }
