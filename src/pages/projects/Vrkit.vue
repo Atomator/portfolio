@@ -33,7 +33,7 @@
     </div>
     <div class="container">
       <div class="tile-centered-primary">
-        <p>Hello</p>
+        <p class="title-light">Skills</p>
       </div>
     </div>
   </div>

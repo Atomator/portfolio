@@ -1,15 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 .tile-centered-primary {
   margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
   background-color: #71A9F7;
-  width: 75vw; }
+  width: 75vw;
+  border-radius: 20px;
+  padding: 30px; }
+
+.title-primary {
+  color: #71A9F7;
+  font-size: 25px !important;
+  font-weight: 900; }
 
 .tile-centered-dark {
   margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
   background-color: #465362;
-  width: 75vw; }
+  width: 75vw;
+  border-radius: 20px;
+  padding: 30px; }
+
+.title-dark {
+  color: #465362;
+  font-size: 25px !important;
+  font-weight: 900; }
 
 .tile-centered-light {
   margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
   background-color: #F7F7FF;
-  width: 75vw; }
+  width: 75vw;
+  border-radius: 20px;
+  padding: 30px; }
+
+.title-light {
+  color: #F7F7FF;
+  font-size: 25px !important;
+  font-weight: 900; }

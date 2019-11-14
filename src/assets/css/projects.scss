@@ -7,13 +7,27 @@
 $blue: #71A9F7;
 $gray: #465362;
 $white: #F7F7FF;
+$blue-transparent: rgba(113, 169, 247, 0.5);
+$white-transparent: rgba(247, 247, 255, 0.5);
+
 
 $colors: ("primary": $blue, "dark": $gray, "light": $white);
 
 @each $name, $color in $colors {
-  .tile-centered-#{$name} {
-    margin: 0 auto;
-    background-color: $color;
-    width: 75vw;
-}
+    .tile-centered-#{$name} {
+        margin: 0 auto;
+        display: table-cell; 
+        vertical-align: middle; 
+        text-align: center; 
+        background-color: $color;
+        width: 75vw;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .title-#{$name} {
+        color: $color;
+        font-size: 25px !important;
+        font-weight: 900;
+    }
 }
