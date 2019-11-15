@@ -7,8 +7,6 @@
 $blue: #71A9F7;
 $gray: #465362;
 $white: #F7F7FF;
-$blue-transparent: rgba(113, 169, 247, 0.5);
-$white-transparent: rgba(247, 247, 255, 0.5);
 
 
 $colors: ("primary": $blue, "dark": $gray, "light": $white);
@@ -23,6 +21,7 @@ $colors: ("primary": $blue, "dark": $gray, "light": $white);
         width: 75vw;
         border-radius: 20px;
         padding: 30px;
+        box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
     }
 
     .title-#{$name} {

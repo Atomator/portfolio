@@ -34,6 +34,7 @@
     <div class="container">
       <div class="tile-centered-primary">
         <p class="title-light">Skills</p>
+        <p class="has-text-white">Skills</p>
       </div>
     </div>
   </div>

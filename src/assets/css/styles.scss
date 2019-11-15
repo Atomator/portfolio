@@ -8,7 +8,7 @@ $blue: #71A9F7;
 $gray: #465362;
 $white: #F7F7FF;
 $blue-transparent: rgba(113, 169, 247, 0.5);
-$white-transparent: rgba(247, 247, 255, 0.5);
+$white-transparent: rgba(38, 38, 255, 0.01);
 
 // Update Bulma's global variables
 $family-sans-serif: "Avenir", sans-serif;
@@ -16,10 +16,10 @@ $text: $gray;
 $title-color: $gray;
 $subtitle-color: $gray; 
 $primary: $blue;
-$secondary: $blue-transparent;
+$info: $blue-transparent;
 $dark: $gray;
 $light: $white;
-$white-bis: $white-transparent;
+$white-ter: $white-transparent;
 $navbar-height: 10rem;
 $navbar-item-img-max-height: 64px;
 $navbar-item-hover-background-color: $white;

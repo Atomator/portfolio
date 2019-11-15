@@ -7,7 +7,8 @@
   background-color: #71A9F7;
   width: 75vw;
   border-radius: 20px;
-  padding: 30px; }
+  padding: 30px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
 .title-primary {
   color: #71A9F7;
@@ -22,7 +23,8 @@
   background-color: #465362;
   width: 75vw;
   border-radius: 20px;
-  padding: 30px; }
+  padding: 30px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
 .title-dark {
   color: #465362;
@@ -37,7 +39,8 @@
   background-color: #F7F7FF;
   width: 75vw;
   border-radius: 20px;
-  padding: 30px; }
+  padding: 30px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
 .title-light {
   color: #F7F7FF;
