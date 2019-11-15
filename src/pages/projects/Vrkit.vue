@@ -4,7 +4,7 @@
     <div class="container work-header">
       <div class="columns">
         <div class="column is-one-half">
-          <div id="main" class="container pull-right">
+          <div id="main" class="pull-right">
             <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
             <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 25px;">
               Google Cardboard Meets Positional Tracking
@@ -33,9 +33,14 @@
     </div>
     <div class="container">
       <div class="tile-centered-primary">
-        <p class="title-light">Skills</p>
-        <p class="has-text-white">Skills</p>
+        <p class="title-light" style="margin-bottom: 5px;">Skills</p>
+        <p class="has-text-white-ter" style="margin-bottom: 30px;">Unity, C#, Blender, ARKit, Google Cardboard</p>
+        <p class="title-light" style="margin-bottom: 5px;">Project Duration</p>
+        <p class="has-text-white-ter">June 2019 - August 2019</p>
       </div>
+    </div>
+    <div class="container">
+      <p class="section-title-primary">Hello</p>
     </div>
   </div>
 </template>
@@ -69,7 +74,9 @@ p {
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
 }
 
-
+.container {
+  margin-bottom: 100px;
+}
 
 @media only screen and (min-width: 768px) {
   #main {
@@ -81,12 +88,11 @@ p {
   }
 
   .container {
-    margin-bottom: 200px;
+    margin-bottom: 128px;
   }
 
   .work-header {
     padding-top: 50px;
-    margin-bottom: 100px;
     min-height: calc(100vh - 100px);
   }
 
@@ -102,9 +108,8 @@ p {
   }
 
   .work-header {
-    margin: 50px;
+    padding: 15px;
   }
-
 }
 
 </style>
