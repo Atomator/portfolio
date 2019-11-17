@@ -24,10 +24,12 @@ $colors: (
 @each $name, $color, $color-transparent in $colors {
     div.tile-column-#{$name} {
         @extend .columns;
+        margin: 0 auto;
+        vertical-align: middle; 
         background-color: $color;
         width: 75vw;
         border-radius: 30px;
-        padding: 35px;
+        padding: 100px;
         box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
     }
 

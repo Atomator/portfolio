@@ -41,15 +41,16 @@
     </div>
     <div class="container has-text-centered">
       <p class="section-title-primary">Why</p>
-      <p style="width: 75vw;">Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br><br> I needed another solution if I was to explore the wonders of VR. </p>
+      <p class="text-fit">Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br><br> I needed another solution if I was to explore the wonders of VR. </p>
     </div>
     <div class="container has-text-centered">
       <div class="tile-column-dark">
-        <div class="column is-half">
-          <p class="has-text-light">Thesdkjfh</p>
+        <div class="column is-half is-centered">
+          <img class="is-vertical-center" src="../../assets/arkit.svg" width="300" style="padding-left: 15px; margin-bottom: 15px;">
         </div>
         <div class="column is-half">
-          <p class="has-text-light">Thesdkjfh</p>
+          <p class="has-text-light title-light" style="font-size: 50px !important; margin-bottom: 25px">What</p>
+          <p class="has-text-white-ter has-text-left">A couple of years ago Apple released ARKit, an augmented reality framework that allowed for apps to be built using an iPhone’s camera to display and track a virtual object in real space using the camera and the phone’s screen. By using Unity and ARKit to overlay an entire virtual environment with a stereoscopic view so it could be viewed with a Google Cardboard, I was able to create a new type of mobile VR experience that allows for positional tracking on a phone. </p>
         </div>
       </div>
     </div>
@@ -78,6 +79,10 @@ p {
   margin-bottom: 50px;
 }
 
+.text-fit {
+  width: 75vw;
+}
+
 .button {
   padding: 30px 35px 30px 35px;
   margin-right: 36px;
@@ -88,6 +93,18 @@ p {
 
 .container {
   margin-bottom: 100px;
+}
+
+.is-centered {
+  display: flex;
+  align-items: center;
+}
+
+.is-centered > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -121,6 +138,18 @@ p {
 
   .work-header {
     padding: 15px;
+  }
+
+  .tile-column-dark {
+    font-size: 12px;  
+    padding: 40px 25px 40px 25px;
+    width: 95vw;
+    line-height: normal !important;
+  }
+
+  .text-fit {
+    padding: 15px;
+    width: 95vw;
   }
 }
 
