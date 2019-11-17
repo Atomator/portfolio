@@ -41,10 +41,17 @@
     </div>
     <div class="container has-text-centered">
       <p class="section-title-primary">Why</p>
-      <p>Bruh</p>
-      <!-- <a class="section-title-primary">Hello</a> -->
-      <!-- <p class="section-title-primary">Hello</p> -->
-      <!-- <span class="section-title-primary">Hello</span> -->
+      <p style="width: 75vw;">Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br><br> I needed another solution if I was to explore the wonders of VR. </p>
+    </div>
+    <div class="container has-text-centered">
+      <div class="tile-column-dark">
+        <div class="column is-half">
+          <p class="has-text-light">Thesdkjfh</p>
+        </div>
+        <div class="column is-half">
+          <p class="has-text-light">Thesdkjfh</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -59,7 +66,8 @@ export default {
 @import '../../assets/css/projects.css';
 
 p {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 45px;
 }
 
 #welcomeMessage {

@@ -2,6 +2,8 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import "../../../node_modules/bulma/sass/utilities/mixins";
+@import "../../../node_modules/bulma/sass/grid/_all";
 
 // Set your brand colors
 $blue: #71A9F7;
@@ -20,6 +22,15 @@ $colors: (
 );
 
 @each $name, $color, $color-transparent in $colors {
+    div.tile-column-#{$name} {
+        @extend .columns;
+        background-color: $color;
+        width: 75vw;
+        border-radius: 30px;
+        padding: 35px;
+        box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+    }
+
     div.tile-centered-#{$name} {
         margin: 0 auto;
         vertical-align: middle; 
@@ -38,13 +49,14 @@ $colors: (
     }
 
     p.section-title-#{$name} {
-        display:inline-block; 
+        line-height: normal !important;
+        display: inline-block; 
         color: $color;
         font-size: 50px !important;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         font-weight: 900;
         height: 10px;
         border-radius: 10px;
-        box-shadow: 0 48px 0 0 $color-transparent  
+        box-shadow: 0 45px 0 0 $color-transparent  
     }
 }
