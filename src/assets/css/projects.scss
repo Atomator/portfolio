@@ -31,6 +31,17 @@ $colors: (
         border-radius: 30px;
         padding: 100px;
         box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+        @include until($tablet) {
+            font-size: 12px;  
+            padding: 40px 25px 40px 25px;
+            width: 95vw;
+            line-height: normal !important;
+        }
+    }
+
+    .is-centered {
+        display: flex;
+        align-items: center;
     }
 
     div.tile-centered-#{$name} {
@@ -46,7 +57,7 @@ $colors: (
 
     p.title-#{$name} {
         color: $color;
-        font-size: 25px !important;
+        font-size: 35px !important;
         font-weight: 900;
     }
 
@@ -60,5 +71,14 @@ $colors: (
         height: 10px;
         border-radius: 10px;
         box-shadow: 0 45px 0 0 $color-transparent  
+    }
+
+    p.text-fit {
+        display:inline-block;
+        width: 75%;
+        @include until($tablet) {
+            padding: 15px;
+            width: 95vw;
+        }
     }
 }
