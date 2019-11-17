@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import "../../../node_modules/bulma/sass/utilities/mixins";
+@import "../../../node_modules/bulma/sass/grid/_all";
+
+// Set your brand colors
+$blue: #71A9F7;
+$gray: #465362;
+$white: #F7F7FF;
+$blue-transparent: rgba(113, 169, 247, 0.5);
+$white-transparent: rgba(255, 248, 248, 0.5);
+$gray-transparent: rgba(70, 83, 98, 0.5);
+
+
+// $colors: ("primary": $blue, "dark": $gray, "light": $white);
+$colors: (
+  ("primary", $blue, $blue-transparent),
+  ("dark", $gray, $gray-transparent),
+  ("light", $white, $white-transparent)
+);
+
+@each $name, $color, $color-transparent in $colors {
+    div.tile-column-#{$name} {
+        @extend .columns;
+        margin: 0 auto;
+        vertical-align: middle; 
+        background-color: $color;
+        width: 75vw;
+        border-radius: 30px;
+        padding: 100px;
+        box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+        @include until($tablet) {
+            font-size: 12px;  
+            padding: 40px 25px 40px 25px;
+            width: 95vw;
+            line-height: normal !important;
+        }
+    }
+
+    .is-centered {
+        display: flex;
+        align-items: center;
+    }
+
+    div.tile-centered-#{$name} {
+        margin: 0 auto;
+        vertical-align: middle; 
+        text-align: center; 
+        background-color: $color;
+        width: 75vw;
+        border-radius: 30px;
+        padding: 35px;
+        box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+    }
+
+    p.title-#{$name} {
+        color: $color;
+        font-size: 35px !important;
+        font-weight: 900;
+    }
+
+    p.section-title-#{$name} {
+        line-height: normal !important;
+        display: inline-block; 
+        color: $color;
+        font-size: 50px !important;
+        margin-bottom: 100px;
+        font-weight: 900;
+        height: 10px;
+        border-radius: 10px;
+        box-shadow: 0 45px 0 0 $color-transparent  
+    }
+
+    p.text-fit {
+        display:inline-block;
+        width: 75%;
+        @include until($tablet) {
+            padding: 15px;
+            width: 95vw;
+        }
+    }
+}

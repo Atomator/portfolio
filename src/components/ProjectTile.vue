@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <div class="box has-background-dark">
-      <img :src="data.images" :alt="data.alt"/>
-      <div id="content">
-        <div class="child">
-          <h1 class="title-custom has-text-light">{{ data.title }}</h1>
-        </div>
-        <div class="child">
-          <div class="tag-container has-text-centered level-item has-background-primary" v-for="(value) in data.tags" v-bind:key="value.id">
-            <p class="tag-text has-text-weight-bold has-text-light"> {{ value }} </p>
+    <router-link :to="'/projects/' + data.page">
+      <div class="box has-background-dark">
+        <img :src="data.images" :alt="data.alt"/>
+        <div id="content">
+          <div class="child">
+            <h1 class="title-custom has-text-light">{{ data.title }}</h1>
+          </div>
+          <div class="child">
+            <div class="tag-container has-text-centered level-item has-background-primary" v-for="(value) in data.tags" v-bind:key="value.id">
+              <p class="tag-text has-text-weight-bold has-text-light"> {{ value }} </p>
+            </div>
+          </div>
+          <div class="child">
+            <p class="text-content has-text-light"> {{ data.description }} </p>
           </div>
         </div>
-        <div class="child">
-          <p class="text-content has-text-light"> {{ data.description }} </p>
-        </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -52,6 +54,7 @@ export default {
 .tag-container {
   border-radius: 15px;
   padding: 1px 8px 1px 8px;
+  margin-top: 1px;
   margin-right: 12px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, .16);
   font-size: 7px;
