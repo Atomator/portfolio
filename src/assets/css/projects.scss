@@ -9,6 +9,7 @@ $gray: #465362;
 $white: #F7F7FF;
 $blue-transparent: rgba(113, 169, 247, 0.5);
 $white-transparent: rgba(255, 248, 248, 0.5);
+$gray-transparent: rgba(70, 83, 98, 0.5);
 
 
 $colors: ("primary": $blue, "dark": $gray, "light": $white);
@@ -32,12 +33,26 @@ $colors: ("primary": $blue, "dark": $gray, "light": $white);
     }
 
     .section-title-#{$name} {
+        width: fit-content; 
         color: $color;
         font-size: 65px !important;
         font-weight: 900;
-        border-radius: 10px;
+        position: relative; 
         height: 10px;
-        width: 255px;
-        box-shadow: 0 22px 0 0 $blue-transparent;
+        // border-bottom: 10px solid;
+        // border-radius: 10px;
+        border-radius: 10px;
+        // height: 10px;
+        // box-shadow: inset 0 -3px 0 0 #bdb;
+        box-shadow: 0 65px 0 0 black    
     }
+    // .section-title-#{$name}:after { 
+    //     content:""; 
+    //     float:left; 
+    //     // background:green; 
+    //     width: 100%;
+    //     // height: 10px;
+    //     border-bottom: 1px solid;
+    //     border-radius: 3px;
+    //   }
 }

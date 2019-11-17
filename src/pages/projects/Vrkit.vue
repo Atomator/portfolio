@@ -40,7 +40,10 @@
       </div>
     </div>
     <div class="container">
-      <p class="section-title-primary">Hello</p>
+      <div class="section-title-primary">Hello</div>
+      <!-- <a class="section-title-primary">Hello</a> -->
+      <!-- <p class="section-title-primary">Hello</p> -->
+      <!-- <span class="section-title-primary">Hello</span> -->
     </div>
   </div>
 </template>
