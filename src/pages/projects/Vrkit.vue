@@ -39,8 +39,9 @@
         <p class="has-text-white-ter">June 2019 - August 2019</p>
       </div>
     </div>
-    <div class="container">
-      <div class="section-title-primary">Hello</div>
+    <div class="container has-text-centered">
+      <p class="section-title-primary">Why</p>
+      <p>Bruh</p>
       <!-- <a class="section-title-primary">Hello</a> -->
       <!-- <p class="section-title-primary">Hello</p> -->
       <!-- <span class="section-title-primary">Hello</span> -->

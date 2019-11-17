@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-.tile-centered-primary {
+div.tile-centered-primary {
   margin: 0 auto;
   vertical-align: middle;
   text-align: center;
@@ -9,22 +9,22 @@
   padding: 35px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
-.title-primary {
+p.title-primary {
   color: #71A9F7;
   font-size: 25px !important;
   font-weight: 900; }
 
-.section-title-primary {
-  width: fit-content;
+p.section-title-primary {
+  display: inline-block;
   color: #71A9F7;
-  font-size: 65px !important;
+  font-size: 50px !important;
+  margin-bottom: 50px;
   font-weight: 900;
-  position: relative;
   height: 10px;
   border-radius: 10px;
-  box-shadow: 0 65px 0 0 black; }
+  box-shadow: 0 48px 0 0 rgba(113, 169, 247, 0.5); }
 
-.tile-centered-dark {
+div.tile-centered-dark {
   margin: 0 auto;
   vertical-align: middle;
   text-align: center;
@@ -34,22 +34,22 @@
   padding: 35px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
-.title-dark {
+p.title-dark {
   color: #465362;
   font-size: 25px !important;
   font-weight: 900; }
 
-.section-title-dark {
-  width: fit-content;
+p.section-title-dark {
+  display: inline-block;
   color: #465362;
-  font-size: 65px !important;
+  font-size: 50px !important;
+  margin-bottom: 50px;
   font-weight: 900;
-  position: relative;
   height: 10px;
   border-radius: 10px;
-  box-shadow: 0 65px 0 0 black; }
+  box-shadow: 0 48px 0 0 rgba(70, 83, 98, 0.5); }
 
-.tile-centered-light {
+div.tile-centered-light {
   margin: 0 auto;
   vertical-align: middle;
   text-align: center;
@@ -59,17 +59,17 @@
   padding: 35px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
-.title-light {
+p.title-light {
   color: #F7F7FF;
   font-size: 25px !important;
   font-weight: 900; }
 
-.section-title-light {
-  width: fit-content;
+p.section-title-light {
+  display: inline-block;
   color: #F7F7FF;
-  font-size: 65px !important;
+  font-size: 50px !important;
+  margin-bottom: 50px;
   font-weight: 900;
-  position: relative;
   height: 10px;
   border-radius: 10px;
-  box-shadow: 0 65px 0 0 black; }
+  box-shadow: 0 48px 0 0 rgba(255, 248, 248, 0.5); }
