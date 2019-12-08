@@ -1183,6 +1183,19 @@
       flex: none;
       width: 100%; } }
 
+.primary-title {
+  font-weight: 900 !important;
+  font-size: 5.5em !important;
+  /* Need a better way to manage the text spacing */
+  margin-bottom: 50px !important; }
+
+.button {
+  padding: 30px 35px 30px 35px;
+  margin-right: 36px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
+
 div.tile-column-primary {
   margin: 0 auto;
   vertical-align: middle;
@@ -1197,6 +1210,14 @@ div.tile-column-primary {
       padding: 40px 25px 40px 25px;
       width: 95vw;
       line-height: normal !important; } }
+
+.button-primary {
+  background-color: #71A9F7;
+  padding: 30px 35px 30px 35px;
+  margin-right: 36px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
 .is-centered {
   display: flex;
@@ -1251,6 +1272,14 @@ div.tile-column-dark {
       width: 95vw;
       line-height: normal !important; } }
 
+.button-dark {
+  background-color: #465362;
+  padding: 30px 35px 30px 35px;
+  margin-right: 36px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
+
 .is-centered {
   display: flex;
   align-items: center; }
@@ -1303,6 +1332,14 @@ div.tile-column-light {
       padding: 40px 25px 40px 25px;
       width: 95vw;
       line-height: normal !important; } }
+
+.button-light {
+  background-color: #F7F7FF;
+  padding: 30px 35px 30px 35px;
+  margin-right: 36px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
 .is-centered {
   display: flex;
