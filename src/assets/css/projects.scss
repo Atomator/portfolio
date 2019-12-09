@@ -2,8 +2,9 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import "../../../node_modules/bulma/sass/utilities/mixins";
-@import "../../../node_modules/bulma/sass/grid/_all";
+@import "../../../node_modules/bulma/sass/utilities/_all";
+@import "../../../node_modules/bulma/sass/grid/columns";
+@import "../../../node_modules/bulma/sass/elements/button";
 
 // Set your brand colors
 $blue: #71A9F7;
@@ -21,20 +22,22 @@ $colors: (
   ("light", $white, $white-transparent)
 );
 
-.primary-title {
+.project-title {
     font-weight: 900 !important;
     font-size: 5.5em !important;
   
     /* Need a better way to manage the text spacing */
-    margin-bottom: 50px !important;
+    margin-bottom: 25px !important;
 }
 
-.button {
-    padding: 30px 35px 30px 35px;
-    margin-right: 36px;
-    margin-bottom: 35px;
-    border-radius: 10px;
-    box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+.project-header {
+    @include until($tablet) {
+        padding: 15px;
+    }
+    @include from($tablet) {
+        padding-top: 50px;
+        min-height: calc(100vh - 100px);
+    }
 }
 
 @each $name, $color, $color-transparent in $colors {
@@ -62,6 +65,8 @@ $colors: (
         margin-bottom: 35px;
         border-radius: 10px;
         box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+        @extend .is-large;
+        @extend .button;
     }
 
     .is-centered {

@@ -1,29 +1,24 @@
 <template>
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
-    <div class="container work-header">
+    <div class="container project-header">
       <div class="columns">
         <div class="column is-one-half">
           <div id="main" class="pull-right">
-            <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
-            <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 25px;">
+            <h1 class="project-title">VRKit<strong class="has-text-primary">.</strong> </h1>
+            <h2 class="subtitle has-text-weight-medium">
               Google Cardboard Meets Positional Tracking
             </h2>
-            <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
+            <a class="button-primary" href="https://github.com/Atomator/VRKit">
               <a class="icon">
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button is-primary is-large has-shadow" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
               <a class="icon">
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <!-- <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
-              <p class="has-text-weight-bold">Demo</p>
-            </a> -->
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">

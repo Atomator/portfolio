@@ -1,4 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.button, .button-primary, .button-dark, .button-light {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.button.is-loading::after, .is-loading.button-primary::after, .is-loading.button-dark::after, .is-loading.button-light::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em; }
+
+.button, .button-primary, .button-dark, .button-light {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top; }
+  .button:focus, .button-primary:focus, .button-dark:focus, .button-light:focus, .is-focused.button, .is-focused.button-primary, .is-focused.button-dark, .is-focused.button-light, .button:active, .button-primary:active, .button-dark:active, .button-light:active, .is-active.button, .is-active.button-primary, .is-active.button-dark, .is-active.button-light {
+    outline: none; }
+  .button[disabled], .button-primary[disabled], .button-dark[disabled], .button-light[disabled],
+  fieldset[disabled] .button,
+  fieldset[disabled] .button-primary,
+  fieldset[disabled] .button-dark,
+  fieldset[disabled] .button-light {
+    cursor: not-allowed; }
+
 .column {
   display: block;
   flex-basis: 0;
@@ -1120,81 +1172,966 @@
     .columns.is-variable.is-8-fullhd, div.is-variable.is-8-fullhd.tile-column-primary, div.is-variable.is-8-fullhd.tile-column-dark, div.is-variable.is-8-fullhd.tile-column-light {
       --columnGap: 2rem; } }
 
-.tile {
-  align-items: stretch;
-  display: block;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-  min-height: min-content; }
-  .tile.is-ancestor {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-    margin-top: -0.75rem; }
-    .tile.is-ancestor:last-child {
-      margin-bottom: -0.75rem; }
-    .tile.is-ancestor:not(:last-child) {
-      margin-bottom: 0.75rem; }
-  .tile.is-child {
-    margin: 0 !important; }
-  .tile.is-parent {
-    padding: 0.75rem; }
-  .tile.is-vertical {
-    flex-direction: column; }
-    .tile.is-vertical > .tile.is-child:not(:last-child) {
-      margin-bottom: 1.5rem !important; }
-  @media screen and (min-width: 769px), print {
-    .tile:not(.is-child) {
-      display: flex; }
-    .tile.is-1 {
-      flex: none;
-      width: 8.33333%; }
-    .tile.is-2 {
-      flex: none;
-      width: 16.66667%; }
-    .tile.is-3 {
-      flex: none;
-      width: 25%; }
-    .tile.is-4 {
-      flex: none;
-      width: 33.33333%; }
-    .tile.is-5 {
-      flex: none;
-      width: 41.66667%; }
-    .tile.is-6 {
-      flex: none;
-      width: 50%; }
-    .tile.is-7 {
-      flex: none;
-      width: 58.33333%; }
-    .tile.is-8 {
-      flex: none;
-      width: 66.66667%; }
-    .tile.is-9 {
-      flex: none;
-      width: 75%; }
-    .tile.is-10 {
-      flex: none;
-      width: 83.33333%; }
-    .tile.is-11 {
-      flex: none;
-      width: 91.66667%; }
-    .tile.is-12 {
-      flex: none;
-      width: 100%; } }
+.button, .button-primary, .button-dark, .button-light {
+  background-color: white;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: calc(0.375em - 1px);
+  text-align: center;
+  white-space: nowrap; }
+  .button strong, .button-primary strong, .button-dark strong, .button-light strong {
+    color: inherit; }
+  .button .icon, .button-primary .icon, .button-dark .icon, .button-light .icon, .button .icon.is-small, .button-primary .icon.is-small, .button-dark .icon.is-small, .button-light .icon.is-small, .button .icon.is-medium, .button-primary .icon.is-medium, .button-dark .icon.is-medium, .button-light .icon.is-medium, .button .icon.is-large, .button-primary .icon.is-large, .button-dark .icon.is-large, .button-light .icon.is-large, .button .icon.button-primary, .button-primary .icon.button-primary, .button-dark .icon.button-primary, .button-light .icon.button-primary, .button .icon.button-dark, .button-primary .icon.button-dark, .button-dark .icon.button-dark, .button-light .icon.button-dark, .button .icon.button-light, .button-primary .icon.button-light, .button-dark .icon.button-light, .button-light .icon.button-light {
+    height: 1.5em;
+    width: 1.5em; }
+  .button .icon:first-child:not(:last-child), .button-primary .icon:first-child:not(:last-child), .button-dark .icon:first-child:not(:last-child), .button-light .icon:first-child:not(:last-child) {
+    margin-left: calc(-0.375em - 1px);
+    margin-right: 0.1875em; }
+  .button .icon:last-child:not(:first-child), .button-primary .icon:last-child:not(:first-child), .button-dark .icon:last-child:not(:first-child), .button-light .icon:last-child:not(:first-child) {
+    margin-left: 0.1875em;
+    margin-right: calc(-0.375em - 1px); }
+  .button .icon:first-child:last-child, .button-primary .icon:first-child:last-child, .button-dark .icon:first-child:last-child, .button-light .icon:first-child:last-child {
+    margin-left: calc(-0.375em - 1px);
+    margin-right: calc(-0.375em - 1px); }
+  .button:hover, .button-primary:hover, .button-dark:hover, .button-light:hover, .button.is-hovered, .is-hovered.button-primary, .is-hovered.button-dark, .is-hovered.button-light {
+    border-color: #b5b5b5;
+    color: #363636; }
+  .button:focus, .button-primary:focus, .button-dark:focus, .button-light:focus, .button.is-focused, .is-focused.button-primary, .is-focused.button-dark, .is-focused.button-light {
+    border-color: #3273dc;
+    color: #363636; }
+    .button:focus:not(:active), .button-primary:focus:not(:active), .button-dark:focus:not(:active), .button-light:focus:not(:active), .button.is-focused:not(:active), .is-focused.button-primary:not(:active), .is-focused.button-dark:not(:active), .is-focused.button-light:not(:active) {
+      box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+  .button:active, .button-primary:active, .button-dark:active, .button-light:active, .button.is-active, .is-active.button-primary, .is-active.button-dark, .is-active.button-light {
+    border-color: #4a4a4a;
+    color: #363636; }
+  .button.is-text, .is-text.button-primary, .is-text.button-dark, .is-text.button-light {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4a4a4a;
+    text-decoration: underline; }
+    .button.is-text:hover, .is-text.button-primary:hover, .is-text.button-dark:hover, .is-text.button-light:hover, .button.is-text.is-hovered, .is-text.is-hovered.button-primary, .is-text.is-hovered.button-dark, .is-text.is-hovered.button-light, .button.is-text:focus, .is-text.button-primary:focus, .is-text.button-dark:focus, .is-text.button-light:focus, .button.is-text.is-focused, .is-text.is-focused.button-primary, .is-text.is-focused.button-dark, .is-text.is-focused.button-light {
+      background-color: whitesmoke;
+      color: #363636; }
+    .button.is-text:active, .is-text.button-primary:active, .is-text.button-dark:active, .is-text.button-light:active, .button.is-text.is-active, .is-text.is-active.button-primary, .is-text.is-active.button-dark, .is-text.is-active.button-light {
+      background-color: #e8e8e8;
+      color: #363636; }
+    .button.is-text[disabled], .is-text.button-primary[disabled], .is-text.button-dark[disabled], .is-text.button-light[disabled],
+    fieldset[disabled] .button.is-text,
+    fieldset[disabled] .is-text.button-primary,
+    fieldset[disabled] .is-text.button-dark,
+    fieldset[disabled] .is-text.button-light {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none; }
+  .button.is-white, .is-white.button-primary, .is-white.button-dark, .is-white.button-light {
+    background-color: white;
+    border-color: transparent;
+    color: #0a0a0a; }
+    .button.is-white:hover, .is-white.button-primary:hover, .is-white.button-dark:hover, .is-white.button-light:hover, .button.is-white.is-hovered, .is-white.is-hovered.button-primary, .is-white.is-hovered.button-dark, .is-white.is-hovered.button-light {
+      background-color: #f9f9f9;
+      border-color: transparent;
+      color: #0a0a0a; }
+    .button.is-white:focus, .is-white.button-primary:focus, .is-white.button-dark:focus, .is-white.button-light:focus, .button.is-white.is-focused, .is-white.is-focused.button-primary, .is-white.is-focused.button-dark, .is-white.is-focused.button-light {
+      border-color: transparent;
+      color: #0a0a0a; }
+      .button.is-white:focus:not(:active), .is-white.button-primary:focus:not(:active), .is-white.button-dark:focus:not(:active), .is-white.button-light:focus:not(:active), .button.is-white.is-focused:not(:active), .is-white.is-focused.button-primary:not(:active), .is-white.is-focused.button-dark:not(:active), .is-white.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
+    .button.is-white:active, .is-white.button-primary:active, .is-white.button-dark:active, .is-white.button-light:active, .button.is-white.is-active, .is-white.is-active.button-primary, .is-white.is-active.button-dark, .is-white.is-active.button-light {
+      background-color: #f2f2f2;
+      border-color: transparent;
+      color: #0a0a0a; }
+    .button.is-white[disabled], .is-white.button-primary[disabled], .is-white.button-dark[disabled], .is-white.button-light[disabled],
+    fieldset[disabled] .button.is-white,
+    fieldset[disabled] .is-white.button-primary,
+    fieldset[disabled] .is-white.button-dark,
+    fieldset[disabled] .is-white.button-light {
+      background-color: white;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-white.is-inverted, .is-white.is-inverted.button-primary, .is-white.is-inverted.button-dark, .is-white.is-inverted.button-light {
+      background-color: #0a0a0a;
+      color: white; }
+      .button.is-white.is-inverted:hover, .is-white.is-inverted.button-primary:hover, .is-white.is-inverted.button-dark:hover, .is-white.is-inverted.button-light:hover, .button.is-white.is-inverted.is-hovered, .is-white.is-inverted.is-hovered.button-primary, .is-white.is-inverted.is-hovered.button-dark, .is-white.is-inverted.is-hovered.button-light {
+        background-color: black; }
+      .button.is-white.is-inverted[disabled], .is-white.is-inverted.button-primary[disabled], .is-white.is-inverted.button-dark[disabled], .is-white.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-white.is-inverted,
+      fieldset[disabled] .is-white.is-inverted.button-primary,
+      fieldset[disabled] .is-white.is-inverted.button-dark,
+      fieldset[disabled] .is-white.is-inverted.button-light {
+        background-color: #0a0a0a;
+        border-color: transparent;
+        box-shadow: none;
+        color: white; }
+    .button.is-white.is-loading::after, .is-white.is-loading.button-primary::after, .is-white.is-loading.button-dark::after, .is-white.is-loading.button-light::after {
+      border-color: transparent transparent #0a0a0a #0a0a0a !important; }
+    .button.is-white.is-outlined, .is-white.is-outlined.button-primary, .is-white.is-outlined.button-dark, .is-white.is-outlined.button-light {
+      background-color: transparent;
+      border-color: white;
+      color: white; }
+      .button.is-white.is-outlined:hover, .is-white.is-outlined.button-primary:hover, .is-white.is-outlined.button-dark:hover, .is-white.is-outlined.button-light:hover, .button.is-white.is-outlined.is-hovered, .is-white.is-outlined.is-hovered.button-primary, .is-white.is-outlined.is-hovered.button-dark, .is-white.is-outlined.is-hovered.button-light, .button.is-white.is-outlined:focus, .is-white.is-outlined.button-primary:focus, .is-white.is-outlined.button-dark:focus, .is-white.is-outlined.button-light:focus, .button.is-white.is-outlined.is-focused, .is-white.is-outlined.is-focused.button-primary, .is-white.is-outlined.is-focused.button-dark, .is-white.is-outlined.is-focused.button-light {
+        background-color: white;
+        border-color: white;
+        color: #0a0a0a; }
+      .button.is-white.is-outlined.is-loading::after, .is-white.is-outlined.is-loading.button-primary::after, .is-white.is-outlined.is-loading.button-dark::after, .is-white.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent white white !important; }
+      .button.is-white.is-outlined.is-loading:hover::after, .is-white.is-outlined.is-loading.button-primary:hover::after, .is-white.is-outlined.is-loading.button-dark:hover::after, .is-white.is-outlined.is-loading.button-light:hover::after, .button.is-white.is-outlined.is-loading.is-hovered::after, .is-white.is-outlined.is-loading.is-hovered.button-primary::after, .is-white.is-outlined.is-loading.is-hovered.button-dark::after, .is-white.is-outlined.is-loading.is-hovered.button-light::after, .button.is-white.is-outlined.is-loading:focus::after, .is-white.is-outlined.is-loading.button-primary:focus::after, .is-white.is-outlined.is-loading.button-dark:focus::after, .is-white.is-outlined.is-loading.button-light:focus::after, .button.is-white.is-outlined.is-loading.is-focused::after, .is-white.is-outlined.is-loading.is-focused.button-primary::after, .is-white.is-outlined.is-loading.is-focused.button-dark::after, .is-white.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #0a0a0a #0a0a0a !important; }
+      .button.is-white.is-outlined[disabled], .is-white.is-outlined.button-primary[disabled], .is-white.is-outlined.button-dark[disabled], .is-white.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-white.is-outlined,
+      fieldset[disabled] .is-white.is-outlined.button-primary,
+      fieldset[disabled] .is-white.is-outlined.button-dark,
+      fieldset[disabled] .is-white.is-outlined.button-light {
+        background-color: transparent;
+        border-color: white;
+        box-shadow: none;
+        color: white; }
+    .button.is-white.is-inverted.is-outlined, .is-white.is-inverted.is-outlined.button-primary, .is-white.is-inverted.is-outlined.button-dark, .is-white.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #0a0a0a;
+      color: #0a0a0a; }
+      .button.is-white.is-inverted.is-outlined:hover, .is-white.is-inverted.is-outlined.button-primary:hover, .is-white.is-inverted.is-outlined.button-dark:hover, .is-white.is-inverted.is-outlined.button-light:hover, .button.is-white.is-inverted.is-outlined.is-hovered, .is-white.is-inverted.is-outlined.is-hovered.button-primary, .is-white.is-inverted.is-outlined.is-hovered.button-dark, .is-white.is-inverted.is-outlined.is-hovered.button-light, .button.is-white.is-inverted.is-outlined:focus, .is-white.is-inverted.is-outlined.button-primary:focus, .is-white.is-inverted.is-outlined.button-dark:focus, .is-white.is-inverted.is-outlined.button-light:focus, .button.is-white.is-inverted.is-outlined.is-focused, .is-white.is-inverted.is-outlined.is-focused.button-primary, .is-white.is-inverted.is-outlined.is-focused.button-dark, .is-white.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #0a0a0a;
+        color: white; }
+      .button.is-white.is-inverted.is-outlined.is-loading:hover::after, .is-white.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-white.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-white.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-white.is-inverted.is-outlined.is-loading.is-hovered::after, .is-white.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-white.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-white.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-white.is-inverted.is-outlined.is-loading:focus::after, .is-white.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-white.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-white.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-white.is-inverted.is-outlined.is-loading.is-focused::after, .is-white.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-white.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-white.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent white white !important; }
+      .button.is-white.is-inverted.is-outlined[disabled], .is-white.is-inverted.is-outlined.button-primary[disabled], .is-white.is-inverted.is-outlined.button-dark[disabled], .is-white.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-white.is-inverted.is-outlined,
+      fieldset[disabled] .is-white.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-white.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-white.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #0a0a0a;
+        box-shadow: none;
+        color: #0a0a0a; }
+  .button.is-black, .is-black.button-primary, .is-black.button-dark, .is-black.button-light {
+    background-color: #0a0a0a;
+    border-color: transparent;
+    color: white; }
+    .button.is-black:hover, .is-black.button-primary:hover, .is-black.button-dark:hover, .is-black.button-light:hover, .button.is-black.is-hovered, .is-black.is-hovered.button-primary, .is-black.is-hovered.button-dark, .is-black.is-hovered.button-light {
+      background-color: #040404;
+      border-color: transparent;
+      color: white; }
+    .button.is-black:focus, .is-black.button-primary:focus, .is-black.button-dark:focus, .is-black.button-light:focus, .button.is-black.is-focused, .is-black.is-focused.button-primary, .is-black.is-focused.button-dark, .is-black.is-focused.button-light {
+      border-color: transparent;
+      color: white; }
+      .button.is-black:focus:not(:active), .is-black.button-primary:focus:not(:active), .is-black.button-dark:focus:not(:active), .is-black.button-light:focus:not(:active), .button.is-black.is-focused:not(:active), .is-black.is-focused.button-primary:not(:active), .is-black.is-focused.button-dark:not(:active), .is-black.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
+    .button.is-black:active, .is-black.button-primary:active, .is-black.button-dark:active, .is-black.button-light:active, .button.is-black.is-active, .is-black.is-active.button-primary, .is-black.is-active.button-dark, .is-black.is-active.button-light {
+      background-color: black;
+      border-color: transparent;
+      color: white; }
+    .button.is-black[disabled], .is-black.button-primary[disabled], .is-black.button-dark[disabled], .is-black.button-light[disabled],
+    fieldset[disabled] .button.is-black,
+    fieldset[disabled] .is-black.button-primary,
+    fieldset[disabled] .is-black.button-dark,
+    fieldset[disabled] .is-black.button-light {
+      background-color: #0a0a0a;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-black.is-inverted, .is-black.is-inverted.button-primary, .is-black.is-inverted.button-dark, .is-black.is-inverted.button-light {
+      background-color: white;
+      color: #0a0a0a; }
+      .button.is-black.is-inverted:hover, .is-black.is-inverted.button-primary:hover, .is-black.is-inverted.button-dark:hover, .is-black.is-inverted.button-light:hover, .button.is-black.is-inverted.is-hovered, .is-black.is-inverted.is-hovered.button-primary, .is-black.is-inverted.is-hovered.button-dark, .is-black.is-inverted.is-hovered.button-light {
+        background-color: #f2f2f2; }
+      .button.is-black.is-inverted[disabled], .is-black.is-inverted.button-primary[disabled], .is-black.is-inverted.button-dark[disabled], .is-black.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-black.is-inverted,
+      fieldset[disabled] .is-black.is-inverted.button-primary,
+      fieldset[disabled] .is-black.is-inverted.button-dark,
+      fieldset[disabled] .is-black.is-inverted.button-light {
+        background-color: white;
+        border-color: transparent;
+        box-shadow: none;
+        color: #0a0a0a; }
+    .button.is-black.is-loading::after, .is-black.is-loading.button-primary::after, .is-black.is-loading.button-dark::after, .is-black.is-loading.button-light::after {
+      border-color: transparent transparent white white !important; }
+    .button.is-black.is-outlined, .is-black.is-outlined.button-primary, .is-black.is-outlined.button-dark, .is-black.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #0a0a0a;
+      color: #0a0a0a; }
+      .button.is-black.is-outlined:hover, .is-black.is-outlined.button-primary:hover, .is-black.is-outlined.button-dark:hover, .is-black.is-outlined.button-light:hover, .button.is-black.is-outlined.is-hovered, .is-black.is-outlined.is-hovered.button-primary, .is-black.is-outlined.is-hovered.button-dark, .is-black.is-outlined.is-hovered.button-light, .button.is-black.is-outlined:focus, .is-black.is-outlined.button-primary:focus, .is-black.is-outlined.button-dark:focus, .is-black.is-outlined.button-light:focus, .button.is-black.is-outlined.is-focused, .is-black.is-outlined.is-focused.button-primary, .is-black.is-outlined.is-focused.button-dark, .is-black.is-outlined.is-focused.button-light {
+        background-color: #0a0a0a;
+        border-color: #0a0a0a;
+        color: white; }
+      .button.is-black.is-outlined.is-loading::after, .is-black.is-outlined.is-loading.button-primary::after, .is-black.is-outlined.is-loading.button-dark::after, .is-black.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #0a0a0a #0a0a0a !important; }
+      .button.is-black.is-outlined.is-loading:hover::after, .is-black.is-outlined.is-loading.button-primary:hover::after, .is-black.is-outlined.is-loading.button-dark:hover::after, .is-black.is-outlined.is-loading.button-light:hover::after, .button.is-black.is-outlined.is-loading.is-hovered::after, .is-black.is-outlined.is-loading.is-hovered.button-primary::after, .is-black.is-outlined.is-loading.is-hovered.button-dark::after, .is-black.is-outlined.is-loading.is-hovered.button-light::after, .button.is-black.is-outlined.is-loading:focus::after, .is-black.is-outlined.is-loading.button-primary:focus::after, .is-black.is-outlined.is-loading.button-dark:focus::after, .is-black.is-outlined.is-loading.button-light:focus::after, .button.is-black.is-outlined.is-loading.is-focused::after, .is-black.is-outlined.is-loading.is-focused.button-primary::after, .is-black.is-outlined.is-loading.is-focused.button-dark::after, .is-black.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent white white !important; }
+      .button.is-black.is-outlined[disabled], .is-black.is-outlined.button-primary[disabled], .is-black.is-outlined.button-dark[disabled], .is-black.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-black.is-outlined,
+      fieldset[disabled] .is-black.is-outlined.button-primary,
+      fieldset[disabled] .is-black.is-outlined.button-dark,
+      fieldset[disabled] .is-black.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #0a0a0a;
+        box-shadow: none;
+        color: #0a0a0a; }
+    .button.is-black.is-inverted.is-outlined, .is-black.is-inverted.is-outlined.button-primary, .is-black.is-inverted.is-outlined.button-dark, .is-black.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: white;
+      color: white; }
+      .button.is-black.is-inverted.is-outlined:hover, .is-black.is-inverted.is-outlined.button-primary:hover, .is-black.is-inverted.is-outlined.button-dark:hover, .is-black.is-inverted.is-outlined.button-light:hover, .button.is-black.is-inverted.is-outlined.is-hovered, .is-black.is-inverted.is-outlined.is-hovered.button-primary, .is-black.is-inverted.is-outlined.is-hovered.button-dark, .is-black.is-inverted.is-outlined.is-hovered.button-light, .button.is-black.is-inverted.is-outlined:focus, .is-black.is-inverted.is-outlined.button-primary:focus, .is-black.is-inverted.is-outlined.button-dark:focus, .is-black.is-inverted.is-outlined.button-light:focus, .button.is-black.is-inverted.is-outlined.is-focused, .is-black.is-inverted.is-outlined.is-focused.button-primary, .is-black.is-inverted.is-outlined.is-focused.button-dark, .is-black.is-inverted.is-outlined.is-focused.button-light {
+        background-color: white;
+        color: #0a0a0a; }
+      .button.is-black.is-inverted.is-outlined.is-loading:hover::after, .is-black.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-black.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-black.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-black.is-inverted.is-outlined.is-loading.is-hovered::after, .is-black.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-black.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-black.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-black.is-inverted.is-outlined.is-loading:focus::after, .is-black.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-black.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-black.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-black.is-inverted.is-outlined.is-loading.is-focused::after, .is-black.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-black.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-black.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #0a0a0a #0a0a0a !important; }
+      .button.is-black.is-inverted.is-outlined[disabled], .is-black.is-inverted.is-outlined.button-primary[disabled], .is-black.is-inverted.is-outlined.button-dark[disabled], .is-black.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-black.is-inverted.is-outlined,
+      fieldset[disabled] .is-black.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-black.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-black.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: white;
+        box-shadow: none;
+        color: white; }
+  .button.is-light, .is-light.button-primary, .is-light.button-dark, .is-light.button-light {
+    background-color: whitesmoke;
+    border-color: transparent;
+    color: #363636; }
+    .button.is-light:hover, .is-light.button-primary:hover, .is-light.button-dark:hover, .is-light.button-light:hover, .button.is-light.is-hovered, .is-light.is-hovered.button-primary, .is-light.is-hovered.button-dark, .is-light.is-hovered.button-light {
+      background-color: #eeeeee;
+      border-color: transparent;
+      color: #363636; }
+    .button.is-light:focus, .is-light.button-primary:focus, .is-light.button-dark:focus, .is-light.button-light:focus, .button.is-light.is-focused, .is-light.is-focused.button-primary, .is-light.is-focused.button-dark, .is-light.is-focused.button-light {
+      border-color: transparent;
+      color: #363636; }
+      .button.is-light:focus:not(:active), .is-light.button-primary:focus:not(:active), .is-light.button-dark:focus:not(:active), .is-light.button-light:focus:not(:active), .button.is-light.is-focused:not(:active), .is-light.is-focused.button-primary:not(:active), .is-light.is-focused.button-dark:not(:active), .is-light.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
+    .button.is-light:active, .is-light.button-primary:active, .is-light.button-dark:active, .is-light.button-light:active, .button.is-light.is-active, .is-light.is-active.button-primary, .is-light.is-active.button-dark, .is-light.is-active.button-light {
+      background-color: #e8e8e8;
+      border-color: transparent;
+      color: #363636; }
+    .button.is-light[disabled], .is-light.button-primary[disabled], .is-light.button-dark[disabled], .is-light.button-light[disabled],
+    fieldset[disabled] .button.is-light,
+    fieldset[disabled] .is-light.button-primary,
+    fieldset[disabled] .is-light.button-dark,
+    fieldset[disabled] .is-light.button-light {
+      background-color: whitesmoke;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-light.is-inverted, .is-light.is-inverted.button-primary, .is-light.is-inverted.button-dark, .is-light.is-inverted.button-light {
+      background-color: #363636;
+      color: whitesmoke; }
+      .button.is-light.is-inverted:hover, .is-light.is-inverted.button-primary:hover, .is-light.is-inverted.button-dark:hover, .is-light.is-inverted.button-light:hover, .button.is-light.is-inverted.is-hovered, .is-light.is-inverted.is-hovered.button-primary, .is-light.is-inverted.is-hovered.button-dark, .is-light.is-inverted.is-hovered.button-light {
+        background-color: #292929; }
+      .button.is-light.is-inverted[disabled], .is-light.is-inverted.button-primary[disabled], .is-light.is-inverted.button-dark[disabled], .is-light.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-light.is-inverted,
+      fieldset[disabled] .is-light.is-inverted.button-primary,
+      fieldset[disabled] .is-light.is-inverted.button-dark,
+      fieldset[disabled] .is-light.is-inverted.button-light {
+        background-color: #363636;
+        border-color: transparent;
+        box-shadow: none;
+        color: whitesmoke; }
+    .button.is-light.is-loading::after, .is-light.is-loading.button-primary::after, .is-light.is-loading.button-dark::after, .is-light.is-loading.button-light::after {
+      border-color: transparent transparent #363636 #363636 !important; }
+    .button.is-light.is-outlined, .is-light.is-outlined.button-primary, .is-light.is-outlined.button-dark, .is-light.is-outlined.button-light {
+      background-color: transparent;
+      border-color: whitesmoke;
+      color: whitesmoke; }
+      .button.is-light.is-outlined:hover, .is-light.is-outlined.button-primary:hover, .is-light.is-outlined.button-dark:hover, .is-light.is-outlined.button-light:hover, .button.is-light.is-outlined.is-hovered, .is-light.is-outlined.is-hovered.button-primary, .is-light.is-outlined.is-hovered.button-dark, .is-light.is-outlined.is-hovered.button-light, .button.is-light.is-outlined:focus, .is-light.is-outlined.button-primary:focus, .is-light.is-outlined.button-dark:focus, .is-light.is-outlined.button-light:focus, .button.is-light.is-outlined.is-focused, .is-light.is-outlined.is-focused.button-primary, .is-light.is-outlined.is-focused.button-dark, .is-light.is-outlined.is-focused.button-light {
+        background-color: whitesmoke;
+        border-color: whitesmoke;
+        color: #363636; }
+      .button.is-light.is-outlined.is-loading::after, .is-light.is-outlined.is-loading.button-primary::after, .is-light.is-outlined.is-loading.button-dark::after, .is-light.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent whitesmoke whitesmoke !important; }
+      .button.is-light.is-outlined.is-loading:hover::after, .is-light.is-outlined.is-loading.button-primary:hover::after, .is-light.is-outlined.is-loading.button-dark:hover::after, .is-light.is-outlined.is-loading.button-light:hover::after, .button.is-light.is-outlined.is-loading.is-hovered::after, .is-light.is-outlined.is-loading.is-hovered.button-primary::after, .is-light.is-outlined.is-loading.is-hovered.button-dark::after, .is-light.is-outlined.is-loading.is-hovered.button-light::after, .button.is-light.is-outlined.is-loading:focus::after, .is-light.is-outlined.is-loading.button-primary:focus::after, .is-light.is-outlined.is-loading.button-dark:focus::after, .is-light.is-outlined.is-loading.button-light:focus::after, .button.is-light.is-outlined.is-loading.is-focused::after, .is-light.is-outlined.is-loading.is-focused.button-primary::after, .is-light.is-outlined.is-loading.is-focused.button-dark::after, .is-light.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #363636 #363636 !important; }
+      .button.is-light.is-outlined[disabled], .is-light.is-outlined.button-primary[disabled], .is-light.is-outlined.button-dark[disabled], .is-light.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-light.is-outlined,
+      fieldset[disabled] .is-light.is-outlined.button-primary,
+      fieldset[disabled] .is-light.is-outlined.button-dark,
+      fieldset[disabled] .is-light.is-outlined.button-light {
+        background-color: transparent;
+        border-color: whitesmoke;
+        box-shadow: none;
+        color: whitesmoke; }
+    .button.is-light.is-inverted.is-outlined, .is-light.is-inverted.is-outlined.button-primary, .is-light.is-inverted.is-outlined.button-dark, .is-light.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #363636;
+      color: #363636; }
+      .button.is-light.is-inverted.is-outlined:hover, .is-light.is-inverted.is-outlined.button-primary:hover, .is-light.is-inverted.is-outlined.button-dark:hover, .is-light.is-inverted.is-outlined.button-light:hover, .button.is-light.is-inverted.is-outlined.is-hovered, .is-light.is-inverted.is-outlined.is-hovered.button-primary, .is-light.is-inverted.is-outlined.is-hovered.button-dark, .is-light.is-inverted.is-outlined.is-hovered.button-light, .button.is-light.is-inverted.is-outlined:focus, .is-light.is-inverted.is-outlined.button-primary:focus, .is-light.is-inverted.is-outlined.button-dark:focus, .is-light.is-inverted.is-outlined.button-light:focus, .button.is-light.is-inverted.is-outlined.is-focused, .is-light.is-inverted.is-outlined.is-focused.button-primary, .is-light.is-inverted.is-outlined.is-focused.button-dark, .is-light.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #363636;
+        color: whitesmoke; }
+      .button.is-light.is-inverted.is-outlined.is-loading:hover::after, .is-light.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-light.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-light.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-light.is-inverted.is-outlined.is-loading.is-hovered::after, .is-light.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-light.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-light.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-light.is-inverted.is-outlined.is-loading:focus::after, .is-light.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-light.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-light.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-light.is-inverted.is-outlined.is-loading.is-focused::after, .is-light.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-light.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-light.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent whitesmoke whitesmoke !important; }
+      .button.is-light.is-inverted.is-outlined[disabled], .is-light.is-inverted.is-outlined.button-primary[disabled], .is-light.is-inverted.is-outlined.button-dark[disabled], .is-light.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-light.is-inverted.is-outlined,
+      fieldset[disabled] .is-light.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-light.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-light.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #363636;
+        box-shadow: none;
+        color: #363636; }
+  .button.is-dark, .is-dark.button-primary, .is-dark.button-dark, .is-dark.button-light {
+    background-color: #363636;
+    border-color: transparent;
+    color: whitesmoke; }
+    .button.is-dark:hover, .is-dark.button-primary:hover, .is-dark.button-dark:hover, .is-dark.button-light:hover, .button.is-dark.is-hovered, .is-dark.is-hovered.button-primary, .is-dark.is-hovered.button-dark, .is-dark.is-hovered.button-light {
+      background-color: #2f2f2f;
+      border-color: transparent;
+      color: whitesmoke; }
+    .button.is-dark:focus, .is-dark.button-primary:focus, .is-dark.button-dark:focus, .is-dark.button-light:focus, .button.is-dark.is-focused, .is-dark.is-focused.button-primary, .is-dark.is-focused.button-dark, .is-dark.is-focused.button-light {
+      border-color: transparent;
+      color: whitesmoke; }
+      .button.is-dark:focus:not(:active), .is-dark.button-primary:focus:not(:active), .is-dark.button-dark:focus:not(:active), .is-dark.button-light:focus:not(:active), .button.is-dark.is-focused:not(:active), .is-dark.is-focused.button-primary:not(:active), .is-dark.is-focused.button-dark:not(:active), .is-dark.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
+    .button.is-dark:active, .is-dark.button-primary:active, .is-dark.button-dark:active, .is-dark.button-light:active, .button.is-dark.is-active, .is-dark.is-active.button-primary, .is-dark.is-active.button-dark, .is-dark.is-active.button-light {
+      background-color: #292929;
+      border-color: transparent;
+      color: whitesmoke; }
+    .button.is-dark[disabled], .is-dark.button-primary[disabled], .is-dark.button-dark[disabled], .is-dark.button-light[disabled],
+    fieldset[disabled] .button.is-dark,
+    fieldset[disabled] .is-dark.button-primary,
+    fieldset[disabled] .is-dark.button-dark,
+    fieldset[disabled] .is-dark.button-light {
+      background-color: #363636;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-dark.is-inverted, .is-dark.is-inverted.button-primary, .is-dark.is-inverted.button-dark, .is-dark.is-inverted.button-light {
+      background-color: whitesmoke;
+      color: #363636; }
+      .button.is-dark.is-inverted:hover, .is-dark.is-inverted.button-primary:hover, .is-dark.is-inverted.button-dark:hover, .is-dark.is-inverted.button-light:hover, .button.is-dark.is-inverted.is-hovered, .is-dark.is-inverted.is-hovered.button-primary, .is-dark.is-inverted.is-hovered.button-dark, .is-dark.is-inverted.is-hovered.button-light {
+        background-color: #e8e8e8; }
+      .button.is-dark.is-inverted[disabled], .is-dark.is-inverted.button-primary[disabled], .is-dark.is-inverted.button-dark[disabled], .is-dark.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-dark.is-inverted,
+      fieldset[disabled] .is-dark.is-inverted.button-primary,
+      fieldset[disabled] .is-dark.is-inverted.button-dark,
+      fieldset[disabled] .is-dark.is-inverted.button-light {
+        background-color: whitesmoke;
+        border-color: transparent;
+        box-shadow: none;
+        color: #363636; }
+    .button.is-dark.is-loading::after, .is-dark.is-loading.button-primary::after, .is-dark.is-loading.button-dark::after, .is-dark.is-loading.button-light::after {
+      border-color: transparent transparent whitesmoke whitesmoke !important; }
+    .button.is-dark.is-outlined, .is-dark.is-outlined.button-primary, .is-dark.is-outlined.button-dark, .is-dark.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #363636;
+      color: #363636; }
+      .button.is-dark.is-outlined:hover, .is-dark.is-outlined.button-primary:hover, .is-dark.is-outlined.button-dark:hover, .is-dark.is-outlined.button-light:hover, .button.is-dark.is-outlined.is-hovered, .is-dark.is-outlined.is-hovered.button-primary, .is-dark.is-outlined.is-hovered.button-dark, .is-dark.is-outlined.is-hovered.button-light, .button.is-dark.is-outlined:focus, .is-dark.is-outlined.button-primary:focus, .is-dark.is-outlined.button-dark:focus, .is-dark.is-outlined.button-light:focus, .button.is-dark.is-outlined.is-focused, .is-dark.is-outlined.is-focused.button-primary, .is-dark.is-outlined.is-focused.button-dark, .is-dark.is-outlined.is-focused.button-light {
+        background-color: #363636;
+        border-color: #363636;
+        color: whitesmoke; }
+      .button.is-dark.is-outlined.is-loading::after, .is-dark.is-outlined.is-loading.button-primary::after, .is-dark.is-outlined.is-loading.button-dark::after, .is-dark.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #363636 #363636 !important; }
+      .button.is-dark.is-outlined.is-loading:hover::after, .is-dark.is-outlined.is-loading.button-primary:hover::after, .is-dark.is-outlined.is-loading.button-dark:hover::after, .is-dark.is-outlined.is-loading.button-light:hover::after, .button.is-dark.is-outlined.is-loading.is-hovered::after, .is-dark.is-outlined.is-loading.is-hovered.button-primary::after, .is-dark.is-outlined.is-loading.is-hovered.button-dark::after, .is-dark.is-outlined.is-loading.is-hovered.button-light::after, .button.is-dark.is-outlined.is-loading:focus::after, .is-dark.is-outlined.is-loading.button-primary:focus::after, .is-dark.is-outlined.is-loading.button-dark:focus::after, .is-dark.is-outlined.is-loading.button-light:focus::after, .button.is-dark.is-outlined.is-loading.is-focused::after, .is-dark.is-outlined.is-loading.is-focused.button-primary::after, .is-dark.is-outlined.is-loading.is-focused.button-dark::after, .is-dark.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent whitesmoke whitesmoke !important; }
+      .button.is-dark.is-outlined[disabled], .is-dark.is-outlined.button-primary[disabled], .is-dark.is-outlined.button-dark[disabled], .is-dark.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-dark.is-outlined,
+      fieldset[disabled] .is-dark.is-outlined.button-primary,
+      fieldset[disabled] .is-dark.is-outlined.button-dark,
+      fieldset[disabled] .is-dark.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #363636;
+        box-shadow: none;
+        color: #363636; }
+    .button.is-dark.is-inverted.is-outlined, .is-dark.is-inverted.is-outlined.button-primary, .is-dark.is-inverted.is-outlined.button-dark, .is-dark.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: whitesmoke;
+      color: whitesmoke; }
+      .button.is-dark.is-inverted.is-outlined:hover, .is-dark.is-inverted.is-outlined.button-primary:hover, .is-dark.is-inverted.is-outlined.button-dark:hover, .is-dark.is-inverted.is-outlined.button-light:hover, .button.is-dark.is-inverted.is-outlined.is-hovered, .is-dark.is-inverted.is-outlined.is-hovered.button-primary, .is-dark.is-inverted.is-outlined.is-hovered.button-dark, .is-dark.is-inverted.is-outlined.is-hovered.button-light, .button.is-dark.is-inverted.is-outlined:focus, .is-dark.is-inverted.is-outlined.button-primary:focus, .is-dark.is-inverted.is-outlined.button-dark:focus, .is-dark.is-inverted.is-outlined.button-light:focus, .button.is-dark.is-inverted.is-outlined.is-focused, .is-dark.is-inverted.is-outlined.is-focused.button-primary, .is-dark.is-inverted.is-outlined.is-focused.button-dark, .is-dark.is-inverted.is-outlined.is-focused.button-light {
+        background-color: whitesmoke;
+        color: #363636; }
+      .button.is-dark.is-inverted.is-outlined.is-loading:hover::after, .is-dark.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-dark.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-dark.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-dark.is-inverted.is-outlined.is-loading.is-hovered::after, .is-dark.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-dark.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-dark.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-dark.is-inverted.is-outlined.is-loading:focus::after, .is-dark.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-dark.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-dark.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-dark.is-inverted.is-outlined.is-loading.is-focused::after, .is-dark.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-dark.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-dark.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #363636 #363636 !important; }
+      .button.is-dark.is-inverted.is-outlined[disabled], .is-dark.is-inverted.is-outlined.button-primary[disabled], .is-dark.is-inverted.is-outlined.button-dark[disabled], .is-dark.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-dark.is-inverted.is-outlined,
+      fieldset[disabled] .is-dark.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-dark.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-dark.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: whitesmoke;
+        box-shadow: none;
+        color: whitesmoke; }
+  .button.is-primary, .is-primary.button-primary, .is-primary.button-dark, .is-primary.button-light {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff; }
+    .button.is-primary:hover, .is-primary.button-primary:hover, .is-primary.button-dark:hover, .is-primary.button-light:hover, .button.is-primary.is-hovered, .is-primary.is-hovered.button-primary, .is-primary.is-hovered.button-dark, .is-primary.is-hovered.button-light {
+      background-color: #00c4a7;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-primary:focus, .is-primary.button-primary:focus, .is-primary.button-dark:focus, .is-primary.button-light:focus, .button.is-primary.is-focused, .is-primary.is-focused.button-primary, .is-primary.is-focused.button-dark, .is-primary.is-focused.button-light {
+      border-color: transparent;
+      color: #fff; }
+      .button.is-primary:focus:not(:active), .is-primary.button-primary:focus:not(:active), .is-primary.button-dark:focus:not(:active), .is-primary.button-light:focus:not(:active), .button.is-primary.is-focused:not(:active), .is-primary.is-focused.button-primary:not(:active), .is-primary.is-focused.button-dark:not(:active), .is-primary.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
+    .button.is-primary:active, .is-primary.button-primary:active, .is-primary.button-dark:active, .is-primary.button-light:active, .button.is-primary.is-active, .is-primary.is-active.button-primary, .is-primary.is-active.button-dark, .is-primary.is-active.button-light {
+      background-color: #00b89c;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-primary[disabled], .is-primary.button-primary[disabled], .is-primary.button-dark[disabled], .is-primary.button-light[disabled],
+    fieldset[disabled] .button.is-primary,
+    fieldset[disabled] .is-primary.button-primary,
+    fieldset[disabled] .is-primary.button-dark,
+    fieldset[disabled] .is-primary.button-light {
+      background-color: #00d1b2;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-primary.is-inverted, .is-primary.is-inverted.button-primary, .is-primary.is-inverted.button-dark, .is-primary.is-inverted.button-light {
+      background-color: #fff;
+      color: #00d1b2; }
+      .button.is-primary.is-inverted:hover, .is-primary.is-inverted.button-primary:hover, .is-primary.is-inverted.button-dark:hover, .is-primary.is-inverted.button-light:hover, .button.is-primary.is-inverted.is-hovered, .is-primary.is-inverted.is-hovered.button-primary, .is-primary.is-inverted.is-hovered.button-dark, .is-primary.is-inverted.is-hovered.button-light {
+        background-color: #f2f2f2; }
+      .button.is-primary.is-inverted[disabled], .is-primary.is-inverted.button-primary[disabled], .is-primary.is-inverted.button-dark[disabled], .is-primary.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-primary.is-inverted,
+      fieldset[disabled] .is-primary.is-inverted.button-primary,
+      fieldset[disabled] .is-primary.is-inverted.button-dark,
+      fieldset[disabled] .is-primary.is-inverted.button-light {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: none;
+        color: #00d1b2; }
+    .button.is-primary.is-loading::after, .is-primary.is-loading.button-primary::after, .is-primary.is-loading.button-dark::after, .is-primary.is-loading.button-light::after {
+      border-color: transparent transparent #fff #fff !important; }
+    .button.is-primary.is-outlined, .is-primary.is-outlined.button-primary, .is-primary.is-outlined.button-dark, .is-primary.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #00d1b2;
+      color: #00d1b2; }
+      .button.is-primary.is-outlined:hover, .is-primary.is-outlined.button-primary:hover, .is-primary.is-outlined.button-dark:hover, .is-primary.is-outlined.button-light:hover, .button.is-primary.is-outlined.is-hovered, .is-primary.is-outlined.is-hovered.button-primary, .is-primary.is-outlined.is-hovered.button-dark, .is-primary.is-outlined.is-hovered.button-light, .button.is-primary.is-outlined:focus, .is-primary.is-outlined.button-primary:focus, .is-primary.is-outlined.button-dark:focus, .is-primary.is-outlined.button-light:focus, .button.is-primary.is-outlined.is-focused, .is-primary.is-outlined.is-focused.button-primary, .is-primary.is-outlined.is-focused.button-dark, .is-primary.is-outlined.is-focused.button-light {
+        background-color: #00d1b2;
+        border-color: #00d1b2;
+        color: #fff; }
+      .button.is-primary.is-outlined.is-loading::after, .is-primary.is-outlined.is-loading.button-primary::after, .is-primary.is-outlined.is-loading.button-dark::after, .is-primary.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #00d1b2 #00d1b2 !important; }
+      .button.is-primary.is-outlined.is-loading:hover::after, .is-primary.is-outlined.is-loading.button-primary:hover::after, .is-primary.is-outlined.is-loading.button-dark:hover::after, .is-primary.is-outlined.is-loading.button-light:hover::after, .button.is-primary.is-outlined.is-loading.is-hovered::after, .is-primary.is-outlined.is-loading.is-hovered.button-primary::after, .is-primary.is-outlined.is-loading.is-hovered.button-dark::after, .is-primary.is-outlined.is-loading.is-hovered.button-light::after, .button.is-primary.is-outlined.is-loading:focus::after, .is-primary.is-outlined.is-loading.button-primary:focus::after, .is-primary.is-outlined.is-loading.button-dark:focus::after, .is-primary.is-outlined.is-loading.button-light:focus::after, .button.is-primary.is-outlined.is-loading.is-focused::after, .is-primary.is-outlined.is-loading.is-focused.button-primary::after, .is-primary.is-outlined.is-loading.is-focused.button-dark::after, .is-primary.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #fff #fff !important; }
+      .button.is-primary.is-outlined[disabled], .is-primary.is-outlined.button-primary[disabled], .is-primary.is-outlined.button-dark[disabled], .is-primary.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-primary.is-outlined,
+      fieldset[disabled] .is-primary.is-outlined.button-primary,
+      fieldset[disabled] .is-primary.is-outlined.button-dark,
+      fieldset[disabled] .is-primary.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #00d1b2;
+        box-shadow: none;
+        color: #00d1b2; }
+    .button.is-primary.is-inverted.is-outlined, .is-primary.is-inverted.is-outlined.button-primary, .is-primary.is-inverted.is-outlined.button-dark, .is-primary.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #fff;
+      color: #fff; }
+      .button.is-primary.is-inverted.is-outlined:hover, .is-primary.is-inverted.is-outlined.button-primary:hover, .is-primary.is-inverted.is-outlined.button-dark:hover, .is-primary.is-inverted.is-outlined.button-light:hover, .button.is-primary.is-inverted.is-outlined.is-hovered, .is-primary.is-inverted.is-outlined.is-hovered.button-primary, .is-primary.is-inverted.is-outlined.is-hovered.button-dark, .is-primary.is-inverted.is-outlined.is-hovered.button-light, .button.is-primary.is-inverted.is-outlined:focus, .is-primary.is-inverted.is-outlined.button-primary:focus, .is-primary.is-inverted.is-outlined.button-dark:focus, .is-primary.is-inverted.is-outlined.button-light:focus, .button.is-primary.is-inverted.is-outlined.is-focused, .is-primary.is-inverted.is-outlined.is-focused.button-primary, .is-primary.is-inverted.is-outlined.is-focused.button-dark, .is-primary.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #fff;
+        color: #00d1b2; }
+      .button.is-primary.is-inverted.is-outlined.is-loading:hover::after, .is-primary.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-primary.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-primary.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-primary.is-inverted.is-outlined.is-loading.is-hovered::after, .is-primary.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-primary.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-primary.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-primary.is-inverted.is-outlined.is-loading:focus::after, .is-primary.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-primary.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-primary.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-primary.is-inverted.is-outlined.is-loading.is-focused::after, .is-primary.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-primary.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-primary.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #00d1b2 #00d1b2 !important; }
+      .button.is-primary.is-inverted.is-outlined[disabled], .is-primary.is-inverted.is-outlined.button-primary[disabled], .is-primary.is-inverted.is-outlined.button-dark[disabled], .is-primary.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-primary.is-inverted.is-outlined,
+      fieldset[disabled] .is-primary.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-primary.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-primary.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #fff;
+        box-shadow: none;
+        color: #fff; }
+  .button.is-link, .is-link.button-primary, .is-link.button-dark, .is-link.button-light {
+    background-color: #3273dc;
+    border-color: transparent;
+    color: #fff; }
+    .button.is-link:hover, .is-link.button-primary:hover, .is-link.button-dark:hover, .is-link.button-light:hover, .button.is-link.is-hovered, .is-link.is-hovered.button-primary, .is-link.is-hovered.button-dark, .is-link.is-hovered.button-light {
+      background-color: #276cda;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-link:focus, .is-link.button-primary:focus, .is-link.button-dark:focus, .is-link.button-light:focus, .button.is-link.is-focused, .is-link.is-focused.button-primary, .is-link.is-focused.button-dark, .is-link.is-focused.button-light {
+      border-color: transparent;
+      color: #fff; }
+      .button.is-link:focus:not(:active), .is-link.button-primary:focus:not(:active), .is-link.button-dark:focus:not(:active), .is-link.button-light:focus:not(:active), .button.is-link.is-focused:not(:active), .is-link.is-focused.button-primary:not(:active), .is-link.is-focused.button-dark:not(:active), .is-link.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+    .button.is-link:active, .is-link.button-primary:active, .is-link.button-dark:active, .is-link.button-light:active, .button.is-link.is-active, .is-link.is-active.button-primary, .is-link.is-active.button-dark, .is-link.is-active.button-light {
+      background-color: #2366d1;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-link[disabled], .is-link.button-primary[disabled], .is-link.button-dark[disabled], .is-link.button-light[disabled],
+    fieldset[disabled] .button.is-link,
+    fieldset[disabled] .is-link.button-primary,
+    fieldset[disabled] .is-link.button-dark,
+    fieldset[disabled] .is-link.button-light {
+      background-color: #3273dc;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-link.is-inverted, .is-link.is-inverted.button-primary, .is-link.is-inverted.button-dark, .is-link.is-inverted.button-light {
+      background-color: #fff;
+      color: #3273dc; }
+      .button.is-link.is-inverted:hover, .is-link.is-inverted.button-primary:hover, .is-link.is-inverted.button-dark:hover, .is-link.is-inverted.button-light:hover, .button.is-link.is-inverted.is-hovered, .is-link.is-inverted.is-hovered.button-primary, .is-link.is-inverted.is-hovered.button-dark, .is-link.is-inverted.is-hovered.button-light {
+        background-color: #f2f2f2; }
+      .button.is-link.is-inverted[disabled], .is-link.is-inverted.button-primary[disabled], .is-link.is-inverted.button-dark[disabled], .is-link.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-link.is-inverted,
+      fieldset[disabled] .is-link.is-inverted.button-primary,
+      fieldset[disabled] .is-link.is-inverted.button-dark,
+      fieldset[disabled] .is-link.is-inverted.button-light {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: none;
+        color: #3273dc; }
+    .button.is-link.is-loading::after, .is-link.is-loading.button-primary::after, .is-link.is-loading.button-dark::after, .is-link.is-loading.button-light::after {
+      border-color: transparent transparent #fff #fff !important; }
+    .button.is-link.is-outlined, .is-link.is-outlined.button-primary, .is-link.is-outlined.button-dark, .is-link.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #3273dc;
+      color: #3273dc; }
+      .button.is-link.is-outlined:hover, .is-link.is-outlined.button-primary:hover, .is-link.is-outlined.button-dark:hover, .is-link.is-outlined.button-light:hover, .button.is-link.is-outlined.is-hovered, .is-link.is-outlined.is-hovered.button-primary, .is-link.is-outlined.is-hovered.button-dark, .is-link.is-outlined.is-hovered.button-light, .button.is-link.is-outlined:focus, .is-link.is-outlined.button-primary:focus, .is-link.is-outlined.button-dark:focus, .is-link.is-outlined.button-light:focus, .button.is-link.is-outlined.is-focused, .is-link.is-outlined.is-focused.button-primary, .is-link.is-outlined.is-focused.button-dark, .is-link.is-outlined.is-focused.button-light {
+        background-color: #3273dc;
+        border-color: #3273dc;
+        color: #fff; }
+      .button.is-link.is-outlined.is-loading::after, .is-link.is-outlined.is-loading.button-primary::after, .is-link.is-outlined.is-loading.button-dark::after, .is-link.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #3273dc #3273dc !important; }
+      .button.is-link.is-outlined.is-loading:hover::after, .is-link.is-outlined.is-loading.button-primary:hover::after, .is-link.is-outlined.is-loading.button-dark:hover::after, .is-link.is-outlined.is-loading.button-light:hover::after, .button.is-link.is-outlined.is-loading.is-hovered::after, .is-link.is-outlined.is-loading.is-hovered.button-primary::after, .is-link.is-outlined.is-loading.is-hovered.button-dark::after, .is-link.is-outlined.is-loading.is-hovered.button-light::after, .button.is-link.is-outlined.is-loading:focus::after, .is-link.is-outlined.is-loading.button-primary:focus::after, .is-link.is-outlined.is-loading.button-dark:focus::after, .is-link.is-outlined.is-loading.button-light:focus::after, .button.is-link.is-outlined.is-loading.is-focused::after, .is-link.is-outlined.is-loading.is-focused.button-primary::after, .is-link.is-outlined.is-loading.is-focused.button-dark::after, .is-link.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #fff #fff !important; }
+      .button.is-link.is-outlined[disabled], .is-link.is-outlined.button-primary[disabled], .is-link.is-outlined.button-dark[disabled], .is-link.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-link.is-outlined,
+      fieldset[disabled] .is-link.is-outlined.button-primary,
+      fieldset[disabled] .is-link.is-outlined.button-dark,
+      fieldset[disabled] .is-link.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #3273dc;
+        box-shadow: none;
+        color: #3273dc; }
+    .button.is-link.is-inverted.is-outlined, .is-link.is-inverted.is-outlined.button-primary, .is-link.is-inverted.is-outlined.button-dark, .is-link.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #fff;
+      color: #fff; }
+      .button.is-link.is-inverted.is-outlined:hover, .is-link.is-inverted.is-outlined.button-primary:hover, .is-link.is-inverted.is-outlined.button-dark:hover, .is-link.is-inverted.is-outlined.button-light:hover, .button.is-link.is-inverted.is-outlined.is-hovered, .is-link.is-inverted.is-outlined.is-hovered.button-primary, .is-link.is-inverted.is-outlined.is-hovered.button-dark, .is-link.is-inverted.is-outlined.is-hovered.button-light, .button.is-link.is-inverted.is-outlined:focus, .is-link.is-inverted.is-outlined.button-primary:focus, .is-link.is-inverted.is-outlined.button-dark:focus, .is-link.is-inverted.is-outlined.button-light:focus, .button.is-link.is-inverted.is-outlined.is-focused, .is-link.is-inverted.is-outlined.is-focused.button-primary, .is-link.is-inverted.is-outlined.is-focused.button-dark, .is-link.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #fff;
+        color: #3273dc; }
+      .button.is-link.is-inverted.is-outlined.is-loading:hover::after, .is-link.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-link.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-link.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-link.is-inverted.is-outlined.is-loading.is-hovered::after, .is-link.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-link.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-link.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-link.is-inverted.is-outlined.is-loading:focus::after, .is-link.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-link.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-link.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-link.is-inverted.is-outlined.is-loading.is-focused::after, .is-link.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-link.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-link.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #3273dc #3273dc !important; }
+      .button.is-link.is-inverted.is-outlined[disabled], .is-link.is-inverted.is-outlined.button-primary[disabled], .is-link.is-inverted.is-outlined.button-dark[disabled], .is-link.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-link.is-inverted.is-outlined,
+      fieldset[disabled] .is-link.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-link.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-link.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #fff;
+        box-shadow: none;
+        color: #fff; }
+  .button.is-info, .is-info.button-primary, .is-info.button-dark, .is-info.button-light {
+    background-color: #209cee;
+    border-color: transparent;
+    color: #fff; }
+    .button.is-info:hover, .is-info.button-primary:hover, .is-info.button-dark:hover, .is-info.button-light:hover, .button.is-info.is-hovered, .is-info.is-hovered.button-primary, .is-info.is-hovered.button-dark, .is-info.is-hovered.button-light {
+      background-color: #1496ed;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-info:focus, .is-info.button-primary:focus, .is-info.button-dark:focus, .is-info.button-light:focus, .button.is-info.is-focused, .is-info.is-focused.button-primary, .is-info.is-focused.button-dark, .is-info.is-focused.button-light {
+      border-color: transparent;
+      color: #fff; }
+      .button.is-info:focus:not(:active), .is-info.button-primary:focus:not(:active), .is-info.button-dark:focus:not(:active), .is-info.button-light:focus:not(:active), .button.is-info.is-focused:not(:active), .is-info.is-focused.button-primary:not(:active), .is-info.is-focused.button-dark:not(:active), .is-info.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
+    .button.is-info:active, .is-info.button-primary:active, .is-info.button-dark:active, .is-info.button-light:active, .button.is-info.is-active, .is-info.is-active.button-primary, .is-info.is-active.button-dark, .is-info.is-active.button-light {
+      background-color: #118fe4;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-info[disabled], .is-info.button-primary[disabled], .is-info.button-dark[disabled], .is-info.button-light[disabled],
+    fieldset[disabled] .button.is-info,
+    fieldset[disabled] .is-info.button-primary,
+    fieldset[disabled] .is-info.button-dark,
+    fieldset[disabled] .is-info.button-light {
+      background-color: #209cee;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-info.is-inverted, .is-info.is-inverted.button-primary, .is-info.is-inverted.button-dark, .is-info.is-inverted.button-light {
+      background-color: #fff;
+      color: #209cee; }
+      .button.is-info.is-inverted:hover, .is-info.is-inverted.button-primary:hover, .is-info.is-inverted.button-dark:hover, .is-info.is-inverted.button-light:hover, .button.is-info.is-inverted.is-hovered, .is-info.is-inverted.is-hovered.button-primary, .is-info.is-inverted.is-hovered.button-dark, .is-info.is-inverted.is-hovered.button-light {
+        background-color: #f2f2f2; }
+      .button.is-info.is-inverted[disabled], .is-info.is-inverted.button-primary[disabled], .is-info.is-inverted.button-dark[disabled], .is-info.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-info.is-inverted,
+      fieldset[disabled] .is-info.is-inverted.button-primary,
+      fieldset[disabled] .is-info.is-inverted.button-dark,
+      fieldset[disabled] .is-info.is-inverted.button-light {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: none;
+        color: #209cee; }
+    .button.is-info.is-loading::after, .is-info.is-loading.button-primary::after, .is-info.is-loading.button-dark::after, .is-info.is-loading.button-light::after {
+      border-color: transparent transparent #fff #fff !important; }
+    .button.is-info.is-outlined, .is-info.is-outlined.button-primary, .is-info.is-outlined.button-dark, .is-info.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #209cee;
+      color: #209cee; }
+      .button.is-info.is-outlined:hover, .is-info.is-outlined.button-primary:hover, .is-info.is-outlined.button-dark:hover, .is-info.is-outlined.button-light:hover, .button.is-info.is-outlined.is-hovered, .is-info.is-outlined.is-hovered.button-primary, .is-info.is-outlined.is-hovered.button-dark, .is-info.is-outlined.is-hovered.button-light, .button.is-info.is-outlined:focus, .is-info.is-outlined.button-primary:focus, .is-info.is-outlined.button-dark:focus, .is-info.is-outlined.button-light:focus, .button.is-info.is-outlined.is-focused, .is-info.is-outlined.is-focused.button-primary, .is-info.is-outlined.is-focused.button-dark, .is-info.is-outlined.is-focused.button-light {
+        background-color: #209cee;
+        border-color: #209cee;
+        color: #fff; }
+      .button.is-info.is-outlined.is-loading::after, .is-info.is-outlined.is-loading.button-primary::after, .is-info.is-outlined.is-loading.button-dark::after, .is-info.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #209cee #209cee !important; }
+      .button.is-info.is-outlined.is-loading:hover::after, .is-info.is-outlined.is-loading.button-primary:hover::after, .is-info.is-outlined.is-loading.button-dark:hover::after, .is-info.is-outlined.is-loading.button-light:hover::after, .button.is-info.is-outlined.is-loading.is-hovered::after, .is-info.is-outlined.is-loading.is-hovered.button-primary::after, .is-info.is-outlined.is-loading.is-hovered.button-dark::after, .is-info.is-outlined.is-loading.is-hovered.button-light::after, .button.is-info.is-outlined.is-loading:focus::after, .is-info.is-outlined.is-loading.button-primary:focus::after, .is-info.is-outlined.is-loading.button-dark:focus::after, .is-info.is-outlined.is-loading.button-light:focus::after, .button.is-info.is-outlined.is-loading.is-focused::after, .is-info.is-outlined.is-loading.is-focused.button-primary::after, .is-info.is-outlined.is-loading.is-focused.button-dark::after, .is-info.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #fff #fff !important; }
+      .button.is-info.is-outlined[disabled], .is-info.is-outlined.button-primary[disabled], .is-info.is-outlined.button-dark[disabled], .is-info.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-info.is-outlined,
+      fieldset[disabled] .is-info.is-outlined.button-primary,
+      fieldset[disabled] .is-info.is-outlined.button-dark,
+      fieldset[disabled] .is-info.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #209cee;
+        box-shadow: none;
+        color: #209cee; }
+    .button.is-info.is-inverted.is-outlined, .is-info.is-inverted.is-outlined.button-primary, .is-info.is-inverted.is-outlined.button-dark, .is-info.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #fff;
+      color: #fff; }
+      .button.is-info.is-inverted.is-outlined:hover, .is-info.is-inverted.is-outlined.button-primary:hover, .is-info.is-inverted.is-outlined.button-dark:hover, .is-info.is-inverted.is-outlined.button-light:hover, .button.is-info.is-inverted.is-outlined.is-hovered, .is-info.is-inverted.is-outlined.is-hovered.button-primary, .is-info.is-inverted.is-outlined.is-hovered.button-dark, .is-info.is-inverted.is-outlined.is-hovered.button-light, .button.is-info.is-inverted.is-outlined:focus, .is-info.is-inverted.is-outlined.button-primary:focus, .is-info.is-inverted.is-outlined.button-dark:focus, .is-info.is-inverted.is-outlined.button-light:focus, .button.is-info.is-inverted.is-outlined.is-focused, .is-info.is-inverted.is-outlined.is-focused.button-primary, .is-info.is-inverted.is-outlined.is-focused.button-dark, .is-info.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #fff;
+        color: #209cee; }
+      .button.is-info.is-inverted.is-outlined.is-loading:hover::after, .is-info.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-info.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-info.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-info.is-inverted.is-outlined.is-loading.is-hovered::after, .is-info.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-info.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-info.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-info.is-inverted.is-outlined.is-loading:focus::after, .is-info.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-info.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-info.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-info.is-inverted.is-outlined.is-loading.is-focused::after, .is-info.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-info.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-info.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #209cee #209cee !important; }
+      .button.is-info.is-inverted.is-outlined[disabled], .is-info.is-inverted.is-outlined.button-primary[disabled], .is-info.is-inverted.is-outlined.button-dark[disabled], .is-info.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-info.is-inverted.is-outlined,
+      fieldset[disabled] .is-info.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-info.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-info.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #fff;
+        box-shadow: none;
+        color: #fff; }
+  .button.is-success, .is-success.button-primary, .is-success.button-dark, .is-success.button-light {
+    background-color: #23d160;
+    border-color: transparent;
+    color: #fff; }
+    .button.is-success:hover, .is-success.button-primary:hover, .is-success.button-dark:hover, .is-success.button-light:hover, .button.is-success.is-hovered, .is-success.is-hovered.button-primary, .is-success.is-hovered.button-dark, .is-success.is-hovered.button-light {
+      background-color: #22c65b;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-success:focus, .is-success.button-primary:focus, .is-success.button-dark:focus, .is-success.button-light:focus, .button.is-success.is-focused, .is-success.is-focused.button-primary, .is-success.is-focused.button-dark, .is-success.is-focused.button-light {
+      border-color: transparent;
+      color: #fff; }
+      .button.is-success:focus:not(:active), .is-success.button-primary:focus:not(:active), .is-success.button-dark:focus:not(:active), .is-success.button-light:focus:not(:active), .button.is-success.is-focused:not(:active), .is-success.is-focused.button-primary:not(:active), .is-success.is-focused.button-dark:not(:active), .is-success.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25); }
+    .button.is-success:active, .is-success.button-primary:active, .is-success.button-dark:active, .is-success.button-light:active, .button.is-success.is-active, .is-success.is-active.button-primary, .is-success.is-active.button-dark, .is-success.is-active.button-light {
+      background-color: #20bc56;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-success[disabled], .is-success.button-primary[disabled], .is-success.button-dark[disabled], .is-success.button-light[disabled],
+    fieldset[disabled] .button.is-success,
+    fieldset[disabled] .is-success.button-primary,
+    fieldset[disabled] .is-success.button-dark,
+    fieldset[disabled] .is-success.button-light {
+      background-color: #23d160;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-success.is-inverted, .is-success.is-inverted.button-primary, .is-success.is-inverted.button-dark, .is-success.is-inverted.button-light {
+      background-color: #fff;
+      color: #23d160; }
+      .button.is-success.is-inverted:hover, .is-success.is-inverted.button-primary:hover, .is-success.is-inverted.button-dark:hover, .is-success.is-inverted.button-light:hover, .button.is-success.is-inverted.is-hovered, .is-success.is-inverted.is-hovered.button-primary, .is-success.is-inverted.is-hovered.button-dark, .is-success.is-inverted.is-hovered.button-light {
+        background-color: #f2f2f2; }
+      .button.is-success.is-inverted[disabled], .is-success.is-inverted.button-primary[disabled], .is-success.is-inverted.button-dark[disabled], .is-success.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-success.is-inverted,
+      fieldset[disabled] .is-success.is-inverted.button-primary,
+      fieldset[disabled] .is-success.is-inverted.button-dark,
+      fieldset[disabled] .is-success.is-inverted.button-light {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: none;
+        color: #23d160; }
+    .button.is-success.is-loading::after, .is-success.is-loading.button-primary::after, .is-success.is-loading.button-dark::after, .is-success.is-loading.button-light::after {
+      border-color: transparent transparent #fff #fff !important; }
+    .button.is-success.is-outlined, .is-success.is-outlined.button-primary, .is-success.is-outlined.button-dark, .is-success.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #23d160;
+      color: #23d160; }
+      .button.is-success.is-outlined:hover, .is-success.is-outlined.button-primary:hover, .is-success.is-outlined.button-dark:hover, .is-success.is-outlined.button-light:hover, .button.is-success.is-outlined.is-hovered, .is-success.is-outlined.is-hovered.button-primary, .is-success.is-outlined.is-hovered.button-dark, .is-success.is-outlined.is-hovered.button-light, .button.is-success.is-outlined:focus, .is-success.is-outlined.button-primary:focus, .is-success.is-outlined.button-dark:focus, .is-success.is-outlined.button-light:focus, .button.is-success.is-outlined.is-focused, .is-success.is-outlined.is-focused.button-primary, .is-success.is-outlined.is-focused.button-dark, .is-success.is-outlined.is-focused.button-light {
+        background-color: #23d160;
+        border-color: #23d160;
+        color: #fff; }
+      .button.is-success.is-outlined.is-loading::after, .is-success.is-outlined.is-loading.button-primary::after, .is-success.is-outlined.is-loading.button-dark::after, .is-success.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #23d160 #23d160 !important; }
+      .button.is-success.is-outlined.is-loading:hover::after, .is-success.is-outlined.is-loading.button-primary:hover::after, .is-success.is-outlined.is-loading.button-dark:hover::after, .is-success.is-outlined.is-loading.button-light:hover::after, .button.is-success.is-outlined.is-loading.is-hovered::after, .is-success.is-outlined.is-loading.is-hovered.button-primary::after, .is-success.is-outlined.is-loading.is-hovered.button-dark::after, .is-success.is-outlined.is-loading.is-hovered.button-light::after, .button.is-success.is-outlined.is-loading:focus::after, .is-success.is-outlined.is-loading.button-primary:focus::after, .is-success.is-outlined.is-loading.button-dark:focus::after, .is-success.is-outlined.is-loading.button-light:focus::after, .button.is-success.is-outlined.is-loading.is-focused::after, .is-success.is-outlined.is-loading.is-focused.button-primary::after, .is-success.is-outlined.is-loading.is-focused.button-dark::after, .is-success.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #fff #fff !important; }
+      .button.is-success.is-outlined[disabled], .is-success.is-outlined.button-primary[disabled], .is-success.is-outlined.button-dark[disabled], .is-success.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-success.is-outlined,
+      fieldset[disabled] .is-success.is-outlined.button-primary,
+      fieldset[disabled] .is-success.is-outlined.button-dark,
+      fieldset[disabled] .is-success.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #23d160;
+        box-shadow: none;
+        color: #23d160; }
+    .button.is-success.is-inverted.is-outlined, .is-success.is-inverted.is-outlined.button-primary, .is-success.is-inverted.is-outlined.button-dark, .is-success.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #fff;
+      color: #fff; }
+      .button.is-success.is-inverted.is-outlined:hover, .is-success.is-inverted.is-outlined.button-primary:hover, .is-success.is-inverted.is-outlined.button-dark:hover, .is-success.is-inverted.is-outlined.button-light:hover, .button.is-success.is-inverted.is-outlined.is-hovered, .is-success.is-inverted.is-outlined.is-hovered.button-primary, .is-success.is-inverted.is-outlined.is-hovered.button-dark, .is-success.is-inverted.is-outlined.is-hovered.button-light, .button.is-success.is-inverted.is-outlined:focus, .is-success.is-inverted.is-outlined.button-primary:focus, .is-success.is-inverted.is-outlined.button-dark:focus, .is-success.is-inverted.is-outlined.button-light:focus, .button.is-success.is-inverted.is-outlined.is-focused, .is-success.is-inverted.is-outlined.is-focused.button-primary, .is-success.is-inverted.is-outlined.is-focused.button-dark, .is-success.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #fff;
+        color: #23d160; }
+      .button.is-success.is-inverted.is-outlined.is-loading:hover::after, .is-success.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-success.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-success.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-success.is-inverted.is-outlined.is-loading.is-hovered::after, .is-success.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-success.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-success.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-success.is-inverted.is-outlined.is-loading:focus::after, .is-success.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-success.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-success.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-success.is-inverted.is-outlined.is-loading.is-focused::after, .is-success.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-success.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-success.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #23d160 #23d160 !important; }
+      .button.is-success.is-inverted.is-outlined[disabled], .is-success.is-inverted.is-outlined.button-primary[disabled], .is-success.is-inverted.is-outlined.button-dark[disabled], .is-success.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-success.is-inverted.is-outlined,
+      fieldset[disabled] .is-success.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-success.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-success.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #fff;
+        box-shadow: none;
+        color: #fff; }
+  .button.is-warning, .is-warning.button-primary, .is-warning.button-dark, .is-warning.button-light {
+    background-color: #ffdd57;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7); }
+    .button.is-warning:hover, .is-warning.button-primary:hover, .is-warning.button-dark:hover, .is-warning.button-light:hover, .button.is-warning.is-hovered, .is-warning.is-hovered.button-primary, .is-warning.is-hovered.button-dark, .is-warning.is-hovered.button-light {
+      background-color: #ffdb4a;
+      border-color: transparent;
+      color: rgba(0, 0, 0, 0.7); }
+    .button.is-warning:focus, .is-warning.button-primary:focus, .is-warning.button-dark:focus, .is-warning.button-light:focus, .button.is-warning.is-focused, .is-warning.is-focused.button-primary, .is-warning.is-focused.button-dark, .is-warning.is-focused.button-light {
+      border-color: transparent;
+      color: rgba(0, 0, 0, 0.7); }
+      .button.is-warning:focus:not(:active), .is-warning.button-primary:focus:not(:active), .is-warning.button-dark:focus:not(:active), .is-warning.button-light:focus:not(:active), .button.is-warning.is-focused:not(:active), .is-warning.is-focused.button-primary:not(:active), .is-warning.is-focused.button-dark:not(:active), .is-warning.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25); }
+    .button.is-warning:active, .is-warning.button-primary:active, .is-warning.button-dark:active, .is-warning.button-light:active, .button.is-warning.is-active, .is-warning.is-active.button-primary, .is-warning.is-active.button-dark, .is-warning.is-active.button-light {
+      background-color: #ffd83d;
+      border-color: transparent;
+      color: rgba(0, 0, 0, 0.7); }
+    .button.is-warning[disabled], .is-warning.button-primary[disabled], .is-warning.button-dark[disabled], .is-warning.button-light[disabled],
+    fieldset[disabled] .button.is-warning,
+    fieldset[disabled] .is-warning.button-primary,
+    fieldset[disabled] .is-warning.button-dark,
+    fieldset[disabled] .is-warning.button-light {
+      background-color: #ffdd57;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-warning.is-inverted, .is-warning.is-inverted.button-primary, .is-warning.is-inverted.button-dark, .is-warning.is-inverted.button-light {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ffdd57; }
+      .button.is-warning.is-inverted:hover, .is-warning.is-inverted.button-primary:hover, .is-warning.is-inverted.button-dark:hover, .is-warning.is-inverted.button-light:hover, .button.is-warning.is-inverted.is-hovered, .is-warning.is-inverted.is-hovered.button-primary, .is-warning.is-inverted.is-hovered.button-dark, .is-warning.is-inverted.is-hovered.button-light {
+        background-color: rgba(0, 0, 0, 0.7); }
+      .button.is-warning.is-inverted[disabled], .is-warning.is-inverted.button-primary[disabled], .is-warning.is-inverted.button-dark[disabled], .is-warning.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-warning.is-inverted,
+      fieldset[disabled] .is-warning.is-inverted.button-primary,
+      fieldset[disabled] .is-warning.is-inverted.button-dark,
+      fieldset[disabled] .is-warning.is-inverted.button-light {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-color: transparent;
+        box-shadow: none;
+        color: #ffdd57; }
+    .button.is-warning.is-loading::after, .is-warning.is-loading.button-primary::after, .is-warning.is-loading.button-dark::after, .is-warning.is-loading.button-light::after {
+      border-color: transparent transparent rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) !important; }
+    .button.is-warning.is-outlined, .is-warning.is-outlined.button-primary, .is-warning.is-outlined.button-dark, .is-warning.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #ffdd57;
+      color: #ffdd57; }
+      .button.is-warning.is-outlined:hover, .is-warning.is-outlined.button-primary:hover, .is-warning.is-outlined.button-dark:hover, .is-warning.is-outlined.button-light:hover, .button.is-warning.is-outlined.is-hovered, .is-warning.is-outlined.is-hovered.button-primary, .is-warning.is-outlined.is-hovered.button-dark, .is-warning.is-outlined.is-hovered.button-light, .button.is-warning.is-outlined:focus, .is-warning.is-outlined.button-primary:focus, .is-warning.is-outlined.button-dark:focus, .is-warning.is-outlined.button-light:focus, .button.is-warning.is-outlined.is-focused, .is-warning.is-outlined.is-focused.button-primary, .is-warning.is-outlined.is-focused.button-dark, .is-warning.is-outlined.is-focused.button-light {
+        background-color: #ffdd57;
+        border-color: #ffdd57;
+        color: rgba(0, 0, 0, 0.7); }
+      .button.is-warning.is-outlined.is-loading::after, .is-warning.is-outlined.is-loading.button-primary::after, .is-warning.is-outlined.is-loading.button-dark::after, .is-warning.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #ffdd57 #ffdd57 !important; }
+      .button.is-warning.is-outlined.is-loading:hover::after, .is-warning.is-outlined.is-loading.button-primary:hover::after, .is-warning.is-outlined.is-loading.button-dark:hover::after, .is-warning.is-outlined.is-loading.button-light:hover::after, .button.is-warning.is-outlined.is-loading.is-hovered::after, .is-warning.is-outlined.is-loading.is-hovered.button-primary::after, .is-warning.is-outlined.is-loading.is-hovered.button-dark::after, .is-warning.is-outlined.is-loading.is-hovered.button-light::after, .button.is-warning.is-outlined.is-loading:focus::after, .is-warning.is-outlined.is-loading.button-primary:focus::after, .is-warning.is-outlined.is-loading.button-dark:focus::after, .is-warning.is-outlined.is-loading.button-light:focus::after, .button.is-warning.is-outlined.is-loading.is-focused::after, .is-warning.is-outlined.is-loading.is-focused.button-primary::after, .is-warning.is-outlined.is-loading.is-focused.button-dark::after, .is-warning.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) !important; }
+      .button.is-warning.is-outlined[disabled], .is-warning.is-outlined.button-primary[disabled], .is-warning.is-outlined.button-dark[disabled], .is-warning.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-warning.is-outlined,
+      fieldset[disabled] .is-warning.is-outlined.button-primary,
+      fieldset[disabled] .is-warning.is-outlined.button-dark,
+      fieldset[disabled] .is-warning.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #ffdd57;
+        box-shadow: none;
+        color: #ffdd57; }
+    .button.is-warning.is-inverted.is-outlined, .is-warning.is-inverted.is-outlined.button-primary, .is-warning.is-inverted.is-outlined.button-dark, .is-warning.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 0, 0.7); }
+      .button.is-warning.is-inverted.is-outlined:hover, .is-warning.is-inverted.is-outlined.button-primary:hover, .is-warning.is-inverted.is-outlined.button-dark:hover, .is-warning.is-inverted.is-outlined.button-light:hover, .button.is-warning.is-inverted.is-outlined.is-hovered, .is-warning.is-inverted.is-outlined.is-hovered.button-primary, .is-warning.is-inverted.is-outlined.is-hovered.button-dark, .is-warning.is-inverted.is-outlined.is-hovered.button-light, .button.is-warning.is-inverted.is-outlined:focus, .is-warning.is-inverted.is-outlined.button-primary:focus, .is-warning.is-inverted.is-outlined.button-dark:focus, .is-warning.is-inverted.is-outlined.button-light:focus, .button.is-warning.is-inverted.is-outlined.is-focused, .is-warning.is-inverted.is-outlined.is-focused.button-primary, .is-warning.is-inverted.is-outlined.is-focused.button-dark, .is-warning.is-inverted.is-outlined.is-focused.button-light {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #ffdd57; }
+      .button.is-warning.is-inverted.is-outlined.is-loading:hover::after, .is-warning.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-warning.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-warning.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-warning.is-inverted.is-outlined.is-loading.is-hovered::after, .is-warning.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-warning.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-warning.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-warning.is-inverted.is-outlined.is-loading:focus::after, .is-warning.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-warning.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-warning.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-warning.is-inverted.is-outlined.is-loading.is-focused::after, .is-warning.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-warning.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-warning.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #ffdd57 #ffdd57 !important; }
+      .button.is-warning.is-inverted.is-outlined[disabled], .is-warning.is-inverted.is-outlined.button-primary[disabled], .is-warning.is-inverted.is-outlined.button-dark[disabled], .is-warning.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-warning.is-inverted.is-outlined,
+      fieldset[disabled] .is-warning.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-warning.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-warning.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: rgba(0, 0, 0, 0.7);
+        box-shadow: none;
+        color: rgba(0, 0, 0, 0.7); }
+  .button.is-danger, .is-danger.button-primary, .is-danger.button-dark, .is-danger.button-light {
+    background-color: #ff3860;
+    border-color: transparent;
+    color: #fff; }
+    .button.is-danger:hover, .is-danger.button-primary:hover, .is-danger.button-dark:hover, .is-danger.button-light:hover, .button.is-danger.is-hovered, .is-danger.is-hovered.button-primary, .is-danger.is-hovered.button-dark, .is-danger.is-hovered.button-light {
+      background-color: #ff2b56;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-danger:focus, .is-danger.button-primary:focus, .is-danger.button-dark:focus, .is-danger.button-light:focus, .button.is-danger.is-focused, .is-danger.is-focused.button-primary, .is-danger.is-focused.button-dark, .is-danger.is-focused.button-light {
+      border-color: transparent;
+      color: #fff; }
+      .button.is-danger:focus:not(:active), .is-danger.button-primary:focus:not(:active), .is-danger.button-dark:focus:not(:active), .is-danger.button-light:focus:not(:active), .button.is-danger.is-focused:not(:active), .is-danger.is-focused.button-primary:not(:active), .is-danger.is-focused.button-dark:not(:active), .is-danger.is-focused.button-light:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25); }
+    .button.is-danger:active, .is-danger.button-primary:active, .is-danger.button-dark:active, .is-danger.button-light:active, .button.is-danger.is-active, .is-danger.is-active.button-primary, .is-danger.is-active.button-dark, .is-danger.is-active.button-light {
+      background-color: #ff1f4b;
+      border-color: transparent;
+      color: #fff; }
+    .button.is-danger[disabled], .is-danger.button-primary[disabled], .is-danger.button-dark[disabled], .is-danger.button-light[disabled],
+    fieldset[disabled] .button.is-danger,
+    fieldset[disabled] .is-danger.button-primary,
+    fieldset[disabled] .is-danger.button-dark,
+    fieldset[disabled] .is-danger.button-light {
+      background-color: #ff3860;
+      border-color: transparent;
+      box-shadow: none; }
+    .button.is-danger.is-inverted, .is-danger.is-inverted.button-primary, .is-danger.is-inverted.button-dark, .is-danger.is-inverted.button-light {
+      background-color: #fff;
+      color: #ff3860; }
+      .button.is-danger.is-inverted:hover, .is-danger.is-inverted.button-primary:hover, .is-danger.is-inverted.button-dark:hover, .is-danger.is-inverted.button-light:hover, .button.is-danger.is-inverted.is-hovered, .is-danger.is-inverted.is-hovered.button-primary, .is-danger.is-inverted.is-hovered.button-dark, .is-danger.is-inverted.is-hovered.button-light {
+        background-color: #f2f2f2; }
+      .button.is-danger.is-inverted[disabled], .is-danger.is-inverted.button-primary[disabled], .is-danger.is-inverted.button-dark[disabled], .is-danger.is-inverted.button-light[disabled],
+      fieldset[disabled] .button.is-danger.is-inverted,
+      fieldset[disabled] .is-danger.is-inverted.button-primary,
+      fieldset[disabled] .is-danger.is-inverted.button-dark,
+      fieldset[disabled] .is-danger.is-inverted.button-light {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: none;
+        color: #ff3860; }
+    .button.is-danger.is-loading::after, .is-danger.is-loading.button-primary::after, .is-danger.is-loading.button-dark::after, .is-danger.is-loading.button-light::after {
+      border-color: transparent transparent #fff #fff !important; }
+    .button.is-danger.is-outlined, .is-danger.is-outlined.button-primary, .is-danger.is-outlined.button-dark, .is-danger.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #ff3860;
+      color: #ff3860; }
+      .button.is-danger.is-outlined:hover, .is-danger.is-outlined.button-primary:hover, .is-danger.is-outlined.button-dark:hover, .is-danger.is-outlined.button-light:hover, .button.is-danger.is-outlined.is-hovered, .is-danger.is-outlined.is-hovered.button-primary, .is-danger.is-outlined.is-hovered.button-dark, .is-danger.is-outlined.is-hovered.button-light, .button.is-danger.is-outlined:focus, .is-danger.is-outlined.button-primary:focus, .is-danger.is-outlined.button-dark:focus, .is-danger.is-outlined.button-light:focus, .button.is-danger.is-outlined.is-focused, .is-danger.is-outlined.is-focused.button-primary, .is-danger.is-outlined.is-focused.button-dark, .is-danger.is-outlined.is-focused.button-light {
+        background-color: #ff3860;
+        border-color: #ff3860;
+        color: #fff; }
+      .button.is-danger.is-outlined.is-loading::after, .is-danger.is-outlined.is-loading.button-primary::after, .is-danger.is-outlined.is-loading.button-dark::after, .is-danger.is-outlined.is-loading.button-light::after {
+        border-color: transparent transparent #ff3860 #ff3860 !important; }
+      .button.is-danger.is-outlined.is-loading:hover::after, .is-danger.is-outlined.is-loading.button-primary:hover::after, .is-danger.is-outlined.is-loading.button-dark:hover::after, .is-danger.is-outlined.is-loading.button-light:hover::after, .button.is-danger.is-outlined.is-loading.is-hovered::after, .is-danger.is-outlined.is-loading.is-hovered.button-primary::after, .is-danger.is-outlined.is-loading.is-hovered.button-dark::after, .is-danger.is-outlined.is-loading.is-hovered.button-light::after, .button.is-danger.is-outlined.is-loading:focus::after, .is-danger.is-outlined.is-loading.button-primary:focus::after, .is-danger.is-outlined.is-loading.button-dark:focus::after, .is-danger.is-outlined.is-loading.button-light:focus::after, .button.is-danger.is-outlined.is-loading.is-focused::after, .is-danger.is-outlined.is-loading.is-focused.button-primary::after, .is-danger.is-outlined.is-loading.is-focused.button-dark::after, .is-danger.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #fff #fff !important; }
+      .button.is-danger.is-outlined[disabled], .is-danger.is-outlined.button-primary[disabled], .is-danger.is-outlined.button-dark[disabled], .is-danger.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-danger.is-outlined,
+      fieldset[disabled] .is-danger.is-outlined.button-primary,
+      fieldset[disabled] .is-danger.is-outlined.button-dark,
+      fieldset[disabled] .is-danger.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #ff3860;
+        box-shadow: none;
+        color: #ff3860; }
+    .button.is-danger.is-inverted.is-outlined, .is-danger.is-inverted.is-outlined.button-primary, .is-danger.is-inverted.is-outlined.button-dark, .is-danger.is-inverted.is-outlined.button-light {
+      background-color: transparent;
+      border-color: #fff;
+      color: #fff; }
+      .button.is-danger.is-inverted.is-outlined:hover, .is-danger.is-inverted.is-outlined.button-primary:hover, .is-danger.is-inverted.is-outlined.button-dark:hover, .is-danger.is-inverted.is-outlined.button-light:hover, .button.is-danger.is-inverted.is-outlined.is-hovered, .is-danger.is-inverted.is-outlined.is-hovered.button-primary, .is-danger.is-inverted.is-outlined.is-hovered.button-dark, .is-danger.is-inverted.is-outlined.is-hovered.button-light, .button.is-danger.is-inverted.is-outlined:focus, .is-danger.is-inverted.is-outlined.button-primary:focus, .is-danger.is-inverted.is-outlined.button-dark:focus, .is-danger.is-inverted.is-outlined.button-light:focus, .button.is-danger.is-inverted.is-outlined.is-focused, .is-danger.is-inverted.is-outlined.is-focused.button-primary, .is-danger.is-inverted.is-outlined.is-focused.button-dark, .is-danger.is-inverted.is-outlined.is-focused.button-light {
+        background-color: #fff;
+        color: #ff3860; }
+      .button.is-danger.is-inverted.is-outlined.is-loading:hover::after, .is-danger.is-inverted.is-outlined.is-loading.button-primary:hover::after, .is-danger.is-inverted.is-outlined.is-loading.button-dark:hover::after, .is-danger.is-inverted.is-outlined.is-loading.button-light:hover::after, .button.is-danger.is-inverted.is-outlined.is-loading.is-hovered::after, .is-danger.is-inverted.is-outlined.is-loading.is-hovered.button-primary::after, .is-danger.is-inverted.is-outlined.is-loading.is-hovered.button-dark::after, .is-danger.is-inverted.is-outlined.is-loading.is-hovered.button-light::after, .button.is-danger.is-inverted.is-outlined.is-loading:focus::after, .is-danger.is-inverted.is-outlined.is-loading.button-primary:focus::after, .is-danger.is-inverted.is-outlined.is-loading.button-dark:focus::after, .is-danger.is-inverted.is-outlined.is-loading.button-light:focus::after, .button.is-danger.is-inverted.is-outlined.is-loading.is-focused::after, .is-danger.is-inverted.is-outlined.is-loading.is-focused.button-primary::after, .is-danger.is-inverted.is-outlined.is-loading.is-focused.button-dark::after, .is-danger.is-inverted.is-outlined.is-loading.is-focused.button-light::after {
+        border-color: transparent transparent #ff3860 #ff3860 !important; }
+      .button.is-danger.is-inverted.is-outlined[disabled], .is-danger.is-inverted.is-outlined.button-primary[disabled], .is-danger.is-inverted.is-outlined.button-dark[disabled], .is-danger.is-inverted.is-outlined.button-light[disabled],
+      fieldset[disabled] .button.is-danger.is-inverted.is-outlined,
+      fieldset[disabled] .is-danger.is-inverted.is-outlined.button-primary,
+      fieldset[disabled] .is-danger.is-inverted.is-outlined.button-dark,
+      fieldset[disabled] .is-danger.is-inverted.is-outlined.button-light {
+        background-color: transparent;
+        border-color: #fff;
+        box-shadow: none;
+        color: #fff; }
+  .button.is-small, .is-small.button-primary, .is-small.button-dark, .is-small.button-light {
+    border-radius: 2px;
+    font-size: 0.75rem; }
+  .button.is-normal, .is-normal.button-primary, .is-normal.button-dark, .is-normal.button-light {
+    font-size: 1rem; }
+  .button.is-medium, .is-medium.button-primary, .is-medium.button-dark, .is-medium.button-light {
+    font-size: 1.25rem; }
+  .button.is-large, .button-primary, .button-dark, .button-light {
+    font-size: 1.5rem; }
+  .button[disabled], .button-primary[disabled], .button-dark[disabled], .button-light[disabled],
+  fieldset[disabled] .button,
+  fieldset[disabled] .button-primary,
+  fieldset[disabled] .button-dark,
+  fieldset[disabled] .button-light {
+    background-color: white;
+    border-color: #dbdbdb;
+    box-shadow: none;
+    opacity: 0.5; }
+  .button.is-fullwidth, .is-fullwidth.button-primary, .is-fullwidth.button-dark, .is-fullwidth.button-light {
+    display: flex;
+    width: 100%; }
+  .button.is-loading, .is-loading.button-primary, .is-loading.button-dark, .is-loading.button-light {
+    color: transparent !important;
+    pointer-events: none; }
+    .button.is-loading::after, .is-loading.button-primary::after, .is-loading.button-dark::after, .is-loading.button-light::after {
+      position: absolute;
+      left: calc(50% - (1em / 2));
+      top: calc(50% - (1em / 2));
+      position: absolute !important; }
+  .button.is-static, .is-static.button-primary, .is-static.button-dark, .is-static.button-light {
+    background-color: whitesmoke;
+    border-color: #dbdbdb;
+    color: #7a7a7a;
+    box-shadow: none;
+    pointer-events: none; }
+  .button.is-rounded, .is-rounded.button-primary, .is-rounded.button-dark, .is-rounded.button-light {
+    border-radius: 290486px;
+    padding-left: 1em;
+    padding-right: 1em; }
 
-.primary-title {
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .buttons .button, .buttons .button-primary, .buttons .button-dark, .buttons .button-light {
+    margin-bottom: 0.5rem; }
+    .buttons .button:not(:last-child):not(.is-fullwidth), .buttons .button-primary:not(:last-child):not(.is-fullwidth), .buttons .button-dark:not(:last-child):not(.is-fullwidth), .buttons .button-light:not(:last-child):not(.is-fullwidth) {
+      margin-right: 0.5rem; }
+  .buttons:last-child {
+    margin-bottom: -0.5rem; }
+  .buttons:not(:last-child) {
+    margin-bottom: 1rem; }
+  .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light), .buttons.are-small .button-primary:not(.is-normal):not(.is-medium):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light), .buttons.are-small .button-dark:not(.is-normal):not(.is-medium):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light), .buttons.are-small .button-light:not(.is-normal):not(.is-medium):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light) {
+    border-radius: 2px;
+    font-size: 0.75rem; }
+  .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light), .buttons.are-medium .button-primary:not(.is-small):not(.is-normal):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light), .buttons.are-medium .button-dark:not(.is-small):not(.is-normal):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light), .buttons.are-medium .button-light:not(.is-small):not(.is-normal):not(.is-large):not(.button-primary):not(.button-dark):not(.button-light) {
+    font-size: 1.25rem; }
+  .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium), .buttons.are-large .button-primary:not(.is-small):not(.is-normal):not(.is-medium), .buttons.are-large .button-dark:not(.is-small):not(.is-normal):not(.is-medium), .buttons.are-large .button-light:not(.is-small):not(.is-normal):not(.is-medium) {
+    font-size: 1.5rem; }
+  .buttons.has-addons .button:not(:first-child), .buttons.has-addons .button-primary:not(:first-child), .buttons.has-addons .button-dark:not(:first-child), .buttons.has-addons .button-light:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+  .buttons.has-addons .button:not(:last-child), .buttons.has-addons .button-primary:not(:last-child), .buttons.has-addons .button-dark:not(:last-child), .buttons.has-addons .button-light:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: -1px; }
+  .buttons.has-addons .button:last-child, .buttons.has-addons .button-primary:last-child, .buttons.has-addons .button-dark:last-child, .buttons.has-addons .button-light:last-child {
+    margin-right: 0; }
+  .buttons.has-addons .button:hover, .buttons.has-addons .button-primary:hover, .buttons.has-addons .button-dark:hover, .buttons.has-addons .button-light:hover, .buttons.has-addons .button.is-hovered, .buttons.has-addons .is-hovered.button-primary, .buttons.has-addons .is-hovered.button-dark, .buttons.has-addons .is-hovered.button-light {
+    z-index: 2; }
+  .buttons.has-addons .button:focus, .buttons.has-addons .button-primary:focus, .buttons.has-addons .button-dark:focus, .buttons.has-addons .button-light:focus, .buttons.has-addons .button.is-focused, .buttons.has-addons .is-focused.button-primary, .buttons.has-addons .is-focused.button-dark, .buttons.has-addons .is-focused.button-light, .buttons.has-addons .button:active, .buttons.has-addons .button-primary:active, .buttons.has-addons .button-dark:active, .buttons.has-addons .button-light:active, .buttons.has-addons .button.is-active, .buttons.has-addons .is-active.button-primary, .buttons.has-addons .is-active.button-dark, .buttons.has-addons .is-active.button-light, .buttons.has-addons .button.is-selected, .buttons.has-addons .is-selected.button-primary, .buttons.has-addons .is-selected.button-dark, .buttons.has-addons .is-selected.button-light {
+    z-index: 3; }
+    .buttons.has-addons .button:focus:hover, .buttons.has-addons .button-primary:focus:hover, .buttons.has-addons .button-dark:focus:hover, .buttons.has-addons .button-light:focus:hover, .buttons.has-addons .button.is-focused:hover, .buttons.has-addons .is-focused.button-primary:hover, .buttons.has-addons .is-focused.button-dark:hover, .buttons.has-addons .is-focused.button-light:hover, .buttons.has-addons .button:active:hover, .buttons.has-addons .button-primary:active:hover, .buttons.has-addons .button-dark:active:hover, .buttons.has-addons .button-light:active:hover, .buttons.has-addons .button.is-active:hover, .buttons.has-addons .is-active.button-primary:hover, .buttons.has-addons .is-active.button-dark:hover, .buttons.has-addons .is-active.button-light:hover, .buttons.has-addons .button.is-selected:hover, .buttons.has-addons .is-selected.button-primary:hover, .buttons.has-addons .is-selected.button-dark:hover, .buttons.has-addons .is-selected.button-light:hover {
+      z-index: 4; }
+  .buttons.has-addons .button.is-expanded, .buttons.has-addons .is-expanded.button-primary, .buttons.has-addons .is-expanded.button-dark, .buttons.has-addons .is-expanded.button-light {
+    flex-grow: 1;
+    flex-shrink: 1; }
+  .buttons.is-centered {
+    justify-content: center; }
+    .buttons.is-centered:not(.has-addons) .button:not(.is-fullwidth), .buttons.is-centered:not(.has-addons) .button-primary:not(.is-fullwidth), .buttons.is-centered:not(.has-addons) .button-dark:not(.is-fullwidth), .buttons.is-centered:not(.has-addons) .button-light:not(.is-fullwidth) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem; }
+  .buttons.is-right {
+    justify-content: flex-end; }
+    .buttons.is-right:not(.has-addons) .button:not(.is-fullwidth), .buttons.is-right:not(.has-addons) .button-primary:not(.is-fullwidth), .buttons.is-right:not(.has-addons) .button-dark:not(.is-fullwidth), .buttons.is-right:not(.has-addons) .button-light:not(.is-fullwidth) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem; }
+
+.project-title {
   font-weight: 900 !important;
   font-size: 5.5em !important;
   /* Need a better way to manage the text spacing */
-  margin-bottom: 50px !important; }
+  margin-bottom: 25px !important; }
 
-.button {
-  padding: 30px 35px 30px 35px;
-  margin-right: 36px;
-  margin-bottom: 35px;
-  border-radius: 10px;
-  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
+@media screen and (max-width: 768px) {
+  .project-header {
+    padding: 15px; } }
+
+@media screen and (min-width: 769px) {
+  .project-header {
+    padding-top: 50px;
+    min-height: calc(100vh - 100px); } }
 
 div.tile-column-primary {
   margin: 0 auto;
