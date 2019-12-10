@@ -2,7 +2,7 @@
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
     <div class="container project-header">
-      <div class="columns">
+      <div class="columns is-vcentered">
         <div class="column is-one-half">
           <div id="main" class="pull-right">
             <h1 class="project-title">VRKit<strong class="has-text-primary">.</strong> </h1>
@@ -22,7 +22,7 @@
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">
-          <img class="is-vertical-center" src="../../assets/plank.svg" width="350">
+          <img class="is-vertical-center" src="../../assets/plank.svg" width="350" style="margin-top: 100px;">
         </div>
       </div>
     </div>
@@ -183,9 +183,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  #main {
-    margin-top: 150px;
-  }
 
   .pull-right {
     float: right;

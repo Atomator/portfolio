@@ -2,8 +2,8 @@
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
     <div class="container project-header">
-      <div class="columns">
-        <div class="column is-one-half">
+      <div class="columns is-vcentered">
+        <div class="column is-one-half ">
           <div id="main" class="pull-right">
             <h1 class="project-title">Qlearning<strong class="has-text-primary">.</strong> </h1>
             <h2 class="subtitle has-text-weight-medium">
@@ -64,9 +64,6 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
-  #main {
-    margin-top: 150px;
-  }
 
   .pull-right {
     float: right;

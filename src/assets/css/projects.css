@@ -2130,8 +2130,10 @@
 
 @media screen and (min-width: 769px) {
   .project-header {
-    padding-top: 50px;
     min-height: calc(100vh - 100px); } }
+
+.project-header .columns, .project-header div.tile-column-primary, .project-header div.tile-column-dark, .project-header div.tile-column-light {
+  height: calc(100vh - 100px); }
 
 div.tile-column-primary {
   margin: 0 auto;

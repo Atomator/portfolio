@@ -35,9 +35,13 @@ $colors: (
         padding: 15px;
     }
     @include from($tablet) {
-        padding-top: 50px;
+        // padding-top: 50px;
         min-height: calc(100vh - 100px);
     }
+}
+
+.project-header .columns {
+    height: calc(100vh - 100px);
 }
 
 @each $name, $color, $color-transparent in $colors {
