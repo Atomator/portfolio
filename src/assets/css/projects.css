@@ -2132,8 +2132,9 @@
   .project-header {
     min-height: calc(100vh - 100px); } }
 
-.project-header .columns, .project-header div.tile-column-primary, .project-header div.tile-column-dark, .project-header div.tile-column-light {
-  height: calc(100vh - 100px); }
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 50px; } }
 
 div.tile-column-primary {
   margin: 0 auto;

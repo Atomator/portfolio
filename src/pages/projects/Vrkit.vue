@@ -19,10 +19,16 @@
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
             </a>
+            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+              <a class="icon">
+                <img src="../../assets/media icons/youtube.svg" class="logo">
+              </a>
+              <!-- <p class="has-text-weight-bold">Explore</p> -->
+            </a>
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">
-          <img class="is-vertical-center" src="../../assets/plank.svg" width="350" style="margin-top: 100px;">
+          <img class="is-vertical-center" src="../../assets/plank.svg" width="350">
         </div>
       </div>
     </div>
@@ -150,11 +156,6 @@ export default {
 <style scoped>
 @import '../../assets/css/projects.css';
 
-p {
-  font-size: 18px;
-  line-height: 45px;
-}
-
 #welcomeMessage {
   font-weight: 900;
   font-size: 5.5em;
@@ -175,11 +176,17 @@ p {
   margin-bottom: 100px;
 }
 
-.is-centered > img{
+.is-centered img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 45px;
 }
 
 @media only screen and (min-width: 768px) {
