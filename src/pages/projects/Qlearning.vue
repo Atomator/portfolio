@@ -53,6 +53,19 @@
       <br>
       <p>My original plan was to use a neural network that learned from my play style in order to teach the machine how to play the game. This idea mainly stemmed from the fact that I had created a neural network before and I though I could just use that code in order to have it learn rather than trying to create something new or even dip my toes into a more robust solution like Tensorflow or Pytorch. However, attempting this solution soon had me realize that using an ANN with my knowledge wasn’t going to cut it, and so I turned to the internet and learned about a glorious algorithm known as qLearning.</p>
     </div>
+    <div class="container has-text-centered">
+      <p class="section-title-primary">Creation</p>
+      <div class="tile-column-dark">
+        <div class="column is-half is-centered" style="padding: 50px;">
+          <p class="has-text-light title-light">Idea</p>
+          <p class="has-text-light">To create a program that allows for my computer to learn how to play the game of snake at level that is equal to or better than my own.</p>
+        </div>
+        <div class="column is-half" style="padding: 50px;">
+          <p class="has-text-light title-light">Goal</p>
+          <p class="has-text-light">Using a qLearning table, the computer will slowly be able to learn the correct actions to perform at the appropriate time in the computer game of snake.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -101,7 +114,7 @@ p {
   }
 
   .container {
-    margin-bottom: 128px;
+    margin-bottom: 64px;
   }
 }
 
