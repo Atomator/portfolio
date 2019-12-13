@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="tile-centered-primary">
+      <div class="tile-centered-dark">
         <p class="title-light" style="margin-bottom: 5px;">Skills</p>
         <p class="has-text-white-ter" style="margin-bottom: 30px;">Python, Pygame, Numpy</p>
         <p class="title-light" style="margin-bottom: 5px;">Project Duration</p>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="container has-text-centered">
-      <p class="section-title-primary">Why</p>
+      <p class="section-title-dark">Why</p>
       <br>
       <p>When most people see a cool looking vehicle they wish they could get in it; so like any developer, I jumped onto the machine learning hype train. While I wished I had the resources and skills to teach a computer to drive a car or control a robot, there is something else I could do, and so, I taught it to play snake.</p>
     </div>
@@ -54,7 +54,7 @@
       <p>My original plan was to use a neural network that learned from my play style in order to teach the machine how to play the game. This idea mainly stemmed from the fact that I had created a neural network before and I though I could just use that code in order to have it learn rather than trying to create something new or even dip my toes into a more robust solution like Tensorflow or Pytorch. However, attempting this solution soon had me realize that using an ANN with my knowledge wasn’t going to cut it, and so I turned to the internet and learned about a glorious algorithm known as qLearning.</p>
     </div>
     <div class="container has-text-centered">
-      <p class="section-title-primary">Creation</p>
+      <p class="section-title-dark">Creation</p>
       <div class="tile-column-dark">
         <div class="column is-half is-centered" style="padding: 50px;">
           <p class="has-text-light title-light">Idea</p>
@@ -65,6 +65,89 @@
           <p class="has-text-light">Using a qLearning table, the computer will slowly be able to learn the correct actions to perform at the appropriate time in the computer game of snake.</p>
         </div>
       </div>
+      <div class="timeline is-centered">
+        <header class="timeline-header">
+          <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px; margin-top: 128px;">Start</span>
+        </header>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Idea</p>
+            <p>The first idea that I had actually involved using an ANN that would learn from my play style to get better at the game.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Creating the Game</p>
+            <p>While this was one of the longest parts of the process, in reality it was one of the simplest. All I had to do was use an array to store the locations of the snake than output them on a screen.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Finishing the Game</p>
+            <p>One done with that I added collision rules so that way the snake could eat apples, get longer, and die when touching itself.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Tracking Gameplay</p>
+            <p>To track the gameplay, I created an array that would keep track of snake direction, distance from apple, what side the apple was on, and what keys were being pressed.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Stochastic Gradient Descent</p>
+            <p>At this point, using an ANN that I had built from scratch I tried to pass each second of gameplay, which only resulted in the snake moving straight forward after around a half hour of training.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Batch Gradient Descent</p>
+            <p>I then tried to pass through the end of each gameplay session to the ANN which resulted in the same gameplay as last time.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">qLearning?</p>
+            <p>At this point I looked into alternate methods, and once I realized that qLearning was only a large table with conditions I knew I could do it.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Implementation</p>
+            <p>All I had to do was create a table for each state that corresponded to an action. So a complex set of if statements determined the state of the snake while some simple math determined the weight of the actions as a result of the cost of the snakes movements.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Dimensional Rifting</p>
+            <p>While the idea was working, the over 100 lines of if statements that I had could barely track the game state, so I switched to a multidimensional numpy array so I could track each attribute of play individually.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">GUI</p>
+            <p>After the success of multiple dimensions, I was able to clean up the look of the game to track the stats of the bot; having it reach over 50 points in the end. </p>
+          </div>
+        </div>
+        <header class="timeline-header" style="margin-bottom: 100px;">
+          <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
+        </header>
+      </div>
+    </div>
+    <div class="container has-text-centered">
+      <p class="section-title-dark">Challenges</p>
+      <br>
+      <p class="text-fit">The main challenge of the project was simply learning how to manage data. In order to keep track of the snake I had to create the correct array, and in order to find the correct state, I had to create a multidimensional array. This experience reflect a sentiment that I heard from a couple of different places; that half the battle in machine learning is obtaining the correct data. Next time I attempt something like this, I want to try a couple of different things. The first is simply that I would like to have my algorithm think further into the future, as mine currently only thinks one step ahead. I would also like to get it to train off of the images on screen rather than the data I extract from the game. Overall, this was a really cool and empowering experience that taught me a lot about machine learning and inspired me on where to go next.</p>
     </div>
   </div>
 </template>
@@ -114,7 +197,7 @@ p {
   }
 
   .container {
-    margin-bottom: 64px;
+    margin-bottom: 128px;
   }
 }
 

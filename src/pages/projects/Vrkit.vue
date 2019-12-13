@@ -173,7 +173,7 @@ export default {
 }
 
 .container {
-  margin-bottom: 100px;
+  margin-bottom: 128px;
 }
 
 .is-centered img{
