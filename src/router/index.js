@@ -6,6 +6,7 @@ import About from '@/pages/About'
 import Contact from '@/pages/Contact'
 import Resume from '@/pages/Resume'
 import Vrkit from '@/pages/projects/Vrkit'
+import Qlearning from '@/pages/projects/Qlearning'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ const router = new Router({
       path: '/projects/vrkit',
       name: 'Vrkit',
       component: Vrkit
+    },
+    {
+      path: '/projects/qlearning',
+      name: 'Qlearning',
+      component: Qlearning
     },
   ]
 })

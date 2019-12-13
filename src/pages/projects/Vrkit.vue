@@ -1,29 +1,30 @@
 <template>
 <!-- Basic app page to sit on the site for now -->
   <div id="app">
-    <div class="container work-header">
-      <div class="columns">
+    <div class="container project-header">
+      <div class="columns is-vcentered">
         <div class="column is-one-half">
           <div id="main" class="pull-right">
-            <h1 class="title" id="welcomeMessage">VRKit<strong class="has-text-primary">.</strong> </h1>
-            <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 25px;">
+            <h1 class="project-title">VRKit<strong class="has-text-primary">.</strong> </h1>
+            <h2 class="subtitle has-text-weight-medium">
               Google Cardboard Meets Positional Tracking
             </h2>
-            <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
+            <a class="button-primary" href="https://github.com/Atomator/VRKit">
               <a class="icon">
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button is-primary is-large has-shadow" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
               <a class="icon">
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
+            </a>
+            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+              <a class="icon">
+                <img src="../../assets/media icons/youtube.svg" class="logo">
+              </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <!-- <a class="button is-primary is-large has-shadow" href="https://github.com/Atomator/VRKit">
-              <p class="has-text-weight-bold">Demo</p>
-            </a> -->
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">
@@ -155,11 +156,6 @@ export default {
 <style scoped>
 @import '../../assets/css/projects.css';
 
-p {
-  font-size: 18px;
-  line-height: 45px;
-}
-
 #welcomeMessage {
   font-weight: 900;
   font-size: 5.5em;
@@ -177,20 +173,23 @@ p {
 }
 
 .container {
-  margin-bottom: 100px;
+  margin-bottom: 128px;
 }
 
-.is-centered > img{
+.is-centered img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 
+
+p {
+    font-size: 18px;
+    line-height: 45px;
+}
+
 @media only screen and (min-width: 768px) {
-  #main {
-    margin-top: 150px;
-  }
 
   .pull-right {
     float: right;

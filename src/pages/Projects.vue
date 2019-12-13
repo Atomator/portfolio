@@ -37,7 +37,7 @@ export default {
           "tags": ["Python", "Numpy", "Pygame"],
           "description": "When I was forced to the reality that a computer can in fact drive a car I became interested in ML. While I couldn’t teach a computer to drive a car I soon saw that I could teach it how to play a game. ",
           "alt": "snake-game-with-code",
-          "page": "vrkit"
+          "page": "qlearning"
         },
         {
           "title": "Neural Network",

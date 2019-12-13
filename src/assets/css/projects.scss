@@ -2,8 +2,9 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import "../../../node_modules/bulma/sass/utilities/mixins";
-@import "../../../node_modules/bulma/sass/grid/_all";
+@import "../../../node_modules/bulma/sass/utilities/_all";
+@import "../../../node_modules/bulma/sass/grid/columns";
+@import "../../../node_modules/bulma/sass/elements/button";
 
 // Set your brand colors
 $blue: #71A9F7;
@@ -21,13 +22,37 @@ $colors: (
   ("light", $white, $white-transparent)
 );
 
+.project-title {
+    font-weight: 900 !important;
+    font-size: 5.5em !important;
+  
+    /* Need a better way to manage the text spacing */
+    margin-bottom: 25px !important;
+}
+
+.project-header {
+    @include until($tablet) {
+        padding: 15px;
+    }
+
+    @include from($tablet) {
+        // padding-top: 50px;
+        min-height: calc(100vh - 100px);
+    }
+}
+
+.container {
+    @include until($tablet) {
+        padding-top: 50px;
+    }
+}
+
 @each $name, $color, $color-transparent in $colors {
     div.tile-column-#{$name} {
         @extend .columns;
         margin: 0 auto;
         vertical-align: middle; 
         background-color: $color;
-        width: 75vw;
         border-radius: 30px;
         padding: 100px;
         box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
@@ -37,6 +62,17 @@ $colors: (
             width: 95vw;
             line-height: normal !important;
         }
+    }
+
+    .button-#{$name} {
+        background-color: $color;
+        padding: 30px 35px 30px 35px;
+        margin-right: 36px;
+        margin-bottom: 35px;
+        border-radius: 10px;
+        box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+        @extend .is-large;
+        @extend .button;
     }
 
     .is-centered {
@@ -49,7 +85,6 @@ $colors: (
         vertical-align: middle; 
         text-align: center; 
         background-color: $color;
-        width: 75vw;
         border-radius: 30px;
         padding: 35px;
         box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
