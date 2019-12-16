@@ -46,13 +46,10 @@
       <p>Machine learning has quickly emerged to be one of the common techno-buzzwords of this era, and as such I decided to check it out. Working through the Coursera Machine Learning Course, I found myself interested in exploring the field further; so I created an ANN using nothing but Python and Numpy.</p>
     </div>
     <div class="container has-text-centered">
-      <div class="tile-column-dark">
-        <div class="column is-half is-centered">
-          <img class="is-vertical-center" src="../../assets/images/neuralnetwork-intro.png" width="300" style="padding-left: 15px; margin-bottom: 15px;">
-        </div>
-        <div class="column is-half">
-          <p class="has-text-light title-light" style="font-size: 50px !important; margin-bottom: 25px">What</p>
-          <p class="has-text-white-ter has-text-left">In terms of the idea, this project was extremely simple compared to some of the other projects I have worked on, but its execution proved to be more difficult. The goal was that by using only Numpy and Python within a Google Colab Notebook, I was going to create an ANN that was capable of recognizing hand-written digits from the MNIST dataset. Doing this would allow for me to get a better idea of how the math behind an ANN works so I can build more complex machine learning projects later. </p>
+      <div class="tile-column-primary">
+        <div class="column has-text-centered">
+          <p class="section-title-light">What</p>
+          <p class="has-text-white-ter">In terms of the idea, this project was extremely simple compared to some of the other projects I have worked on, but its execution proved to be more difficult. The goal was that by using only Numpy and Python within a Google Colab Notebook, I was going to create an ANN that was capable of recognizing hand-written digits from the MNIST dataset. Doing this would allow for me to get a better idea of how the math behind an ANN works so I can build more complex machine learning projects later. </p>
         </div>
       </div>
     </div>
