@@ -45,7 +45,7 @@ export default {
           "tags": ["Python", "Numpy"],
           "description": "Not understanding Artificial Neural Networks I embarked on a quest, create a NN using nothing but Python, Numpy, and a lot of math that was way above my skill level.",
           "alt": "numpy-code",
-          "page": "vrkit"
+          "page": "neuralnetwork"
         },
         {
           "title": "Driveline",
@@ -59,7 +59,7 @@ export default {
           "title": "Portfolio",
           "images": require('src/assets/images/portfolio.jpg'),
           "tags": ["XD", "HTML/CSS", "Vuejs", "Bulma"],
-          "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a web developer portfolio that would at least be okay.",
+          "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a developer portfolio.",
           "alt": "adobe-xd",
           "page": "vrkit"
         }

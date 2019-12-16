@@ -30,7 +30,7 @@
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">
-          <img class="is-vertical-center" src="../../assets/images/qlearning-practice.png" width="750">
+          <img class="is-vertical-center" src="../../assets/images/qlearning-practice.png" width="85%">
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
         <p class="title-light" style="margin-bottom: 5px;">Skills</p>
         <p class="has-text-white-ter" style="margin-bottom: 30px;">Python, Pygame, Numpy</p>
         <p class="title-light" style="margin-bottom: 5px;">Project Duration</p>
-        <p class="has-text-white-ter">Feburary 2019 - March 2019</p>
+        <p class="has-text-white-ter">March 2019 - April 2019</p>
       </div>
     </div>
     <div class="container has-text-centered">
@@ -171,16 +171,16 @@ export default {
 
 
 p {
-    font-size: 18px;
-    line-height: 45px;
+  font-size: 18px;
+  line-height: 45px;
 }
 
 .button {
-    padding: 30px 35px 30px 35px;
-    margin-right: 36px;
-    margin-bottom: 35px;
-    border-radius: 10px;
-    box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
+  padding: 30px 35px 30px 35px;
+  margin-right: 36px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
 }
 
 .is-centered > img{
@@ -191,7 +191,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-
   .pull-right {
     float: right;
   }
