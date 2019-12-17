@@ -46,12 +46,68 @@
       <p>Machine learning has quickly emerged to be one of the common techno-buzzwords of this era, and as such I decided to check it out. Working through the Coursera Machine Learning Course, I found myself interested in exploring the field further; so I created an ANN using nothing but Python and Numpy.</p>
     </div>
     <div class="container has-text-centered">
+      <img src="../../assets/images/neuralnetwork-code.png" alt="ann-code" style="margin-bottom: 100px;">
       <div class="tile-column-primary">
         <div class="column has-text-centered">
           <p class="section-title-light">What</p>
           <p class="has-text-white-ter">In terms of the idea, this project was extremely simple compared to some of the other projects I have worked on, but its execution proved to be more difficult. The goal was that by using only Numpy and Python within a Google Colab Notebook, I was going to create an ANN that was capable of recognizing hand-written digits from the MNIST dataset. Doing this would allow for me to get a better idea of how the math behind an ANN works so I can build more complex machine learning projects later. </p>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <div class="columns has-text-centered">
+        <div class="column is-half" style="padding: 30px;">
+          <p class="section-title-primary">Idea</p>
+          <p>Using the mathematical equations provided by the Coursera Machine Learning Course, implement gradient descent. </p>
+        </div>
+        <div class="column is-half" style="padding: 30px;">
+          <p class="section-title-primary">Goal</p>
+          <p>Create an ANN using only Numpy and Python that can identify hand-written digits from the MNIST dataset at 90% or greater accuracy. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="timeline is-centered">
+        <header class="timeline-header">
+          <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">Start</span>
+        </header>
+        <div class="timeline-item is-primary">
+          <div class="timeline-marker is-primary"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Managing Data</p>
+            <p>Before I could start training of the network I needed to find an MNIST dataset that I could import as a Numpy array, which I was quickly able to locate on Github.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-primary">
+          <div class="timeline-marker is-primary"></div>
+          <div class="timeline-content">
+            <p class="heading">Learning</p>
+            <p>At this point I sat down with the math that I needed and began to code it using the matrix functions provided by Numpy. However, even after hours of training I only hit an accuracy of 30%.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-primary">
+          <div class="timeline-marker is-primary"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Stackoverflow</p>
+            <p>After working for a couple of hours to improve accuracy, I was out of ideas on what to do, so, I turned to Stackoverflow for help. It turned out that I has simply failed to add a bias unit to my data, and upon doing this accuracy shot up to 92%.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-primary">
+          <div class="timeline-marker is-primary"></div>
+          <div class="timeline-content">
+            <p class="heading">Cosmetic Changes</p>
+            <p>In my mind, I considered this working, but I wanted to make some improvements. As seen in the notebook, I added user input to allow for them to change the number of nodes, along with a visualization tool so they can see the layers.</p>
+          </div>
+        </div>
+        <header class="timeline-header" style="margin-bottom: 100px;">
+          <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
+        </header>
+      </div>
+    </div>
+    <div class="container has-text-centered">
+      <p class="section-title-primary">Challenges</p>
+      <br>
+      <p class="text-fit">Compared to the other projects within this portfolio, it was rather short, but I do think that I learned a lot from it. This is the project that primarily got me interested in machine learning as a field, and helped me to remember why I actually like math in the first place. Someday I would like to revisit this project and attempt to get the accuracy even higher by trying to do things like adding more layers, or changing the activation function to something like ReLu. But, in the end, even though this project is short, I think that the code mostly speaks for itself, showing what I have done with the subject and where I would like to go.</p>
     </div>
   </div>
 </template>
