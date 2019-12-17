@@ -28,7 +28,7 @@
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">
-          <img class="is-vertical-center" src="../../assets/plank.svg" width="350">
+          <img class="is-vertical-center" src="../../assets/plank.svg" width="40%">
         </div>
       </div>
     </div>

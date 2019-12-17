@@ -37,7 +37,13 @@ $colors: (
 
     @include from($tablet) {
         // padding-top: 50px;
-        min-height: calc(100vh - 100px);
+        // min-height: calc(100vh - 100px);
+    }
+}
+
+.project-header .columns {
+    @include from($tablet) {
+        min-height: calc(75vh);
     }
 }
 

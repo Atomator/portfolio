@@ -7,6 +7,7 @@ import Contact from '@/pages/Contact'
 import Resume from '@/pages/Resume'
 import Vrkit from '@/pages/projects/Vrkit'
 import Qlearning from '@/pages/projects/Qlearning'
+import Neuralnetwork from '@/pages/projects/Neuralnetwork'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ const router = new Router({
       path: '/projects/qlearning',
       name: 'Qlearning',
       component: Qlearning
+    },
+    {
+      path: '/projects/neuralnetwork',
+      name: 'Neuralnetwork',
+      component: Neuralnetwork
     },
   ]
 })
