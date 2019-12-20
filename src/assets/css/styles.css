@@ -795,10 +795,10 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   background-color: #7a7a7a !important; }
 
 .has-text-grey-light {
-  color: rgba(70, 83, 98, 0.5) !important; }
+  color: #b5b5b5 !important; }
 
 .has-background-grey-light {
-  background-color: rgba(70, 83, 98, 0.5) !important; }
+  background-color: #b5b5b5 !important; }
 
 .has-text-grey-lighter {
   color: #dbdbdb !important; }
@@ -1188,7 +1188,7 @@ a.box:active {
     margin-left: calc(-0.375em - 1px);
     margin-right: calc(-0.375em - 1px); }
   .button:hover, .button.is-hovered {
-    border-color: rgba(70, 83, 98, 0.5);
+    border-color: #b5b5b5;
     color: #363636; }
   .button:focus, .button.is-focused {
     border-color: #71A9F7;
@@ -2798,7 +2798,7 @@ a.tag:hover {
   .input:-ms-input-placeholder, .textarea:-ms-input-placeholder, .select select:-ms-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
   .input:hover, .textarea:hover, .select select:hover, .is-hovered.input, .is-hovered.textarea, .select select.is-hovered {
-    border-color: rgba(70, 83, 98, 0.5); }
+    border-color: #b5b5b5; }
   .input:focus, .textarea:focus, .select select:focus, .is-focused.input, .is-focused.textarea, .select select.is-focused, .input:active, .textarea:active, .select select:active, .is-active.input, .is-active.textarea, .select select.is-active {
     border-color: #71A9F7;
     box-shadow: 0 0 0 0.125em rgba(113, 169, 247, 0.25); }
@@ -3608,7 +3608,7 @@ a.tag:hover {
       cursor: default;
       pointer-events: none; }
     .breadcrumb li + li::before {
-      color: rgba(70, 83, 98, 0.5);
+      color: #b5b5b5;
       content: "\0002f"; }
   .breadcrumb ul,
   .breadcrumb ol {
@@ -4985,7 +4985,7 @@ a.navbar-item,
   .pagination-previous:hover,
   .pagination-next:hover,
   .pagination-link:hover {
-    border-color: rgba(70, 83, 98, 0.5);
+    border-color: #b5b5b5;
     color: #363636; }
   .pagination-previous:focus,
   .pagination-next:focus,
@@ -5016,7 +5016,7 @@ a.navbar-item,
   color: #fff; }
 
 .pagination-ellipsis {
-  color: rgba(70, 83, 98, 0.5);
+  color: #b5b5b5;
   pointer-events: none; }
 
 .pagination-list {
@@ -5220,7 +5220,7 @@ label.panel-block {
     position: relative; }
     .tabs.is-toggle a:hover {
       background-color: rgba(255, 248, 248, 0.5);
-      border-color: rgba(70, 83, 98, 0.5);
+      border-color: #b5b5b5;
       z-index: 2; }
   .tabs.is-toggle li + li {
     margin-left: -1px; }

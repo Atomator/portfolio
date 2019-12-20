@@ -2134,7 +2134,8 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 50px; } }
+    padding-top: 50px;
+    padding: 10%; } }
 
 div.tile-column-primary {
   margin: 0 auto;
@@ -2153,8 +2154,7 @@ div.tile-column-primary {
 .button-primary {
   background-color: #71A9F7;
   padding: 30px 35px 30px 35px;
-  margin-right: 36px;
-  margin-bottom: 35px;
+  margin: 0px 16px 35px 16px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
@@ -2212,8 +2212,7 @@ div.tile-column-dark {
 .button-dark {
   background-color: #465362;
   padding: 30px 35px 30px 35px;
-  margin-right: 36px;
-  margin-bottom: 35px;
+  margin: 0px 16px 35px 16px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 
@@ -2271,8 +2270,7 @@ div.tile-column-light {
 .button-light {
   background-color: #F7F7FF;
   padding: 30px 35px 30px 35px;
-  margin-right: 36px;
-  margin-bottom: 35px;
+  margin: 0px 16px 35px 16px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
 

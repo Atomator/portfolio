@@ -30,7 +30,7 @@
     <div class="container has-text-centered">
       <p class="section-title-dark" style="margin-bottom: 5px;">Skills</p>
       <p class="has-text-dark" style="margin-bottom: 30px;">Javascript, HTML/CSS, Vue.js, Firebase</p>
-      <p class="section-title-dark" style="margin-bottom: 5px;">Project Duration</p>
+      <p class="section-title-dark" style="margin-bottom: 5px;">Duration</p>
       <p class="has-text-dark">January 2019 - May 2019</p>
     </div>
    <div class="container">
