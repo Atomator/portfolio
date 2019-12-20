@@ -45,9 +45,10 @@
     </div>
    </div>
    <div class="container">
-    <p class="section-title-dark">Why</p>
+    <p class="section-title-dark">What</p>
     <p>For context, the driveline works by having the parents first drive into the school parking lot, following a set path that allowed for them to pass by and pickup their kids before exiting back onto the street. Moving through the line the parent would reach a section in which the line would be stopped and their kid was allowed to enter into their vehicle, and once every kid as loaded the wave would be released. Teachers on duty would talk to each parent in order to get the correct kid into the correct car. </p>
     <img class="is-centered" src="../../assets/images/driveline-page.png" alt="ann-code" style="margin: 64px 0px 64px 0px; width: 50%; margin-left: auto; margin-right: auto;">
+    <p class="has-text-centered" style="margin-top: -84px; margin-bottom: 64px;">Teacher View of Page</p>
     <p>Our solution would have an app that keep track of which cars are in the driveline, using a database to communicate which kids have made it to which cars. Upon a wave entering, through the use of iPads, a teacher would be responsible for registering the drivers, identifying them by the color of their vehicle. Then as teachers guide students to their respective rides, they check off which rides are filled, and once all the rides in the staging areas are full the wave is released.</p>
    </div>
   </div>
