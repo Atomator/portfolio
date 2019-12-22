@@ -43,7 +43,7 @@
     <div class="container has-text-centered">
       <p class="section-title-primary">Why</p>
       <br>
-      <p class="text-fit">Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br><br> I needed another solution if I was to explore the wonders of VR. </p>
+      <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br><br> I needed another solution if I was to explore the wonders of VR. </p>
     </div>
     <div class="container has-text-centered">
       <div class="tile-column-dark">
@@ -59,7 +59,7 @@
     <div class="container has-text-centered">
       <p class="section-title-primary">Creation</p>
       <p class="has-text-dark title-dark" style="margin-bottom: 25px;">Idea</p>
-      <p class="text-fit" style="margin-bottom: 100px;">The purpose of the application was to act as a demo for positional tracking on mobile, meaning the experience created couldn’t rely on controllers. Using Richie’s Plank Experience as a guide, the app would start by having user based in a virtual city. From there they would enter an elevator that would begin to move up a building and when it reached the top they would be presented with a plank they could walk. The game would end when they fell and hit the ground.</p>
+      <p style="margin-bottom: 100px;">The purpose of the application was to act as a demo for positional tracking on mobile, meaning the experience created couldn’t rely on controllers. Using Richie’s Plank Experience as a guide, the app would start by having user based in a virtual city. From there they would enter an elevator that would begin to move up a building and when it reached the top they would be presented with a plank they could walk. The game would end when they fell and hit the ground.</p>
       <p class="has-text-dark title-dark" style="margin-bottom: 25px;">Timeline</p>
       <div class="timeline is-centered">
         <header class="timeline-header">
@@ -142,7 +142,7 @@
     <div class="container has-text-centered">
       <p class="section-title-primary">Challenges</p>
       <br>
-      <p class="text-fit">When creating this project I was challenged in a variety of ways. Primarily I had to learn Unity, Blender, and C#, which were all items I had not had prior exposure to. This meant that I spent the majority of my time learning the softwares rather than creating the product. Having a limited amount of time also made it difficult to complete the project, as it meant working long days on a limited schedule. However, this did help me to improve both my time and project management, so the challenge was worth it. Small issues also popped up, forcing me to spend days fixing issues and creating features that only should has taken hours. Yet, this showed me how to push through in a project and why perseverance is so important.</p>
+      <p>When creating this project I was challenged in a variety of ways. Primarily I had to learn Unity, Blender, and C#, which were all items I had not had prior exposure to. This meant that I spent the majority of my time learning the softwares rather than creating the product. Having a limited amount of time also made it difficult to complete the project, as it meant working long days on a limited schedule. However, this did help me to improve both my time and project management, so the challenge was worth it. Small issues also popped up, forcing me to spend days fixing issues and creating features that only should has taken hours. Yet, this showed me how to push through in a project and why perseverance is so important.</p>
     </div>
   </div>
 </template>

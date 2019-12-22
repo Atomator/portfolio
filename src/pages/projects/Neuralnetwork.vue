@@ -102,7 +102,7 @@
     <div class="container has-text-centered">
       <p class="section-title-primary">Challenges</p>
       <br>
-      <p class="text-fit">Compared to the other projects within this portfolio, it was rather short, but I do think that I learned a lot from it. This is the project that primarily got me interested in machine learning as a field, and helped me to remember why I actually like math in the first place. Someday I would like to revisit this project and attempt to get the accuracy even higher by trying to do things like adding more layers, or changing the activation function to something like ReLu. But, in the end, even though this project is short, I think that the code mostly speaks for itself, showing what I have done with the subject and where I would like to go.</p>
+      <p>Compared to the other projects within this portfolio, it was rather short, but I do think that I learned a lot from it. This is the project that primarily got me interested in machine learning as a field, and helped me to remember why I actually like math in the first place. Someday I would like to revisit this project and attempt to get the accuracy even higher by trying to do things like adding more layers, or changing the activation function to something like ReLu. But, in the end, even though this project is short, I think that the code mostly speaks for itself, showing what I have done with the subject and where I would like to go.</p>
     </div>
   </div>
 </template>

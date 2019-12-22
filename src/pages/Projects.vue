@@ -53,16 +53,16 @@ export default {
           "tags": ["Javascript", "Vuejs", "Firebase", "HTML", "Bootstrap"],
           "description": "Working with web design this was my first time coding with a group. With my fellow classmates and a mentor, we began to craft an app to help with the schools drop off and pickup.",
           "alt": "driveline-app",
-          "page": "vrkit"
+          "page": "driveline"
         },
-        {
-          "title": "Portfolio",
-          "images": require('src/assets/images/portfolio.jpg'),
-          "tags": ["XD", "HTML/CSS", "Vuejs", "Bulma"],
-          "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a developer portfolio.",
-          "alt": "adobe-xd",
-          "page": "vrkit"
-        }
+        // {
+        //   "title": "Portfolio",
+        //   "images": require('src/assets/images/portfolio.jpg'),
+        //   "tags": ["XD", "HTML/CSS", "Vuejs", "Bulma"],
+        //   "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a developer portfolio.",
+        //   "alt": "adobe-xd",
+        //   "page": "vrkit"
+        // }
       ]
     }
   }

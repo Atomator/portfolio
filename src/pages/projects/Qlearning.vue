@@ -9,19 +9,19 @@
             <h2 class="subtitle has-text-weight-medium">
               Teaching My Computer to Beat Me at Snake
             </h2>
-            <a class="button-primary" href="https://github.com/Atomator/VRKit">
+            <a class="button-dark" href="https://github.com/Atomator/VRKit">
               <a class="icon">
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-dark" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
               <a class="icon">
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-dark" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
               <a class="icon">
                 <img src="../../assets/media icons/youtube.svg" class="logo">
               </a>
@@ -147,7 +147,7 @@
     <div class="container has-text-centered">
       <p class="section-title-dark">Challenges</p>
       <br>
-      <p class="text-fit">The main challenge of the project was simply learning how to manage data. In order to keep track of the snake I had to create the correct array, and in order to find the correct state, I had to create a multidimensional array. This experience reflect a sentiment that I heard from a couple of different places; that half the battle in machine learning is obtaining the correct data. Next time I attempt something like this, I want to try a couple of different things. The first is simply that I would like to have my algorithm think further into the future, as mine currently only thinks one step ahead. I would also like to get it to train off of the images on screen rather than the data I extract from the game. Overall, this was a really cool and empowering experience that taught me a lot about machine learning and inspired me on where to go next.</p>
+      <p>The main challenge of the project was simply learning how to manage data. In order to keep track of the snake I had to create the correct array, and in order to find the correct state, I had to create a multidimensional array. This experience reflect a sentiment that I heard from a couple of different places; that half the battle in machine learning is obtaining the correct data. Next time I attempt something like this, I want to try a couple of different things. The first is simply that I would like to have my algorithm think further into the future, as mine currently only thinks one step ahead. I would also like to get it to train off of the images on screen rather than the data I extract from the game. Overall, this was a really cool and empowering experience that taught me a lot about machine learning and inspired me on where to go next.</p>
     </div>
   </div>
 </template>
