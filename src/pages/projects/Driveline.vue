@@ -51,6 +51,60 @@
     <p class="has-text-centered" style="margin-top: -84px; margin-bottom: 64px;">Teacher View of Page</p>
     <p>Our solution would have an app that keep track of which cars are in the driveline, using a database to communicate which kids have made it to which cars. Upon a wave entering, through the use of iPads, a teacher would be responsible for registering the drivers, identifying them by the color of their vehicle. Then as teachers guide students to their respective rides, they check off which rides are filled, and once all the rides in the staging areas are full the wave is released.</p>
    </div>
+   <div class="container has-text-centered">
+    <div class="tile-column-dark">
+      <div class="column has-text-centered">
+        <p class="title-light">Goal</p>
+        <p class="has-text-white-ter">To work with a team in order to create an application that helps to speed up Elementary School pickup by allowing easier communication between teachers.</p>
+        <p class="title-light" style="margin-top: 64px;">Idea</p>
+        <p class="has-text-white-ter">To use a real-time data base in order to update a webpage that informs teacher whether or not a student has reached the correct ride.</p>
+      </div>
+    </div>
+   </div>
+    <div class="container has-text-centered">
+      <p class="section-title-dark">Creation</p>
+      <div class="timeline is-centered">
+        <header class="timeline-header">
+          <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px; margin-top: 128px;">Start</span>
+        </header>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Logging In</p>
+            <p>As an introduction to the start of the project each member of the group was tasked with adding user authentication (using Firebase) to the site in their own git branch; with the best code being merged into master. Using Bootstrap 4, I was able to spice up the look of the look up my page, and as such, my code got merged.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Tussling with Data</p>
+            <p>Having not used a database before I had figure out how to relate different data points in order to have students be registered with drivers and vice-versa. Vuex allowed for me to manage the data state when pushing and fetching data from Firebase.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Hold Please!</p>
+            <p>To keep track of cars that needed to be pulled aside, I had to create a new Vuex manager from scratch. This helped me to become better aquatinted with the database technologies while also getting better at using Vue, as I had to use v-for and v-if statements to display the data properly.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-dark">
+          <div class="timeline-marker is-dark"></div>
+          <div class="timeline-content has-text-left">
+            <p class="heading">Time</p>
+            <p>To track the gameplay, I created an array that would keep track of snake direction, distance from apple, what side the apple was on, and what keys were being pressed.</p>
+          </div>
+        </div>
+        <header class="timeline-header" style="margin-bottom: 100px;">
+          <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
+        </header>
+      </div>
+    </div>
+    <div class="container has-text-centered">
+      <p class="section-title-dark">Challenges</p>
+      <br>
+      <p>Due to the fact that I had to work with a group this was a much different project than I was used to. Working with a group proved to be much different than anything that I had attempted before, as I had to coordinate with, and help others, when it came to making the site a working web application. However, I am thankful for this experience, as I was able to learn how to help other in a respectful and kind way while also soliciting the same type of assistance from others. Being able to sit down with a new group of people and walk out with a finished product is an experience that will not only help me in the work force, but be an experience that I will never forget.</p>
+    </div>
   </div>
 </template>
 

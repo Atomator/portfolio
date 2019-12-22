@@ -55,14 +55,14 @@ export default {
           "alt": "driveline-app",
           "page": "driveline"
         },
-        {
-          "title": "Portfolio",
-          "images": require('src/assets/images/portfolio.jpg'),
-          "tags": ["XD", "HTML/CSS", "Vuejs", "Bulma"],
-          "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a developer portfolio.",
-          "alt": "adobe-xd",
-          "page": "vrkit"
-        }
+        // {
+        //   "title": "Portfolio",
+        //   "images": require('src/assets/images/portfolio.jpg'),
+        //   "tags": ["XD", "HTML/CSS", "Vuejs", "Bulma"],
+        //   "description": "Not having a great idea of what I have worked or a way to share it, I embarked on the quest to create a developer portfolio.",
+        //   "alt": "adobe-xd",
+        //   "page": "vrkit"
+        // }
       ]
     }
   }
