@@ -41,7 +41,7 @@ export default {
         'Projects': '/projects',
         'About': '/about',
         'Contact': '/contact',
-        'Resume': '/resume'
+        // 'Resume': '/resume'
       }
     }
   },
