@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="columns is-centered">
+    <div class="columns">
       <about-tile v-for="(value) in pageData" v-bind:key="value.id" :data="value"></about-tile>
     </div>
 
