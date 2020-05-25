@@ -14,12 +14,12 @@
             <a class="icon">
               <img src="../assets/media icons/medium.svg" class="logo">
             </a>
-            <a class="icon">
+            <!-- <a class="icon">
               <img src="../assets/media icons/linkedin.svg" class="logo">
-            </a>
+            </a> -->
           </div>
           <p class="has-text-light">Conner Stark</p>
-          <p class="has-text-light">© twentyNineteen </p>
+          <p class="has-text-light">© twentyTwenty </p>
         </div>
       </div>
     </div>

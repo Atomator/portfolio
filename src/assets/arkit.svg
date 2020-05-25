@@ -110,6 +110,6 @@
         </g>
       </g>
     </g>
-    <text id="ARKit" transform="translate(573.457 2937.7)" fill="#f7f7ff" font-size="72" font-family="Avenir-Black, Avenir" font-weight="800"><tspan x="-100.008" y="0">ARKit</tspan></text>
+    <text id="ARKit" transform="translate(573.457 2937.7)" fill="#f7f7ff" font-size="72" font-family="Arial, Avenir" font-weight="800"><tspan x="-100.008" y="0">ARKit</tspan></text>
   </g>
 </svg>
