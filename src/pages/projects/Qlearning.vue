@@ -9,21 +9,15 @@
             <h2 class="subtitle has-text-weight-medium">
               Teaching My Computer to Beat Me at Snake
             </h2>
-            <a class="button-dark" href="https://github.com/Atomator/VRKit">
+            <a class="button-dark" href="https://github.com/Atomator/Q-Learning-Snake">
               <a class="icon">
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
-            <a class="button-dark" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
-              <a class="icon">
-                <img src="../../assets/media icons/medium.svg" class="logo">
-              </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
-            </a>
-            <a class="button-dark" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
-              <a class="icon">
-                <img src="../../assets/media icons/youtube.svg" class="logo">
+            <a class="button-dark" href="https://repl.it/repls/IllegalUnfitDeadcode">
+              <a class="has-text-white">
+                Try It!
               </a>
               <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>

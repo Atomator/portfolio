@@ -9,12 +9,7 @@
             <h2 class="subtitle has-text-weight-medium">
               Learning About Machine Learning From The Beginning
             </h2>
-            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
-              <a class="icon">
-                <img src="../../assets/media icons/medium.svg" class="logo">
-              </a>
-            </a>
-            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-primary" href="https://colab.research.google.com/drive/1SpU8hd3SXk9F65rSjQ2cIN5QeVIKLhYA?usp=sharing">
               <a class="icon">
                 <img src="../../assets/media icons/colab.svg" class="logo" width="64px">
               </a>
