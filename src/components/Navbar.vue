@@ -3,9 +3,9 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a id="logo" class="navbar-item" href="https://bulma.io" >
+          <router-link to="/" id="logo" class="navbar-item">
             <img src="../assets/mylogo.svg" width="40" height="64">
-          </a>
+          </router-link>
 
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
             <span aria-hidden="true"></span>
@@ -41,7 +41,7 @@ export default {
         'Projects': '/projects',
         'About': '/about',
         'Contact': '/contact',
-        'Resume': '/resume'
+        // 'Resume': '/resume'
       }
     }
   },

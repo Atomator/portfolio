@@ -9,12 +9,7 @@
             <h2 class="subtitle has-text-weight-medium">
               Coding With a Group is a Lot Different
             </h2>
-            <a class="button-dark" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
-              <a class="icon">
-                <img src="../../assets/media icons/medium.svg" class="logo">
-              </a>
-            </a>
-            <a class="button-dark" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-dark" href="https://stem-k12-drive-line.firebaseapp.com">
               <a class="icon">
                 <i class="fas fa-globe-americas fa-lg has-text-light"></i>
               </a>

@@ -36,6 +36,11 @@
   display: flex;
   height: 100%;
   flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .section {
@@ -46,5 +51,6 @@
   align-items: center;
   justify-content: center;
 }
+
 
 </style>

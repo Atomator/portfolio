@@ -19,7 +19,7 @@
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
             </a>
-            <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
+            <a class="button-primary" href="https://www.youtube.com/watch?v=1seLu90q7wE">
               <a class="icon">
                 <img src="../../assets/media icons/youtube.svg" class="logo">
               </a>
@@ -132,7 +132,7 @@
           <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
         </header>
       </div>
-      <a class="button is-primary is-large has-shadow" style="margin-right: 0px;" href="https://github.com/Atomator/VRKit">
+      <a class="button is-primary is-large has-shadow" style="margin-right: 0px;" href="https://www.youtube.com/watch?v=EKLHCKwgs-4&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim">
         <a class="icon">
           <img src="../../assets/media icons/youtube.svg" class="logo">
         </a>

@@ -1,5 +1,5 @@
 <template>
-  <div id="interests" class="box column is-one-fifth has-background-dark">
+  <div id="interests" class="box column is-one-half has-background-dark">
       <div id="header" class="has-background-primary has-text-centered">
           <h1 class="box-header has-text-light has-text-weight-bold">{{ data.title }}</h1>
       </div>

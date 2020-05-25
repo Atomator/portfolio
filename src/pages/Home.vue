@@ -7,9 +7,11 @@
         <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
           I love what I do even if I'm not sure what that is
         </h2>
-        <a id="explore-button" class="button is-primary is-large has-shadow" href="https://xd.adobe.com/view/456fbad4-cc7a-4839-6436-7d5ff64d301b-335e/?fullscreen">
-          <p id="button-text" class="has-text-weight-bold">Explore</p>
-        </a>
+        <router-link to="/projects">
+          <a id="explore-button" class="button is-primary is-large has-shadow">
+            <p id="button-text" class="has-text-weight-bold">Explore</p>
+          </a>
+        </router-link>
       </div>
     </section>
   </div>
