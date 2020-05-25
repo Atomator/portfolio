@@ -10,8 +10,10 @@
       </div>
     </div>
 
-    <div class="columns">
-      <about-tile v-for="(value) in pageData" v-bind:key="value.id" :data="value"></about-tile>
+    <div class="container">
+      <div class="columns">
+        <about-tile v-for="(value) in pageData" v-bind:key="value.id" :data="value"></about-tile>
+      </div>
     </div>
 
   </div>

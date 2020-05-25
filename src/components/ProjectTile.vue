@@ -34,7 +34,7 @@ export default {
 
 .box {
   border-radius: 16px;
-  height: 300px;
+  height: auto;
   width: 400px;
   padding: 0px;
   margin: 15px;
@@ -64,6 +64,7 @@ export default {
 
 .text-content {
   font-size: 11px;
+  margin-bottom: 8px;
 }
 
 #content {
