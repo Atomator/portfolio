@@ -5,13 +5,13 @@
       <div class="container has-text-centered">
         <h1 class="title" id="welcomeMessage">Hello<strong class="has-text-primary">.</strong> </h1>
         <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
-          I love what I do even if I'm not sure what that is
+          I love what I do. The only problem is that I do to a little bit everything.
         </h2>
-        <router-link to="/projects">
-          <a id="explore-button" class="button is-primary is-large has-shadow">
-            <p id="button-text" class="has-text-weight-bold">Explore</p>
+        <!-- <router-link to="/projects"> -->
+          <a href="https://github.com/sentimentapp/application" id="explore-button" class="button is-primary is-large has-shadow">
+            <p id="button-text" class="has-text-weight-bold">See My Current Project!</p>
           </a>
-        </router-link>
+        <!-- </router-link> -->
       </div>
     </section>
   </div>
@@ -35,13 +35,16 @@ export default {
 
 #explore-button {
   height: 58px;
-  width: 200px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
 }
 
 #button-text {
   font-size: 20px;
+}
+
+.currently {
+  padding-top: 16px;
 }
 
 </style>
