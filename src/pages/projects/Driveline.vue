@@ -83,13 +83,6 @@
             <p>To keep track of cars that needed to be pulled aside, I had to create a new Vuex manager from scratch. This helped me to become better aquatinted with the database technologies while also getting better at using Vue, as I had to use v-for and v-if statements to display the data properly.</p>
           </div>
         </div>
-        <div class="timeline-item is-dark">
-          <div class="timeline-marker is-dark"></div>
-          <div class="timeline-content has-text-left">
-            <p class="heading">Time</p>
-            <p>To track the gameplay, I created an array that would keep track of snake direction, distance from apple, what side the apple was on, and what keys were being pressed.</p>
-          </div>
-        </div>
         <header class="timeline-header" style="margin-bottom: 100px;">
           <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
         </header>
