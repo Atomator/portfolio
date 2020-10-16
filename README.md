@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-This is the repository that is used in partnership with Netlify to host my developer portfolio. Feel free to look at my horrible code, or, better yet, check out the portfolio at https://cosparks.me.
+This is the repository that is used in partnership with Netlify to host my developer portfolio. Feel free to look at my horrible code, or better yet, check out the portfolio at https://cosparks.me.
 
 ## Project setup
 ```
