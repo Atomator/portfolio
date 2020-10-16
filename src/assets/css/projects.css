@@ -2132,10 +2132,13 @@
   .project-header .columns, .project-header div.tile-column-primary, .project-header div.tile-column-dark, .project-header div.tile-column-light {
     min-height: calc(75vh); } }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0% 10% 0% 10%; } }
+
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 50px;
-    padding: 10%; } }
+    padding: 10% 10% 0% 10%; } }
 
 div.tile-column-primary {
   margin: 0 auto;
