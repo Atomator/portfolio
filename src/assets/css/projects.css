@@ -2145,7 +2145,7 @@ div.tile-column-primary {
   vertical-align: middle;
   background-color: #71A9F7;
   border-radius: 30px;
-  padding: 100px;
+  padding: 8%;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
   @media screen and (max-width: 768px) {
     div.tile-column-primary {
@@ -2203,7 +2203,7 @@ div.tile-column-dark {
   vertical-align: middle;
   background-color: #465362;
   border-radius: 30px;
-  padding: 100px;
+  padding: 8%;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
   @media screen and (max-width: 768px) {
     div.tile-column-dark {
@@ -2261,7 +2261,7 @@ div.tile-column-light {
   vertical-align: middle;
   background-color: #F7F7FF;
   border-radius: 30px;
-  padding: 100px;
+  padding: 8%;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
   @media screen and (max-width: 768px) {
     div.tile-column-light {

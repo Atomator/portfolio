@@ -63,7 +63,7 @@ $colors: (
         vertical-align: middle; 
         background-color: $color;
         border-radius: 30px;
-        padding: 100px;
+        padding: 8%;
         box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15);
         @include until($tablet) {
             font-size: 12px;  
