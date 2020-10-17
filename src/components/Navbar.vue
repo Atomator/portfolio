@@ -87,4 +87,14 @@ export default {
   }
 }
 
+.navbar-menu.is-active {
+  border-radius: 16px;
+  padding: 5%;
+  margin-bottom: 15%;
+}
+
+.navbar-burger {
+  border-radius: 16px;
+}
+
 </style>
