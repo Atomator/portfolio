@@ -19,7 +19,7 @@
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
             </a>
-            <a class="button-primary" href="https://www.youtube.com/watch?v=1seLu90q7wE">
+            <a class="button-primary" href="https://www.youtube.com/watch?v=MMX9esKbbkc&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim&index=6">
               <a class="icon">
                 <img src="../../assets/media icons/youtube.svg" class="logo">
               </a>
@@ -136,7 +136,7 @@
         <a class="icon">
           <img src="../../assets/media icons/youtube.svg" class="logo">
         </a>
-        <p class="has-text-weight-bold" style="margin-left: 10px;">Watch</p>
+        <p class="has-text-weight-bold" style="margin-left: 10px;">Watch the Process!</p>
       </a>
     </div>
     <div class="container has-text-centered">
