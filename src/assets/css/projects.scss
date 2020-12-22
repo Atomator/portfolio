@@ -28,6 +28,11 @@ $colors: (
   
     /* Need a better way to manage the text spacing */
     margin-bottom: 25px !important;
+
+    @include until($tablet) {
+        font-size: 4em !important;
+    }
+
 }
 
 .project-header {
@@ -68,7 +73,7 @@ $colors: (
         @include until($tablet) {
             font-size: 12px;  
             padding: 40px 25px 40px 25px;
-            width: 95vw;
+            // width: 95vw;
             line-height: normal !important;
         }
     }
