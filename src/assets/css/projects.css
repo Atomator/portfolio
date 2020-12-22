@@ -2123,6 +2123,9 @@
   font-size: 5.5em !important;
   /* Need a better way to manage the text spacing */
   margin-bottom: 25px !important; }
+  @media screen and (max-width: 768px) {
+    .project-title {
+      font-size: 4em !important; } }
 
 @media screen and (max-width: 768px) {
   .project-header {
@@ -2151,7 +2154,6 @@ div.tile-column-primary {
     div.tile-column-primary {
       font-size: 12px;
       padding: 40px 25px 40px 25px;
-      width: 95vw;
       line-height: normal !important; } }
 
 .button-primary {
@@ -2209,7 +2211,6 @@ div.tile-column-dark {
     div.tile-column-dark {
       font-size: 12px;
       padding: 40px 25px 40px 25px;
-      width: 95vw;
       line-height: normal !important; } }
 
 .button-dark {
@@ -2267,7 +2268,6 @@ div.tile-column-light {
     div.tile-column-light {
       font-size: 12px;
       padding: 40px 25px 40px 25px;
-      width: 95vw;
       line-height: normal !important; } }
 
 .button-light {

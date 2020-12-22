@@ -9,21 +9,21 @@
             <h2 class="subtitle has-text-weight-medium">
               Google Cardboard Meets Positional Tracking
             </h2>
-            <a class="button-primary" href="https://github.com/Atomator/VRKit">
+            <a class="button-primary" href="https://www.youtube.com/watch?v=MMX9esKbbkc&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim&index=6">
               <a class="icon">
-                <img src="../../assets/media icons/github.svg" class="logo">
+                <img src="../../assets/media icons/youtube.svg" class="logo">
               </a>
+              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
             <a class="button-primary" href="https://medium.com/@coloradolego/how-to-use-arkit-and-unity-to-create-6dof-mobile-vr-f03de54e2edd">
               <a class="icon">
                 <img src="../../assets/media icons/medium.svg" class="logo">
               </a>
             </a>
-            <a class="button-primary" href="https://www.youtube.com/watch?v=MMX9esKbbkc&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim&index=6">
+            <a class="button-primary" href="https://github.com/Atomator/VRKit">
               <a class="icon">
-                <img src="../../assets/media icons/youtube.svg" class="logo">
+                <img src="../../assets/media icons/github.svg" class="logo">
               </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
           </div>  
         </div>
@@ -48,7 +48,7 @@
     <div class="container has-text-centered">
       <div class="tile-column-dark">
         <div class="column is-half is-centered">
-          <img class="is-vertical-center" src="../../assets/arkit.svg">
+          <img class="is-vertical-center" src="../../assets/arkit.svg" style="padding-left: 16px">
         </div>
         <div class="column is-half">
           <p class="has-text-light title-light" style="font-size: 50px !important; margin-bottom: 25px">What</p>

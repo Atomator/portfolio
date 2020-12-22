@@ -39,7 +39,7 @@
       </div>
     </div>
    </div>
-   <div class="container">
+   <div class="container has-text-centered">
     <p class="section-title-dark">What</p>
     <p>For context, the driveline works by having the parents first drive into the school parking lot, following a set path that allowed for them to pass by and pickup their kids before exiting back onto the street. Moving through the line the parent would reach a section in which the line would be stopped and their kid was allowed to enter into their vehicle, and once every kid as loaded the wave would be released. Teachers on duty would talk to each parent in order to get the correct kid into the correct car. </p>
     <img class="is-centered" src="../../assets/images/driveline-page.png" alt="ann-code" style="margin: 64px 0px 64px 0px; width: 50%; margin-left: auto; margin-right: auto;">
@@ -57,7 +57,7 @@
     </div>
    </div>
     <div class="container has-text-centered">
-      <p class="section-title-dark">Creation</p>
+      <p class="section-title-dark" style="margin-top: 128px;">Creation</p>
       <div class="timeline is-centered">
         <header class="timeline-header">
           <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px; margin-top: 128px;">Start</span>
@@ -83,7 +83,7 @@
             <p>To keep track of cars that needed to be pulled aside, I had to create a new Vuex manager from scratch. This helped me to become better aquatinted with the database technologies while also getting better at using Vue, as I had to use v-for and v-if statements to display the data properly.</p>
           </div>
         </div>
-        <header class="timeline-header" style="margin-bottom: 100px;">
+        <header class="timeline-header" style="margin-top: 0px;">
           <span class="tag is-medium is-dark has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
         </header>
       </div>
@@ -132,6 +132,10 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+.timeline-header {
+  margin-top: -96px;
 }
 
 @media only screen and (min-width: 768px) {
