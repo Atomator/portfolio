@@ -2,7 +2,7 @@
   <div id="app">
     <div class="has-text-centered columns is-centered">
       <div class="column is-three-fifths">
-        <img :src="require('src/assets/images/pfp_me.jpeg')" alt="connor-sparks">
+        <img :src="require('src/assets/images/pfp_me.jpg')" alt="connor-sparks">
         <h1 class="title">Connor Sparks<strong class="has-text-primary">.</strong></h1>
         <div class="icon-container">
           <a class="icon" href="https://dribbble.com/Atomator">
