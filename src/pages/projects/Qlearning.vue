@@ -13,13 +13,11 @@
               <a class="has-text-white">
                 Try It!
               </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
             <a class="button-dark" href="https://github.com/Atomator/Q-Learning-Snake">
               <a class="icon">
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
-              <!-- <p class="has-text-weight-bold">Explore</p> -->
             </a>
           </div>  
         </div>

@@ -24,6 +24,11 @@
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
             </a>
+              <a class="button-primary" href="https://www.figma.com/file/vII04Xd1Q8r208ztIRiuIK/Sentiment-Mockup?node-id=0%3A1">
+              <a class="has-text-white">
+                Mockup
+              </a>
+            </a>
           </div>  
         </div>
         <div class="column is-one-half has-text-centered">
@@ -47,102 +52,30 @@
     <div class="container">
       <div class="tile-column-dark is-vcentered">
         <div class="column has-text-centered">
-          <p class="section-title-light">The Team</p>
-          <p class="has-text-light">During the C4G internship, I was paired with a group of four students and as such, it was important that we figured out our group dynamic from the get-go. As a team, we split into three micro-groups, each one responsible for a different aspect of the application: UI/UX, app development, and the machine learning model. Due to my previous design work, I became the head of the UI/UX section of the project. However, I also worked with the app development and machine learning teams to help complete the application. Along with our micro-teams, we agreed to meet three times a week to check in on our progress, using Trello as our task manager of choice.</p>
+          <p class="has-text-light title-light" style="margin-bottom: 25px">The Team</p>
+          <p class="has-text-light">During the C4G internship, I was paired with a group of four students and as such, it was important that we figured out our group dynamic from the get-go. As a team, we split into three micro-groups, each one responsible for a different aspect of the application: UI/UX, app development, and the machine learning model. Along with heading up the UI/UX team, I also worked with the app development and machine learning groups to help complete the application. As a group we also agreed to meet three times a week to check in on our progress, using Trello as our task manager of choice.</p>
         </div>
         <div class="column">
-          <img src="../../assets/images/sentiment-trello.png" alt="driveline-code">
+          <img src="../../assets/images/sentiment-trello.png" alt="sentiment-trello">
         </div>
       </div>
+    </div>
+    <div class="container has-text-centered">
+     <p class="section-title-dark">UI/UX</p>
+     <p>As the head of UI/UX design, it was mainly my job to create the mockup. My teammates would come up with ideas, and I would transform those ideas into reality. To makes these concepts real, I went through three phases of design: drafting, wireframing, and mockups</p>
+     <div class="columns">
+      <div class="tile-centered-dark column steps">
+        <p class="has-text-light is-size-4">Drafting</p>
+      </div>
+      <div class="tile-centered-dark column steps">
+        <p class="has-text-light is-size-4">Wireframing</p>
+      </div>
+      <div class="tile-centered-dark column steps">
+        <p class="has-text-light is-size-4">Mockups</p>
+      </div>
+    </div>
+    <p></p>
    </div>
-    <div class="container has-text-centered">
-      <p class="section-title-primary">Creation</p>
-      <p class="has-text-dark title-dark" style="margin-bottom: 25px;">Idea</p>
-      <p style="margin-bottom: 100px;">The purpose of the application was to act as a demo for positional tracking on mobile, meaning the experience created couldn’t rely on controllers. Using Richie’s Plank Experience as a guide, the app would start by having user based in a virtual city. From there they would enter an elevator that would begin to move up a building and when it reached the top they would be presented with a plank they could walk. The game would end when they fell and hit the ground.</p>
-      <p class="has-text-dark title-dark" style="margin-bottom: 25px;">Timeline</p>
-      <div class="timeline is-centered">
-        <header class="timeline-header">
-          <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">Start</span>
-        </header>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content has-text-left">
-            <p class="heading">Research</p>
-            <p>Inspired by the project by Github Repository by Andrew Nakas I choose to use Unity as my workspace of choice with his work as a guide.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content">
-            <p class="heading">Nature Assets</p>
-            <p>I started by testing the tracking by creating a nature environment using free Unity Assets, but it failed to convey the feelings of immersion that I wanted.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content has-text-left">
-            <p class="heading">Blender</p>
-            <p>Even though I had never used Blender before I quickly learned the basics and I was able to create buildings for the city in under four days, and the city itself in under seven.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content">
-            <p class="heading">Placement</p>
-            <p>Unity’s ARFoundation tutorial helped me to figure out how I was going to “place” the virtual environment in order to make sure the users height was correct.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content has-text-left">
-            <p class="heading">Moving Up</p>
-            <p>At this point I created the elevator itself, having it close its doors and begin moving up upon user entry.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content">
-            <p class="heading">Falling Down</p>
-            <p>I then added in “gravity” to allow the user to fall when the exit the elevator and then fall off the plank.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content has-text-left">
-            <p class="heading">VR</p>
-            <p>I then added in the VRKit (ARKit + GVR) SDK to allow for the user to trigger VR when inside the elevator.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content">
-            <p class="heading">UI</p>
-            <p>Once the experience was completed I created a main menu system that the user was greeted with upon entering the app.</p>
-          </div>
-        </div>
-        <div class="timeline-item is-primary">
-          <div class="timeline-marker is-primary"></div>
-          <div class="timeline-content has-text-left">
-            <p class="heading">App</p>
-            <p>Creating an app icon, I proceeded to load the final version onto my phone and then share my creation with others.</p>
-          </div>
-        </div>
-        <header class="timeline-header" style="margin-bottom: 100px;">
-          <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
-        </header>
-      </div>
-      <a class="button is-primary is-large has-shadow" style="margin-right: 0px;" href="https://www.youtube.com/watch?v=EKLHCKwgs-4&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim">
-        <a class="icon">
-          <img src="../../assets/media icons/youtube.svg" class="logo">
-        </a>
-        <p class="has-text-weight-bold" style="margin-left: 10px;">Watch the Process!</p>
-      </a>
-    </div>
-    <div class="container has-text-centered">
-      <p class="section-title-primary">Challenges</p>
-      <br>
-      <p>When creating this project I was challenged in a variety of ways. Primarily I had to learn Unity, Blender, and C#, which were all items I had not had prior exposure to. This meant that I spent the majority of my time learning the softwares rather than creating the product. Having a limited amount of time also made it difficult to complete the project, as it meant working long days on a limited schedule. However, this did help me to improve both my time and project management, so the challenge was worth it. Small issues also popped up, forcing me to spend days fixing issues and creating features that only should has taken hours. Yet, this showed me how to push through in a project and why perseverance is so important.</p>
-    </div>
   </div>
 </template>
 
@@ -184,8 +117,15 @@ export default {
 
 
 p {
-    font-size: 18px;
-    line-height: 45px;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+.steps {
+  margin: 64px;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 32px;
 }
 
 @media only screen and (min-width: 768px) {
