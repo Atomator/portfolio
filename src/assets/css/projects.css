@@ -2159,9 +2159,12 @@ div.tile-column-primary {
 .button-primary {
   background-color: #71A9F7;
   padding: 30px 35px 30px 35px;
-  margin: 0px 16px 35px 16px;
+  margin: 0px 32px 35px 0px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
+  @media screen and (max-width: 768px) {
+    .button-primary {
+      margin: 0px 16px 35px 16px; } }
 
 .is-centered {
   display: flex;
@@ -2216,9 +2219,12 @@ div.tile-column-dark {
 .button-dark {
   background-color: #465362;
   padding: 30px 35px 30px 35px;
-  margin: 0px 16px 35px 16px;
+  margin: 0px 32px 35px 0px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
+  @media screen and (max-width: 768px) {
+    .button-dark {
+      margin: 0px 16px 35px 16px; } }
 
 .is-centered {
   display: flex;
@@ -2273,9 +2279,12 @@ div.tile-column-light {
 .button-light {
   background-color: #F7F7FF;
   padding: 30px 35px 30px 35px;
-  margin: 0px 16px 35px 16px;
+  margin: 0px 32px 35px 0px;
   border-radius: 10px;
   box-shadow: 0 6px 6px rgba(10, 10, 10, 0.15); }
+  @media screen and (max-width: 768px) {
+    .button-light {
+      margin: 0px 16px 35px 16px; } }
 
 .is-centered {
   display: flex;

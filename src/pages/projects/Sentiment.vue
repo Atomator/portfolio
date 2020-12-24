@@ -9,11 +9,6 @@
             <h2 class="subtitle has-text-weight-medium">
               Machine Learning. Meet Mental Health.
             </h2>
-            <!-- <a class="button-primary" href="https://www.youtube.com/watch?v=MMX9esKbbkc&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim&index=6">
-              <a class="icon">
-                <img src="../../assets/media icons/youtube.svg" class="logo">
-              </a>
-            </a> -->
             <a class="button-primary" href="https://connorsparks.medium.com/ui-ux-design-for-a-micro-journaling-application-b74c9d2c8d1b">
               <a class="icon">
                 <img src="../../assets/media icons/medium.svg" class="logo">
@@ -78,10 +73,10 @@
     <p>In the drafting phase of the project, the goal was to answer one simple question: how should design promote function? Or, in other words, how can the design of the application help fulfill its purpose of helping the user manage their mental health? So with question in mind, the group proceeded to come up with the following list of requirements for the app's design.</p>
     <div class="tile-centered-primary list-tile">
       <ul class="has-text-white">
-        <p>Calm colors to encourage reflection</p>
-        <p>Adding entries is at the forefront of the design</p>
-        <p>Provide a simply summary of feelings</p>
-        <p>Minimal design to create a relaxing environment</p>
+        <p>• Calm colors to encourage reflection</p>
+        <p>• Adding entries is at the forefront of the design</p>
+        <p>• Provide a simply summary of feelings</p>
+        <p>• Minimal design to create a relaxing environment</p>
       </ul>
     </div>
     <p class="has-text-primary title-primary" style="margin-top: 128px; margin-bottom: 16px;">Wireframing</p>
@@ -94,6 +89,26 @@
         <img class="is-vertical-center" src="../../assets/images/sentiment-wireframe-2.jpg" width="40%">
       </div>
     </div>
+    <p class="has-text-primary title-primary" style="margin-top: 128px; margin-bottom: 16px;">Mockups</p>
+    <p>After the wireframes were complete, it became my job to construct a mockup for the application. Unlike a wireframe, a mockup includes all of the colors and stylistic details that are going to be present in the final application. Using a tool called Figma, I created the design for the app using the wireframes made by other team members.</p>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); height: 512px; margin-top: 32px;" width="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvII04Xd1Q8r208ztIRiuIK%2FSentiment-Mockup%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+   </div>
+   <div class="container has-text-centered">
+    <p class="section-title-primary">Application</p>
+    <p>In order to develop our application, the group choose to use CapacitorJS. Similar to ElectronJS, Capacitor allows for mobile applications to be built using nothing but HTML and CSS. While this choice of development platform meant that our application would run slower than if we wrote it natively, it did mean that we would be able to develop our application faster since nobody on our team had ever written a mobile application before.</p>
+    <br>
+    <p>Though I was not originally a part of the application development group, I quickly became invested in developing the actual version of the app. With another group memeber handling the backend portion of the app, I was responsible for making sure that the UI/UX mockup that I created was actually reflected in the final product. Check out the video below to see it!</p>
+    <br>
+    <p>(Note: The video below shows the application before the machine learning model was integrated)</p>
+    <br>
+    <a class="button-primary" style="margin: 0px 16px 0px 16px !important" href="https://www.youtube.com/watch?v=MMX9esKbbkc&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim&index=6">
+     <a class="icon">
+        <img src="../../assets/media icons/youtube.svg" class="logo">
+      </a>
+      <a class="has-text-white" style="margin-left: 16px">
+        Demo
+      </a>
+    </a>
    </div>
   </div>
 </template>
@@ -131,7 +146,6 @@ export default {
   display: flex !important;
   margin-left: auto;
   margin-right: auto;
-  /* width: 40%; */
 }
 
 
