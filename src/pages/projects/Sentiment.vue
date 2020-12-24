@@ -61,20 +61,39 @@
       </div>
     </div>
     <div class="container has-text-centered">
-     <p class="section-title-dark">UI/UX</p>
-     <p>As the head of UI/UX design, it was mainly my job to create the mockup. My teammates would come up with ideas, and I would transform those ideas into reality. To makes these concepts real, I went through three phases of design: drafting, wireframing, and mockups</p>
+     <p class="section-title-primary">UI/UX</p>
+     <p>As the head of UI/UX design, it was mainly my job to create the mockup. My teammates would come up with ideas, and I would transform those ideas into reality. To makes these concepts real, we went through three phases of design: drafting, wireframing, and mockups</p>
      <div class="columns">
-      <div class="tile-centered-dark column steps">
-        <p class="has-text-light is-size-4">Drafting</p>
+      <div class="tile-centered-dark column ui-steps">
+        <p class="has-text-light is-size-5">Drafting</p>
       </div>
-      <div class="tile-centered-dark column steps">
-        <p class="has-text-light is-size-4">Wireframing</p>
+      <div class="tile-centered-dark column ui-steps">
+        <p class="has-text-light is-size-5">Wireframing</p>
       </div>
-      <div class="tile-centered-dark column steps">
-        <p class="has-text-light is-size-4">Mockups</p>
+      <div class="tile-centered-dark column ui-steps">
+        <p class="has-text-light is-size-5">Mockups</p>
       </div>
     </div>
-    <p></p>
+    <p class="has-text-primary title-primary" style="margin-top: 64px; margin-bottom: 16px;">Drafting</p>
+    <p>In the drafting phase of the project, the goal was to answer one simple question: how should design promote function? Or, in other words, how can the design of the application help fulfill its purpose of helping the user manage their mental health? So with question in mind, the group proceeded to come up with the following list of requirements for the app's design.</p>
+    <div class="tile-centered-primary list-tile">
+      <ul class="has-text-white">
+        <p>Calm colors to encourage reflection</p>
+        <p>Adding entries is at the forefront of the design</p>
+        <p>Provide a simply summary of feelings</p>
+        <p>Minimal design to create a relaxing environment</p>
+      </ul>
+    </div>
+    <p class="has-text-primary title-primary" style="margin-top: 128px; margin-bottom: 16px;">Wireframing</p>
+    <p>In the wireframing step of the design process the goal is to create basic drafts of what the design could look like. These frames have litte to no color, and lack any specific design details. A wireframe is really just meant to give an idea of what the spacing of elements should look like before any additional elements are added.  Below are images of the wireframes that were created by two of my team memembers; much of my final design was based off of their work.</p>
+    <div class="columns" style="margin-top: 32px;">
+      <div class="column">
+        <img class="is-vertical-center" src="../../assets/images/sentiment-wireframe-1.jpg" width="100%">
+      </div>
+      <div class="column">
+        <img class="is-vertical-center" src="../../assets/images/sentiment-wireframe-2.jpg" width="40%">
+      </div>
+    </div>
    </div>
   </div>
 </template>
@@ -121,11 +140,15 @@ p {
   line-height: 45px;
 }
 
-.steps {
-  margin: 64px;
-  padding: 16px;
+.ui-steps {
+  margin: 64px 64px 64px 64px;
+  padding: 8px;
   border-radius: 16px;
-  font-size: 32px;
+}
+
+.list-tile{
+  margin-top: 32px;
+  width: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -157,6 +180,15 @@ p {
   .work-header {
     padding: 15px;
   }
+
+  ul > p {
+    font-size: 12px;
+  }
+
+.list-tile{
+  width: 100%;
+}
+
 }
 
 </style>
