@@ -50,8 +50,8 @@ export default {
         {
           "title": "Driveline",
           "images": require('src/assets/images/driveline.jpg'),
-          "tags": ["Javascript", "Vuejs", "Firebase", "HTML", "Bootstrap"],
-          "description": "Working with web design this was my first time coding with a group. With my fellow classmates and a mentor, we began to craft an app to help with the schools drop off and pickup.",
+          "tags": ["Javascript", "Vuejs", "Firebase"],
+          "description": "This was my first time really coding with a group. With my fellow classmates and a mentor, we began to craft an app to help with the schools drop off and pickup.",
           "alt": "driveline-app",
           "page": "driveline"
         },
