@@ -40,21 +40,21 @@
       </div>
     </div>
     <div class="container has-text-centered">
-      <p class="section-title-dark">Why</p>
+      <p class="section-title-primary">Why</p>
       <br>
-      <p>Throughout High School, I've had my struggles with mental health.</p>
+      <p>Throughout High School, I've had my struggles with mental health. In my battles against the forces of anxiety and depression, I've tried various weapons, but one of these tools has always stuck with me: journaling. In my life, journaling has become a way to ground myself, because writing forces the dark and ephemeral thoughts in my mind to become concrete and definable issues that I can tackle. As such, when I was offered the oppertunity to intern with the Colorado School of Mine's Computing 4 Good (C4G) program, I was able to draw upon my own personal experience to propose that my team create Sentiment: a journaling app that uses machine learning to classify the emotions of entries to help the user track their mental state.</p>
     </div>
-    <div class="container has-text-centered">
-      <div class="tile-column-dark">
-        <div class="column is-half is-centered">
-          <img class="is-vertical-center" src="../../assets/arkit.svg" style="padding-left: 16px">
+    <div class="container">
+      <div class="tile-column-dark is-vcentered">
+        <div class="column has-text-centered">
+          <p class="section-title-light">The Team</p>
+          <p class="has-text-light">During the C4G internship, I was paired with a group of four students and as such, it was important that we figured out our group dynamic from the get-go. As a team, we split into three micro-groups, each one responsible for a different aspect of the application: UI/UX, app development, and the machine learning model. Due to my previous design work, I became the head of the UI/UX section of the project. However, I also worked with the app development and machine learning teams to help complete the application. Along with our micro-teams, we agreed to meet three times a week to check in on our progress, using Trello as our task manager of choice.</p>
         </div>
-        <div class="column is-half">
-          <p class="has-text-light title-light" style="font-size: 50px !important; margin-bottom: 25px">What</p>
-          <p class="has-text-white-ter has-text-left">A couple of years ago Apple released ARKit, an augmented reality framework that allowed for apps to be built using an iPhone’s camera to display and track a virtual object in real space using the camera and the phone’s screen. By using Unity and ARKit to overlay an entire virtual environment with a stereoscopic view so it could be viewed with a Google Cardboard, I was able to create a new type of mobile VR experience that allows for positional tracking on a phone. </p>
+        <div class="column">
+          <img src="../../assets/images/sentiment-trello.png" alt="driveline-code">
         </div>
       </div>
-    </div>
+   </div>
     <div class="container has-text-centered">
       <p class="section-title-primary">Creation</p>
       <p class="has-text-dark title-dark" style="margin-bottom: 25px;">Idea</p>
