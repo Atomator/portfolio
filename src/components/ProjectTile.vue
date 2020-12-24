@@ -79,4 +79,13 @@ img {
   padding: 0;
 }
 
+@media only screen and (max-width: 440px) {
+  .box {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+  
+}
+
 </style>

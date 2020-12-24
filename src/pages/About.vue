@@ -54,11 +54,11 @@ export default {
         },
         {
           "title": "Interests",
-          "interests": ["AWS", "Machine Learning", "Game Development", "Web Development"]
+          "interests": ["AWS", "Machine Learning", "Game Development", "Web Development", "VR"]
         },
         {
           "title": "Languages",
-          "interests": ["Python", "Tensorflow", "Javascript", "Vuejs", "HTML/CSS", "C#"]
+          "interests": ["Python", "Tensorflow/Keras", "Javascript", "Vuejs", "HTML/CSS", "C#"]
         },
       ]
     }

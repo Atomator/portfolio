@@ -47,4 +47,14 @@ export default {
   padding-top: 16px;
 }
 
+@media only screen and (max-width: 440px) {
+  #welcomeMessage {
+    font-size: 23vw !important;
+  }
+
+  #button-text {
+    font-size: 5vw !important;
+  }
+}
+
 </style>
