@@ -48,4 +48,10 @@ export default {
   margin-left: 32px;
 }
 
+@media only screen and (max-width: 440px) {
+  .has-text-light {
+    font-size: 3.5vw !important;
+  }
+}
+
 </style>

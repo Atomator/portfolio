@@ -30,7 +30,7 @@ $colors: (
     margin-bottom: 25px !important;
 
     @include until($tablet) {
-        font-size: 4em !important;
+        font-size: 15vw !important;
     }
 
 }
