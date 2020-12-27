@@ -19,9 +19,9 @@
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
             </a>
-              <a class="button-primary" href="https://www.figma.com/file/vII04Xd1Q8r208ztIRiuIK/Sentiment-Mockup?node-id=0%3A1">
+            <a class="button-primary" href="https://github.com/sentimentapp/core/tree/main/transformer">
               <a class="has-text-white">
-                Mockup
+                Transformer Model
               </a>
             </a>
           </div>  
@@ -80,7 +80,7 @@
       </ul>
     </div>
     <p class="has-text-primary title-primary" style="margin-top: 128px; margin-bottom: 16px;">Wireframing</p>
-    <p>In the wireframing step of the design process the goal is to create basic drafts of what the design could look like. These frames have litte to no color, and lack any specific design details. A wireframe is really just meant to give an idea of what the spacing of elements should look like before any additional elements are added.  Below are images of the wireframes that were created by two of my team memembers; much of my final design was based off of their work.</p>
+    <p>In the wireframing step of the design process the goal is to create basic drafts of what the design could look like. These frames have litte to no color, and lack any specific design details. A wireframe is really just meant to give an idea of what the spacing of elements should look like before any additional elements are added.  Below are images of the wireframes that were created by two of my team members; much of my final design was based off of their work.</p>
     <div class="columns" style="margin-top: 32px;">
       <div class="column">
         <img class="is-vertical-center" src="../../assets/images/sentiment-wireframe-1.jpg" width="100%">
@@ -91,24 +91,92 @@
     </div>
     <p class="has-text-primary title-primary" style="margin-top: 128px; margin-bottom: 16px;">Mockups</p>
     <p>After the wireframes were complete, it became my job to construct a mockup for the application. Unlike a wireframe, a mockup includes all of the colors and stylistic details that are going to be present in the final application. Using a tool called Figma, I created the design for the app using the wireframes made by other team members.</p>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); height: 512px; margin-top: 32px;" width="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvII04Xd1Q8r208ztIRiuIK%2FSentiment-Mockup%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+    <br>
+    <iframe style="display: block; margin: auto; height: 512px; border: 1px solid rgba(0, 0, 0, 0.1);  margin-top: 32px;" width="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvII04Xd1Q8r208ztIRiuIK%2FSentiment-Mockup%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
    </div>
    <div class="container has-text-centered">
     <p class="section-title-primary">Application</p>
-    <p>In order to develop our application, the group choose to use CapacitorJS. Similar to ElectronJS, Capacitor allows for mobile applications to be built using nothing but HTML and CSS. While this choice of development platform meant that our application would run slower than if we wrote it natively, it did mean that we would be able to develop our application faster since nobody on our team had ever written a mobile application before.</p>
+    <p>In order to develop our application, our group choose to use CapacitorJS. Similar to ElectronJS, Capacitor allows for mobile applications to be built using nothing but HTML and CSS. While this choice of development platform meant that our application would run slower than if we wrote it natively, it did mean that we would be able to develop our application faster since nobody on our team had ever written a mobile application before.</p>
     <br>
-    <p>Though I was not originally a part of the application development group, I quickly became invested in developing the actual version of the app. With another group memeber handling the backend portion of the app, I was responsible for making sure that the UI/UX mockup that I created was actually reflected in the final product. Check out the video below to see it!</p>
+    <p>Though I was not originally a part of the application development group, I quickly became invested in developing the actual version of the app. With another group memeber handling the backend portion of the app, I was responsible for making sure that the UI/UX mockup that I created was actually reflected in the final product.</p>
     <br>
-    <p>(Note: The video below shows the application before the machine learning model was integrated)</p>
     <br>
-    <a class="button-primary" style="margin: 0px 16px 0px 16px !important" href="https://www.youtube.com/watch?v=MMX9esKbbkc&list=PLCseOl6jsv2oRbhZzk3ZvgrnswPK12wim&index=6">
-     <a class="icon">
+    <iframe width="560" src="https://www.youtube.com/embed/Po-BH-1kRBw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height: 350px; display: block; margin: auto;"></iframe>
+    <a class="icon">
         <img src="../../assets/media icons/youtube.svg" class="logo">
-      </a>
-      <a class="has-text-white" style="margin-left: 16px">
-        Demo
-      </a>
     </a>
+    <a class="has-text-white" style="margin-left: 16px">
+        Demo
+    </a>
+   </div>
+   <div class="container has-text-centered">
+    <br>
+    <p class="section-title-primary">ML Model</p>
+    <p>Originally, my part in the machine learning portion of the project was rather small. During the 5 weeks over which this project officially took place, I was only responsible for writing the code to load in the GloVe word embeddings into the model while another one of my much more talented group memebers actually wrote and trained the model that would classify the emotions of the entries. However once the project had officially wrapped up, I found myself curious about how I could create a machine learning model that could be used in the application. So, after some research, I decided to try and create a transformer model to help me learn about natural language processing and machine learning.</p>
+    <br>
+    <br>
+    <div class="timeline is-centered">
+      <header class="timeline-header">
+        <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">Start</span>
+      </header>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content has-text-left">
+          <p class="heading">Research</p>
+          <p>In order to create a transformer, I first had to figure out how one worked. Refering to what I now consider to be the <a href="http://jalammar.github.io/illustrated-transformer/">Transformer Bible</a>, I took meticulous notes on  transformer arcitecture while also using Juypter notebooks to write small snippets of transformer code to ensure that I understood the nuances of what was going on.</p>
+        </div>
+      </div>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content">
+          <p class="heading">Library or From Scratch?</p>
+          <p>Once I had a good understanding of how a transformer worked, it was time to figure out how to create one. At first, I was simply going to use the <a href="https://huggingface.co/">HuggingFace</a> transformer library to write the model, but because I really wanted to understand how a transformer worked, I decided to write the model from scratch using a Keras <a href="https://blog.tensorflow.org/2019/05/transformer-chatbot-tutorial-with-tensorflow-2.html">tutorial</a> I had found.</p>
+        </div>
+      </div>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content has-text-left">
+          <p class="heading">Keras Functional API</p>
+          <p>Once I had decided to write the model using Keras, I found that I had another hurdle to overcome: the Keras Functional API. This API is used within Keras to build custom layers and models that couldn't be written otherwise, and having never used it before, I had to learn it. To do this, I used the same strategy that I had with the transforme; I took notes on everything that I was confused about, and then I used Juypter notebooks to actually write out what was confusing me.</p>
+        </div>
+      </div>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content">
+          <p class="heading">Data Preprocessing</p>
+          <p> The dataset used for training included a list of different text segments each labeled with an emotion such as 'sadness' or 'joy'. However, in to order to actually have the model understand the entires passed to it, the data first had to be converted to a format that the model could understand. To do this, I wrote a custom set of functions that used HuggingFace's BERT uncased dictionary to assign a numerical token to each word in an entry. These tokens were then passed to an embedding layer in the model that would transform the word from a single number to a vector of numbers.</p>
+        </div>
+      </div>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content has-text-left">
+          <p class="heading">Writing the Model</p>
+          <p>This part of the project was actually relatively easy thanks to the Keras <a href="https://blog.tensorflow.org/2019/05/transformer-chatbot-tutorial-with-tensorflow-2.html">tutorial</a> I had found earlier. However, I didn't want to simply copy and paste the code from the tutorial, so I instead hand rewrote all of the tutorials code, commenting it as I went to ensure that I atually understood what I was writing.</p>
+        </div>
+      </div>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content">
+          <p class="heading">Training and Exporting the Model</p>
+          <p>Once the model was written, the next step was to get it to actually classify the emotions in a text. So in order to do this, I simply trained different sizes of the model until I reached a nice balance between accuracy and model size. Then to export it, I used Tensorflow to convert the model to TensorflowJS so it could be used in the Sentiment application.</p>
+        </div>
+      </div>
+      <div class="timeline-item is-primary">
+        <div class="timeline-marker is-primary"></div>
+        <div class="timeline-content has-text-left">
+          <p class="heading">Integration into Sentiment</p>
+          <p>To integrate the model into Sentiment, I first had to rewrite my text preprocessing in Javascript to ensure that the TensorflowJS model would recieve the correct inputs. Once I finished with that, I used TensorflowJS to load in the model I had trained and pass the data through it. Thankfully, Sentiment already had placeholder code in place for the model, so as long as the model function returned an emotion, the rest of the app would handle it.</p>
+        </div>
+      </div> 
+      <header class="timeline-header" style="margin-bottom: 100px;">
+        <span class="tag is-medium is-primary has-text-white-ter" style="font-size: 20px; font-weight: 900; border-radius: 10px; padding: 0px 30px 0px 30px;">End</span>
+      </header>
+    </div>
+    <div class="container has-text-centered">
+      <p class="section-title-primary">Challenges</p>
+      <br>
+      <p>While this project is certainly one of the most fun ones that I have ever had the privilege to work on, it wasn't without its challenges. Working with a group at the start of this project presented a couple of issues, the main one being the uneven distribution of work. On our team, we had a variety of people with a variety of different coding skill levels. As such, some members of the group, such as myself, ended up taking on a disproportionate amount of work leaving other members feeling a bit left out. To fix this in the future, I have to be okay with letting group members struggle with tasks that I could easily complete, becauase only then would they be able to grow. During the personal portion of this project when I worked on the model, the main challenge for me was actually getting started. In my head, I had only intended for my transformer exploration to only take about a month at most, but instead, it had ended up taking the whole semester. I had been so obsessed with making sure that I wrote the perfect model, that I ended up spending to much time researching and not enough time writing the code. Though making sure I understand what I am doing is important, I want to try and find a balance between the two in the future so I can have both understanding and implementation.</p>
+    </div>
    </div>
   </div>
 </template>
@@ -163,6 +231,10 @@ p {
 .list-tile{
   margin-top: 32px;
   width: 50%;
+}
+
+a.has-text-white:hover, a.has-text-white:focus {
+    color: #F7F7FF !important;
 }
 
 @media only screen and (min-width: 768px) {
