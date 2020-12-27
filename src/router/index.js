@@ -5,6 +5,7 @@ import Projects from '@/pages/Projects'
 import About from '@/pages/About'
 import Contact from '@/pages/Contact'
 import Resume from '@/pages/Resume'
+import Sentiment from '@/pages/projects/Sentiment'
 import Vrkit from '@/pages/projects/Vrkit'
 import Qlearning from '@/pages/projects/Qlearning'
 import Neuralnetwork from '@/pages/projects/Neuralnetwork'
@@ -38,6 +39,11 @@ const router = new Router({
       path: '/resume',
       name: 'Resume',
       component: Resume
+    },
+    {
+      path: '/projects/sentiment',
+      name: 'Sentiment',
+      component: Sentiment
     },
     {
       path: '/projects/vrkit',

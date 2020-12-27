@@ -24,6 +24,14 @@ export default {
     return {
       "pageData": [
         {
+          "title": "Sentiment",
+          "images": require('src/assets/images/sentiment.webp'),
+          "tags": ["VueJS", "Tensorflow", "CapacitorJS"],
+          "description": "Working with a team of amazing people, I helped to develop Sentiment: an application that classifies the emotions of journal entries through machine learning",
+          "alt": "sentiment-mockup",
+          "page": "sentiment"
+        },
+        {
           "title": "VRKit",
           "images": require('src/assets/images/vrkit.jpg'),
           "tags": ["VR", "AR", "Unity", "C#"],

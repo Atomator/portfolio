@@ -7,11 +7,11 @@
         <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
           I love what I do. The only problem is that I do to a little bit everything.
         </h2>
-        <!-- <router-link to="/projects"> -->
-          <a href="https://github.com/sentimentapp/application" id="explore-button" class="button is-primary is-large has-shadow">
+        <router-link to="/projects/sentiment">
+          <a id="explore-button" class="button is-primary is-large has-shadow">
             <p id="button-text" class="has-text-weight-bold">See My Current Project!</p>
           </a>
-        <!-- </router-link> -->
+        </router-link>
       </div>
     </section>
   </div>
