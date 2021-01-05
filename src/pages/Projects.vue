@@ -35,7 +35,7 @@ export default {
           "title": "VRKit",
           "images": require('src/assets/images/vrkit.jpg'),
           "tags": ["VR", "AR", "Unity", "C#"],
-          "description": "Ever since I had my first hands on time with an Oculus Rift at a local Best Buy, I have been hooked on VR. So I created an experiment; Apple’s ARKit + Google’s GVR combined within Unity.",
+          "description": "Ever since I first tried an Oculus Rift at a local Best Buy, I have been hooked on VR. So I tired something experimental; Apple’s ARKit + Google’s GVR, combined within Unity.",
           "alt": "vr-headset-cardboard",
           "page": "vrkit"
         },
@@ -43,7 +43,7 @@ export default {
           "title": "Q Learning",
           "images": require('src/assets/images/qlearning.jpg'),
           "tags": ["Python", "Numpy", "Pygame"],
-          "description": "When I was forced to the reality that a computer can in fact drive a car I became interested in ML. While I couldn’t teach a computer to drive a car I soon saw that I could teach it how to play a game. ",
+          "description": "After I realized that self-driving cars were indeed becoming a reality, I found myself becoming interested in ML. While I couldn’t create a self-driving car, I could teach my computer to play snake.",
           "alt": "snake-game-with-code",
           "page": "qlearning"
         },
@@ -51,7 +51,7 @@ export default {
           "title": "Neural Network",
           "images": require('src/assets/images/neuralnetwork.jpg'),
           "tags": ["Python", "Numpy"],
-          "description": "Not understanding Artificial Neural Networks I embarked on a quest, create a NN using nothing but Python, Numpy, and a lot of math that was way above my skill level.",
+          "description": "Wanting to understand ML, I decided to embark on a quest: create a neural network using nothing but Python, Numpy, and a lot of math that I didn't really understand.",
           "alt": "numpy-code",
           "page": "neuralnetwork"
         },
@@ -59,7 +59,7 @@ export default {
           "title": "Driveline",
           "images": require('src/assets/images/driveline.jpg'),
           "tags": ["Javascript", "Vuejs", "Firebase"],
-          "description": "This was my first time really coding with a group. With my fellow classmates and a mentor, we began to craft an app to help with the schools drop off and pickup.",
+          "description": "Lead by a mentor, I worked with group of my fellow classmates in order to craft an app that would help our school more effectively manage its drop off and pickup situation.",
           "alt": "driveline-app",
           "page": "driveline"
         },
