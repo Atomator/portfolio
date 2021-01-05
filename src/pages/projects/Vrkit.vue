@@ -43,7 +43,7 @@
     <div class="container has-text-centered">
       <p class="section-title-primary">Why</p>
       <br>
-      <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it). <br><br> I needed another solution if I was to explore the wonders of VR. </p>
+      <p>Virtual Reality captured my interest ever since I donned my first Oculus Rift at a Best Buy over 4 years ago. The experience captivated me and the technology fascinated me, but sadly, my wallet disappointed me. Unable to afford a headset (let alone a PC to drive it), I knew that needed another solution if I was to explore the wonders of VR. </p>
     </div>
     <div class="container has-text-centered">
       <div class="tile-column-dark">
@@ -52,7 +52,7 @@
         </div>
         <div class="column is-half">
           <p class="has-text-light title-light" style="font-size: 50px !important; margin-bottom: 25px">What</p>
-          <p class="has-text-white-ter has-text-left">A couple of years ago Apple released ARKit, an augmented reality framework that allowed for apps to be built using an iPhone’s camera to display and track a virtual object in real space using the camera and the phone’s screen. By using Unity and ARKit to overlay an entire virtual environment with a stereoscopic view so it could be viewed with a Google Cardboard, I was able to create a new type of mobile VR experience that allows for positional tracking on a phone. </p>
+          <p class="has-text-white-ter has-text-left">A couple of years ago Apple released ARKit, an augmented reality framework that allowed for apps to be built using an iPhone’s camera to display and track a virtual object in real space. By using Unity to display an entire virtual environment, rather than just a single object, and the Google Cardboard SDK to render it for VR, I was able to create a new type of mobile VR experience that allows for positional tracking on a phone. </p>
         </div>
       </div>
     </div>

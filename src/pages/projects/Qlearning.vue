@@ -43,7 +43,7 @@
       <img src="../../assets/images/qlearning-code.png" alt="qlearning-code">
       <p>While the concept behind this project wasn’t too complicated compared to my attempt to merge ARKit and GVR, it ended up taking just as much effort. While I had some introductory knowledge of machine learning algorithms and concepts, thanks to Coursera's Machine Learning Course, I had no idea how to truly use any of it. My rudimentary knowledge of the subject made it all the harder to get my computer to actually learn snake, but in the end, it made it all the more rewarding.</p>
       <br>
-      <p>My original plan was to use a neural network that learned from my play style in order to teach the machine how to play the game. This idea mainly stemmed from the fact that I had created a neural network before and I though I could just use that code in order to have it learn rather than trying to create something new or even dip my toes into a more robust solution like Tensorflow or Pytorch. However, attempting this solution soon had me realize that using an ANN with my knowledge wasn’t going to cut it, and so I turned to the internet and learned about a glorious algorithm known as qLearning.</p>
+      <p>My original plan was to use a neural network that learned from my play style in order to teach the machine how to play the game. This idea mainly stemmed from the fact that I had created a neural network before and I thought using that code would be easier than trying to create something new or even dip my toes into a more robust solution like Tensorflow or Pytorch. However, attempting this solution soon had me realize that using an ANN with my knowledge wasn’t going to cut it, and so I turned to the internet and learned about a glorious algorithm known as qLearning.</p>
     </div>
     <div class="container has-text-centered">
       <p class="section-title-dark">Creation</p>
@@ -79,7 +79,7 @@
           <div class="timeline-marker is-dark"></div>
           <div class="timeline-content has-text-left">
             <p class="heading">Finishing the Game</p>
-            <p>One done with that I added collision rules so that way the snake could eat apples, get longer, and die when touching itself.</p>
+            <p>Then, I added collision rules so the snake could eat apples, get longer, and die when it overlapped itself.</p>
           </div>
         </div>
         <div class="timeline-item is-dark">
@@ -93,7 +93,7 @@
           <div class="timeline-marker is-dark"></div>
           <div class="timeline-content has-text-left">
             <p class="heading">Stochastic Gradient Descent</p>
-            <p>At this point, using an ANN that I had built from scratch I tried to pass each second of gameplay, which only resulted in the snake moving straight forward after around a half hour of training.</p>
+            <p>In order to train my computer to play snake, I tried to passing each second of gameplay to the machine learning algorithm. This only resulted in the snake continuing in a straight line after around half an hour of training.</p>
           </div>
         </div>
         <div class="timeline-item is-dark">
@@ -107,7 +107,7 @@
           <div class="timeline-marker is-dark"></div>
           <div class="timeline-content has-text-left">
             <p class="heading">qLearning?</p>
-            <p>At this point I looked into alternate methods, and once I realized that qLearning was only a large table with conditions I knew I could do it.</p>
+            <p>At this point I looked into alternate methods, and once I realized that qLearning was nothing more than a fancy spreadsheet, I knew this was the solution.</p>
           </div>
         </div>
         <div class="timeline-item is-dark">
@@ -121,14 +121,14 @@
           <div class="timeline-marker is-dark"></div>
           <div class="timeline-content has-text-left">
             <p class="heading">Dimensional Rifting</p>
-            <p>While the idea was working, the over 100 lines of if statements that I had could barely track the game state, so I switched to a multidimensional numpy array so I could track each attribute of play individually.</p>
+            <p>While the idea was working, the over 100 lines of if statements that I had written could barely track the game state, so I switched to a multidimensional numpy array so I could track each attribute of play individually.</p>
           </div>
         </div>
         <div class="timeline-item is-dark">
           <div class="timeline-marker is-dark"></div>
           <div class="timeline-content has-text-left">
             <p class="heading">GUI</p>
-            <p>After the success of multiple dimensions, I was able to clean up the look of the game to track the stats of the bot; having it reach over 50 points in the end. </p>
+            <p>After the success of multiple dimensions, I was able to clean up the look of the game and track the progress of the bot. It managed to reach over 50 points in the end. </p>
           </div>
         </div>
         <header class="timeline-header" style="margin-bottom: 100px;">
@@ -139,7 +139,7 @@
     <div class="container has-text-centered">
       <p class="section-title-dark">Challenges</p>
       <br>
-      <p>The main challenge of the project was simply learning how to manage data. In order to keep track of the snake I had to create the correct array, and in order to find the correct state, I had to create a multidimensional array. This experience reflect a sentiment that I heard from a couple of different places; that half the battle in machine learning is obtaining the correct data. Next time I attempt something like this, I want to try a couple of different things. The first is simply that I would like to have my algorithm think further into the future, as mine currently only thinks one step ahead. I would also like to get it to train off of the images on screen rather than the data I extract from the game. Overall, this was a really cool and empowering experience that taught me a lot about machine learning and inspired me on where to go next.</p>
+      <p>The main challenge of the project was simply learning how to manage data. In order to keep track of the snake I had to create the correct array, and in order to find the correct state, I had to create a multidimensional array. This experience reflects a sentiment that I heard from a couple of different places; that half the battle in machine learning is obtaining the correct data. Next time I attempt something like this, I want to try a couple of different things. The first is simply that I would like to have my algorithm think further into the future, because right now, it can only predict a single move at a time. I would also like to get it to train off of the images on screen rather than the data I extract from the game so I could pontentially teach the model to play other games. Overall, this was a really cool and empowering experience that taught me a lot about machine learning and inspired me on where to go next.</p>
     </div>
   </div>
 </template>

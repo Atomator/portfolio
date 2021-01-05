@@ -32,7 +32,7 @@
     <div class="tile-column-dark is-vcentered">
       <div class="column">
         <p class="section-title-light">Why</p>
-        <p class="has-text-light">At school, I was offered the opportunity in my computer science class to create a new app to help manage a local Elementary Schools drop-off and pick-up situation. The school used a pen and paper system to keep track of which students left with which person, and while this worked, the implementation was slow and made it difficult for teachers to communicate whether or not students have made it to the correct car. This was a perfect problem that could be solved by the addition of a little bit of technology and a group of students willing to work on it.</p>
+        <p class="has-text-light">At school, I was offered the opportunity in my computer science class to create a new app to help manage my schools drop-off and pick-up situation. Rather than using a digitial solution, my school instead used a pen and paper system to keep track of which students left with which guardian. While this system worked, the handwriting was slow, and the lack of centralized data made it difficult for the teachers to communicate whether or not students have made it to the correct car. With little bit of code and a group of students willing to work on write it, this problem could easily be solved.</p>
       </div>
       <div class="column">
         <img src="../../assets/images/driveline-code.png" alt="driveline-code">
@@ -41,10 +41,10 @@
    </div>
    <div class="container has-text-centered">
     <p class="section-title-dark">What</p>
-    <p>For context, the driveline works by having the parents first drive into the school parking lot, following a set path that allowed for them to pass by and pickup their kids before exiting back onto the street. Moving through the line the parent would reach a section in which the line would be stopped and their kid was allowed to enter into their vehicle, and once every kid as loaded the wave would be released. Teachers on duty would talk to each parent in order to get the correct kid into the correct car. </p>
+    <p>For context, my school's driveline works by having the parents drive along a set path that passes by the front of the school so they can pick up their kids before exiting back onto the street. Moving through the line the parent would reach a section in which the line would be stopped and their kid was allowed to enter into their vehicle, and once every kid was loaded the wave would be released. Teachers on duty would talk to each parent in order to get the correct kid into the correct car.</p>
     <img class="is-centered" src="../../assets/images/driveline-page.png" alt="ann-code" style="margin: 64px 0px 64px 0px; width: 50%; margin-left: auto; margin-right: auto;">
     <p class="has-text-centered" style="margin-top: -84px; margin-bottom: 64px;">Teacher View of Page</p>
-    <p>Our solution would have an app that keep track of which cars are in the driveline, using a database to communicate which kids have made it to which cars. Upon a wave entering, through the use of iPads, a teacher would be responsible for registering the drivers, identifying them by the color of their vehicle. Then as teachers guide students to their respective rides, they check off which rides are filled, and once all the rides in the staging areas are full the wave is released.</p>
+    <p>Our solution was an app that keeps track of which cars are in the driveline, using an online database to communicate which kids have made it to which cars. Upon a wave of cars entering, through the use of iPads, a teacher would be responsible for registering the drivers, identifying them by the color of their vehicle. Then as teachers guide students to their respective rides, they check off which rides are filled, and once all the rides in the staging areas are full the wave is released.</p>
    </div>
    <div class="container has-text-centered">
     <div class="tile-column-dark">
@@ -52,7 +52,7 @@
         <p class="title-light">Goal</p>
         <p class="has-text-white-ter">To work with a team in order to create an application that helps to speed up Elementary School pickup by allowing easier communication between teachers.</p>
         <p class="title-light" style="margin-top: 64px;">Idea</p>
-        <p class="has-text-white-ter">To use a real-time data base in order to update a webpage that informs teacher whether or not a student has reached the correct ride.</p>
+        <p class="has-text-white-ter">To use a real-time data base in order that updates a webpage that informs teacher whether or not a student has reached the correct ride.</p>
       </div>
     </div>
    </div>
@@ -73,7 +73,7 @@
           <div class="timeline-marker is-dark"></div>
           <div class="timeline-content has-text-left">
             <p class="heading">Tussling with Data</p>
-            <p>Having not used a database before I had figure out how to relate different data points in order to have students be registered with drivers and vice-versa. Vuex allowed for me to manage the data state when pushing and fetching data from Firebase.</p>
+            <p>Having not used a database before, I had figure out how to relate different data points in order to have students be registered with drivers and vice-versa. Vuex allowed for me to manage the data state when pushing and fetching data from Firebase.</p>
           </div>
         </div>
         <div class="timeline-item is-dark">
@@ -91,7 +91,7 @@
     <div class="container has-text-centered">
       <p class="section-title-dark">Challenges</p>
       <br>
-      <p>Due to the fact that I had to work with a group this was a much different project than I was used to. Working with a group proved to be much different than anything that I had attempted before, as I had to coordinate with, and help others, when it came to making the site a working web application. However, I am thankful for this experience, as I was able to learn how to help other in a respectful and kind way while also soliciting the same type of assistance from others. Being able to sit down with a new group of people and walk out with a finished product is an experience that will not only help me in the work force, but be an experience that I will never forget.</p>
+      <p>Working with a group proved to be much different than anything that I had attempted before, as I had to coordinate with, and help others, in order to make sure the web application actually worked. I am thankful for this experience, because it not only helped me to learn how to help other in a respectful and kind way, it taught me to ask for the same type of assistance from others. Being able to sit down with a new group of people and walk out with a finished product is an experience that will not only help me in the work force, but in life as well.</p>
     </div>
   </div>
 </template>
