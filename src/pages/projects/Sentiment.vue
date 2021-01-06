@@ -19,14 +19,9 @@
                 <img src="../../assets/media icons/github.svg" class="logo">
               </a>
             </a>
-            <a class="button-primary" href="https://github.com/sentimentapp/core/tree/main/transformer">
-              <a class="has-text-white">
-                Model Code
-              </a>
-            </a>
             <a class="button-primary" href="https://colab.research.google.com/drive/1bpvIRcNmKAKpKD1ZM3J7BPyiJtFysF1i#scrollTo=wv76z5nCerP4">
               <a class="has-text-white">
-                Model Demo
+                Demo
               </a>
             </a>
           </div>  
