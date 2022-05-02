@@ -11,7 +11,7 @@
             <a class="icon" href="https://github.com/Atomator">
               <img src="../assets/media icons/github.svg" class="logo">
             </a>
-            <a class="icon" href="https://medium.com/@connorsparks">
+            <a class="icon" href="https://cosparks.medium.com/">
               <img src="../assets/media icons/medium.svg" class="logo">
             </a>
             <!-- <a class="icon">
