@@ -5,7 +5,7 @@
       <div class="container has-text-centered">
         <h1 class="title" id="welcomeMessage">Hello<strong class="has-text-primary">.</strong> </h1>
         <h2 class="subtitle has-text-weight-medium" style="margin-bottom: 50px;">
-          I love what I do. The only problem is that I do to a little bit everything.
+          I love what I do. The only problem is that I do a little bit everything.
         </h2>
         <router-link to="/projects/sentiment">
           <a id="explore-button" class="button is-primary is-large has-shadow">

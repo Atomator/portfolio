@@ -19,7 +19,7 @@
             </a> -->
           </div>
           <p class="has-text-light">Connor Sparks</p>
-          <p class="has-text-light">© twentyTwenty </p>
+          <p class="has-text-light">© 2023 </p>
         </div>
       </div>
     </div>
